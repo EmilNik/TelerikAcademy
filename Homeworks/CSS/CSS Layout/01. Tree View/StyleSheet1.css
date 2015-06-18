@@ -1,0 +1,16 @@
+﻿ul{
+    list-style-type:none;
+}
+
+ul ul{
+    padding-left:15px;
+    display:none;
+}
+
+ul li:hover > ul{
+    display:block;
+}
+
+a{  
+    text-decoration:underline;
+}

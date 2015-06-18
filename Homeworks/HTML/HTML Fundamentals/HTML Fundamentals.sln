@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Nested Lists", "02. Nested Lists\02. Nested Lists.csproj", "{56087B42-141F-4B55-905A-0E62D96FA9D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Social site", "03. Social site\03. Social site.csproj", "{4C5F0029-7FED-4184-AE9E-A67D550B0161}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 Runners home", "01 Runners home\01 Runners home.csproj", "{3BA38488-2D1E-42C2-A366-3C40584C983F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56087B42-141F-4B55-905A-0E62D96FA9D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56087B42-141F-4B55-905A-0E62D96FA9D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56087B42-141F-4B55-905A-0E62D96FA9D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56087B42-141F-4B55-905A-0E62D96FA9D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C5F0029-7FED-4184-AE9E-A67D550B0161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C5F0029-7FED-4184-AE9E-A67D550B0161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C5F0029-7FED-4184-AE9E-A67D550B0161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C5F0029-7FED-4184-AE9E-A67D550B0161}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BA38488-2D1E-42C2-A366-3C40584C983F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BA38488-2D1E-42C2-A366-3C40584C983F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BA38488-2D1E-42C2-A366-3C40584C983F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BA38488-2D1E-42C2-A366-3C40584C983F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

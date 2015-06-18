@@ -1,0 +1,50 @@
+﻿body {
+    background-color: #a9a9a9;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+
+li, body > header > h1, body > footer {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+header, li {
+    color: white;
+}
+
+body > header > h1 {
+    font-size: 2.4em;
+}
+
+article h1 {
+    font-size: 1.6em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:active {
+        background-color: #d3d3d3;
+    }
+
+footer > p {
+    font-size: 0.8em;
+}

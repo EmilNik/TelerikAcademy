@@ -1,0 +1,56 @@
+﻿body {
+    background-color: #1e3741;
+    font-family: 'Arial';
+}
+
+nav{
+    float:left;
+}
+
+header nav ul {
+    list-style: none;
+    float:left;
+    padding-left:0;
+}
+
+header nav ul li{
+    background-color:#4b5f67;
+    display:inline;
+    padding: 15px 10px;
+}
+
+header nav ul li:hover, #active{
+    color:#fff;
+    background-color:transparent;
+}
+
+    header nav ul li a{
+        color:#869da9;
+        text-decoration:none;
+    }
+
+    header nav ul li a:hover{
+        text-decoration:underline;
+    }
+
+    section{
+        float:left;
+    }
+
+    section ul{
+        float:left;
+        width:258px;
+        list-style:none;
+        padding-left:0;
+        color:#869da9;
+    }
+
+    section ul li{
+        padding:5px 5px 5px;
+        border-top:1px solid #869da9;
+    }
+
+    #activeNews{
+        background-color:#00968c;
+        color:#fff;
+    }

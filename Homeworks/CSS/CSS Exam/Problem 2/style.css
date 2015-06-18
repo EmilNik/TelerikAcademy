@@ -1,0 +1,106 @@
+﻿html, body {
+    font-family: 'Segoe UI', 'Segoe UI Web', 'Segoe UI Symbol', 'Helvetica Neue', 'BBAlpha Sans', 'S60 Sans', Arial, sans-serif;
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0 auto;
+    width: 1000px;
+    font-weight: 400;
+    -webkit-text-stroke-width: 0;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+body {
+    padding-left: 12px;
+}
+
+#header {
+    font-size: 13px;
+    background-color: #077CC6;
+    height: 35px;
+}
+
+    #header #logo {
+        float: left;
+        background-image: url(images/logo.png);
+        width: 195px;
+        height: 35px;
+    }
+
+    #header #search {
+        float: right;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+
+        #header #search .searchText {
+            width: 200px;
+            height: 25px;
+        }
+
+    #header #menu {
+        float: right;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+        #header #menu li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+            #header #menu li a {
+                color: #e0e0e0;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+#main {
+    font-size: 16px;
+}
+
+    #main h1 {
+        font-size: 53px;
+        font-weight:normal;
+    }
+
+    #main .mainImage {
+        float: right;
+    }
+
+    #main p {
+        text-align: justify;
+    }
+
+        #main p a {
+            color: #DC143C;
+            text-decoration: none;
+        }
+
+        #main p code {
+            border: 1px solid #000;
+            font-weight: bold;
+        }
+
+#footer {
+    font-size: 11px;
+    background-color: #077CC6;
+    height: 45px;
+    align-items: center;
+    text-decoration: underline;
+    color: #fff;
+    text-align: center;
+    padding-top:15px;
+}
+
+    #footer .copyright {
+        text-decoration: underline;
+        color: #fff;
+        text-transform: capitalize;
+    }
+
+        #footer .copyright a {
+            text-decoration: underline;
+            color: #fff;
+        }

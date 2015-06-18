@@ -1,0 +1,6 @@
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\CSS\CSS Layout\06. News site\bin\_06.News_site.dll.config
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\CSS\CSS Layout\06. News site\bin\_06.News_site.dll
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\CSS\CSS Layout\06. News site\bin\_06.News_site.pdb
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\CSS\CSS Layout\06. News site\obj\Debug\06. News site.csprojResolveAssemblyReference.cache
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\CSS\CSS Layout\06. News site\obj\Debug\_06.News_site.dll
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\CSS\CSS Layout\06. News site\obj\Debug\_06.News_site.pdb
