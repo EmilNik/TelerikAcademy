@@ -77,20 +77,20 @@ function solve() {
 
             for (var param in book) {
                 if(typeof book[param] === 'undefined') {
-                    throw new Error(param + 'should not be undefined.');
+                    throw new Error(param + ' is undefined!');
                 }
             }
         }
 
         function checkAuthor(author) {
             if(!author.trim()) {
-                throw new Error('Invalid author.');
+                throw new Error('Invalid author!');
             }
         }
 
         function checkISBN(isbn) {
             if(isbn.length !== 10 && isbn.length !== 13) {
-                throw new Error('ISBN must be either 10 or 13 digits');
+                throw new Error('ISBN must be between 10 and 13 digits!');
             }
 			if(!/^[0-9]+$/.test(isbn.toString())) {
 				throw new Error('ISBN must contain digits only!');
@@ -99,7 +99,7 @@ function solve() {
 
         function checkName(name) {
             if(name.length < 2 || name.length > 100) {
-                throw new Error('Name is either too short or too long');
+                throw new Error('Name must be between 2 and 100 symbols!');
             }
         }
 
