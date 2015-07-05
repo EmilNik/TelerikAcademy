@@ -1,0 +1,5 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Methods\03 English digit\bin\Debug\03 English digit.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Methods\03 English digit\bin\Debug\03 English digit.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Methods\03 English digit\bin\Debug\03 English digit.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Methods\03 English digit\obj\Debug\03 English digit.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Methods\03 English digit\obj\Debug\03 English digit.pdb

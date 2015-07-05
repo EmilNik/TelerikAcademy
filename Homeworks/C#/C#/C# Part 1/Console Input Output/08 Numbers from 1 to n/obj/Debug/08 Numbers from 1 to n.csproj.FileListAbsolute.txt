@@ -1,0 +1,5 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\08 Numbers from 1 to n\bin\Debug\08 Numbers from 1 to n.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\08 Numbers from 1 to n\bin\Debug\08 Numbers from 1 to n.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\08 Numbers from 1 to n\bin\Debug\08 Numbers from 1 to n.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\08 Numbers from 1 to n\obj\Debug\08 Numbers from 1 to n.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\08 Numbers from 1 to n\obj\Debug\08 Numbers from 1 to n.pdb

@@ -1,0 +1,6 @@
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\08 Maximal sum\bin\Debug\08 Maximal sum.exe.config
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\08 Maximal sum\bin\Debug\08 Maximal sum.exe
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\08 Maximal sum\bin\Debug\08 Maximal sum.pdb
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\08 Maximal sum\obj\Debug\08 Maximal sum.csprojResolveAssemblyReference.cache
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\08 Maximal sum\obj\Debug\08 Maximal sum.exe
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\08 Maximal sum\obj\Debug\08 Maximal sum.pdb

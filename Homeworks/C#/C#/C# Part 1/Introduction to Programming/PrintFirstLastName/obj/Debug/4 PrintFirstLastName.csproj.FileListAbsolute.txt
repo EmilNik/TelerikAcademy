@@ -1,0 +1,5 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\PrintFirstLastName\bin\Debug\PrintFirstLastName.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\PrintFirstLastName\bin\Debug\PrintFirstLastName.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\PrintFirstLastName\bin\Debug\PrintFirstLastName.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\PrintFirstLastName\obj\Debug\PrintFirstLastName.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\PrintFirstLastName\obj\Debug\PrintFirstLastName.pdb

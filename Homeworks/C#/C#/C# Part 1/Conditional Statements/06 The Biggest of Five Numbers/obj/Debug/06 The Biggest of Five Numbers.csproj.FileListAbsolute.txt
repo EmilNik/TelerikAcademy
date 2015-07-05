@@ -1,0 +1,6 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution6\06 The Biggest of Five Numbers\bin\Debug\06 The Biggest of Five Numbers.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution6\06 The Biggest of Five Numbers\bin\Debug\06 The Biggest of Five Numbers.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution6\06 The Biggest of Five Numbers\bin\Debug\06 The Biggest of Five Numbers.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution6\06 The Biggest of Five Numbers\obj\Debug\06 The Biggest of Five Numbers.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution6\06 The Biggest of Five Numbers\obj\Debug\06 The Biggest of Five Numbers.pdb
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution6\06 The Biggest of Five Numbers\obj\Debug\06 The Biggest of Five Numbers.csprojResolveAssemblyReference.cache

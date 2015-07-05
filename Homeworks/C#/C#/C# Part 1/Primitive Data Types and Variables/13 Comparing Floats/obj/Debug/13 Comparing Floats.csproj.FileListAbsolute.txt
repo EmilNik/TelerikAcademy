@@ -1,0 +1,8 @@
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\13 Comparing Floats\bin\Debug\13 Comparing Floats.exe.config
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\13 Comparing Floats\bin\Debug\13 Comparing Floats.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\13 Comparing Floats\bin\Debug\13 Comparing Floats.pdb
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\13 Comparing Floats\obj\Debug\13 Comparing Floats.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\13 Comparing Floats\obj\Debug\13 Comparing Floats.pdb
+C:\Users\Emil\Desktop\New folder\Solution3\13 Comparing Floats\bin\Debug\13 Comparing Floats.exe.config
+C:\Users\Emil\Desktop\New folder\Solution3\13 Comparing Floats\obj\Debug\13 Comparing Floats.exe
+C:\Users\Emil\Desktop\New folder\Solution3\13 Comparing Floats\obj\Debug\13 Comparing Floats.pdb

@@ -1,0 +1,6 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\11 Bitwise Extract Bit 3\bin\Debug\11 Bitwise Extract Bit 3.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\11 Bitwise Extract Bit 3\bin\Debug\11 Bitwise Extract Bit 3.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\11 Bitwise Extract Bit 3\bin\Debug\11 Bitwise Extract Bit 3.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\11 Bitwise Extract Bit 3\obj\Debug\11 Bitwise Extract Bit 3.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\11 Bitwise Extract Bit 3\obj\Debug\11 Bitwise Extract Bit 3.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\11 Bitwise Extract Bit 3\obj\Debug\11 Bitwise Extract Bit 3.csprojResolveAssemblyReference.cache

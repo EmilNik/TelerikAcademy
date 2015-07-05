@@ -1,0 +1,5 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\11 Debugger\bin\Debug\11 Debugger.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\11 Debugger\bin\Debug\11 Debugger.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\11 Debugger\bin\Debug\11 Debugger.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\11 Debugger\obj\Debug\11 Debugger.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\11 Debugger\obj\Debug\11 Debugger.pdb

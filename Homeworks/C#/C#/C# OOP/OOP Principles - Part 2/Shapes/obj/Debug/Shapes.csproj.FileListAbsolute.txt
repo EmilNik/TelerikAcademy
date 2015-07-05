@@ -1,0 +1,6 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\OOP Principles - Part 2\Shapes\bin\Debug\Shapes.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\OOP Principles - Part 2\Shapes\obj\Debug\Shapes.csprojResolveAssemblyReference.cache
+c:\users\vucheva\documents\visual studio 2013\Projects\OOP Principles - Part 2\Shapes\bin\Debug\Shapes.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\OOP Principles - Part 2\Shapes\bin\Debug\Shapes.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\OOP Principles - Part 2\Shapes\obj\Debug\Shapes.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\OOP Principles - Part 2\Shapes\obj\Debug\Shapes.pdb

@@ -1,0 +1,6 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\04 Number Comparer\bin\Debug\04 Number Comparer.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\04 Number Comparer\bin\Debug\04 Number Comparer.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\04 Number Comparer\bin\Debug\04 Number Comparer.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\04 Number Comparer\obj\Debug\04 Number Comparer.csprojResolveAssemblyReference.cache
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\04 Number Comparer\obj\Debug\04 Number Comparer.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\04 Number Comparer\obj\Debug\04 Number Comparer.pdb

@@ -1,0 +1,3 @@
+C:\Users\Emil\Desktop\New folder\ConsoleApplication8\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Emil\Desktop\New folder\ConsoleApplication8\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\Emil\Desktop\New folder\ConsoleApplication8\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

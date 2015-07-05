@@ -1,0 +1,8 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\ConsoleApplication13\02 IEnumerable extensions\bin\Debug\02 IEnumerable extensions.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\ConsoleApplication13\02 IEnumerable extensions\bin\Debug\02 IEnumerable extensions.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\ConsoleApplication13\02 IEnumerable extensions\bin\Debug\02 IEnumerable extensions.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\ConsoleApplication13\02 IEnumerable extensions\obj\Debug\02 IEnumerable extensions.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\ConsoleApplication13\02 IEnumerable extensions\obj\Debug\02 IEnumerable extensions.pdb
+C:\Users\Emil\Desktop\New folder\ConsoleApplication13\02 IEnumerable extensions\bin\Debug\02 IEnumerable extensions.exe.config
+C:\Users\Emil\Desktop\New folder\ConsoleApplication13\02 IEnumerable extensions\obj\Debug\02 IEnumerable extensions.exe
+C:\Users\Emil\Desktop\New folder\ConsoleApplication13\02 IEnumerable extensions\obj\Debug\02 IEnumerable extensions.pdb

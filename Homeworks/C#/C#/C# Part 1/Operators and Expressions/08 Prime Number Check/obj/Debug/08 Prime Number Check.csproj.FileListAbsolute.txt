@@ -1,0 +1,5 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\08 Prime Number Check\bin\Debug\08 Prime Number Check.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\08 Prime Number Check\bin\Debug\08 Prime Number Check.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\08 Prime Number Check\bin\Debug\08 Prime Number Check.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\08 Prime Number Check\obj\Debug\08 Prime Number Check.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\08 Prime Number Check\obj\Debug\08 Prime Number Check.pdb

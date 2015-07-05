@@ -1,0 +1,5 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\09 Trapezoids\bin\Debug\09 Trapezoids.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\09 Trapezoids\bin\Debug\09 Trapezoids.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\09 Trapezoids\bin\Debug\09 Trapezoids.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\09 Trapezoids\obj\Debug\09 Trapezoids.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\09 Trapezoids\obj\Debug\09 Trapezoids.pdb

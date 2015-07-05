@@ -1,0 +1,5 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\05 Formatting Numbers\bin\Debug\05 Formatting Numbers.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\05 Formatting Numbers\bin\Debug\05 Formatting Numbers.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\05 Formatting Numbers\bin\Debug\05 Formatting Numbers.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\05 Formatting Numbers\obj\Debug\05 Formatting Numbers.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\05 Formatting Numbers\obj\Debug\05 Formatting Numbers.pdb

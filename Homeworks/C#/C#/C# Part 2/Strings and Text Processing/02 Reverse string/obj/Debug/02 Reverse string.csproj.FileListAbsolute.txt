@@ -1,0 +1,8 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\02 Reverse string\bin\Debug\02 Reverse string.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\02 Reverse string\bin\Debug\02 Reverse string.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\02 Reverse string\bin\Debug\02 Reverse string.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\02 Reverse string\obj\Debug\02 Reverse string.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\02 Reverse string\obj\Debug\02 Reverse string.pdb
+C:\Users\Emil\Desktop\New folder\Solution9\02 Reverse string\bin\Debug\02 Reverse string.exe.config
+C:\Users\Emil\Desktop\New folder\Solution9\02 Reverse string\obj\Debug\02 Reverse string.exe
+C:\Users\Emil\Desktop\New folder\Solution9\02 Reverse string\obj\Debug\02 Reverse string.pdb

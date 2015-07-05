@@ -1,0 +1,6 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\5  SquareRoot\obj\Debug\5  SquareRoot.csprojResolveAssemblyReference.cache
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\5  SquareRoot\bin\Debug\5  SquareRoot.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\5  SquareRoot\bin\Debug\5  SquareRoot.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\5  SquareRoot\bin\Debug\5  SquareRoot.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\5  SquareRoot\obj\Debug\5  SquareRoot.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\5  SquareRoot\obj\Debug\5  SquareRoot.pdb

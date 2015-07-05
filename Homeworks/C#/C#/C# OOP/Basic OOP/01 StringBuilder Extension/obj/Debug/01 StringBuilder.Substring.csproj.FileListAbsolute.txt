@@ -1,0 +1,9 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\ConsoleApplication13\ConsoleApplication13\bin\Debug\ConsoleApplication13.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\ConsoleApplication13\ConsoleApplication13\bin\Debug\ConsoleApplication13.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\ConsoleApplication13\ConsoleApplication13\bin\Debug\ConsoleApplication13.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\ConsoleApplication13\ConsoleApplication13\obj\Debug\01 StringBuilder.Substring.csprojResolveAssemblyReference.cache
+c:\users\vucheva\documents\visual studio 2013\Projects\ConsoleApplication13\ConsoleApplication13\obj\Debug\ConsoleApplication13.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\ConsoleApplication13\ConsoleApplication13\obj\Debug\ConsoleApplication13.pdb
+C:\Users\Emil\Desktop\New folder\ConsoleApplication13\ConsoleApplication13\bin\Debug\ConsoleApplication13.exe.config
+C:\Users\Emil\Desktop\New folder\ConsoleApplication13\ConsoleApplication13\obj\Debug\ConsoleApplication13.exe
+C:\Users\Emil\Desktop\New folder\ConsoleApplication13\ConsoleApplication13\obj\Debug\ConsoleApplication13.pdb

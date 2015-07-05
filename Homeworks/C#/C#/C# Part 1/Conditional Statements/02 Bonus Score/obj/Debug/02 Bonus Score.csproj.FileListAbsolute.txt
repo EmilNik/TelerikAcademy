@@ -1,0 +1,5 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution6\02 Bonus Score\bin\Debug\02 Bonus Score.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution6\02 Bonus Score\bin\Debug\02 Bonus Score.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution6\02 Bonus Score\bin\Debug\02 Bonus Score.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution6\02 Bonus Score\obj\Debug\02 Bonus Score.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution6\02 Bonus Score\obj\Debug\02 Bonus Score.pdb

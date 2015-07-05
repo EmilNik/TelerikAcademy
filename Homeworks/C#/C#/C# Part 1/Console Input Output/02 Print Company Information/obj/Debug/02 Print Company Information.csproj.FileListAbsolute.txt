@@ -1,0 +1,6 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\02 Print Company Information\bin\Debug\02 Print Company Information.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\02 Print Company Information\bin\Debug\02 Print Company Information.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\02 Print Company Information\bin\Debug\02 Print Company Information.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\02 Print Company Information\obj\Debug\02 Print Company Information.csprojResolveAssemblyReference.cache
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\02 Print Company Information\obj\Debug\02 Print Company Information.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\02 Print Company Information\obj\Debug\02 Print Company Information.pdb

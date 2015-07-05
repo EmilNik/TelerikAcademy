@@ -1,0 +1,6 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\6 PrintASequence\bin\Debug\6 PrintASequence.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\6 PrintASequence\bin\Debug\6 PrintASequence.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\6 PrintASequence\bin\Debug\6 PrintASequence.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\6 PrintASequence\obj\Debug\6 PrintASequence.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\6 PrintASequence\obj\Debug\6 PrintASequence.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\6 PrintASequence\obj\Debug\6 PrintASequence.csprojResolveAssemblyReference.cache

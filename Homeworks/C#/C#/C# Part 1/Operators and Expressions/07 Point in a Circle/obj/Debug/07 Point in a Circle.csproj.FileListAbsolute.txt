@@ -1,0 +1,9 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\07 Point in a Circle\bin\Debug\07 Point in a Circle.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\07 Point in a Circle\bin\Debug\07 Point in a Circle.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\07 Point in a Circle\bin\Debug\07 Point in a Circle.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\07 Point in a Circle\obj\Debug\07 Point in a Circle.csprojResolveAssemblyReference.cache
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\07 Point in a Circle\obj\Debug\07 Point in a Circle.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\07 Point in a Circle\obj\Debug\07 Point in a Circle.pdb
+C:\Users\Emil\Desktop\New folder\Solution4\07 Point in a Circle\bin\Debug\07 Point in a Circle.exe.config
+C:\Users\Emil\Desktop\New folder\Solution4\07 Point in a Circle\obj\Debug\07 Point in a Circle.exe
+C:\Users\Emil\Desktop\New folder\Solution4\07 Point in a Circle\obj\Debug\07 Point in a Circle.pdb

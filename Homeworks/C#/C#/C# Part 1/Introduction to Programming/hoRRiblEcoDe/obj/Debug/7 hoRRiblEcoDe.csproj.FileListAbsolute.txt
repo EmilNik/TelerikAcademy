@@ -1,0 +1,3 @@
+C:\Users\Vucheva\Documents\Visual Studio 2013\Projects\Solution2\hoRRiblEcoDe\bin\Debug\hoRRiblEcoDe.exe.config
+C:\Users\Vucheva\Documents\Visual Studio 2013\Projects\Solution2\hoRRiblEcoDe\obj\Debug\hoRRiblEcoDe.exe
+C:\Users\Vucheva\Documents\Visual Studio 2013\Projects\Solution2\hoRRiblEcoDe\obj\Debug\hoRRiblEcoDe.pdb

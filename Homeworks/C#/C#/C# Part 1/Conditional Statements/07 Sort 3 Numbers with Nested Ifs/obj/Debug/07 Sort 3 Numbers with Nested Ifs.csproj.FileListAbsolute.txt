@@ -1,0 +1,5 @@
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution6\07 Sort 3 Numbers with Nested Ifs\bin\Debug\07 Sort 3 Numbers with Nested Ifs.exe.config
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution6\07 Sort 3 Numbers with Nested Ifs\bin\Debug\07 Sort 3 Numbers with Nested Ifs.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution6\07 Sort 3 Numbers with Nested Ifs\bin\Debug\07 Sort 3 Numbers with Nested Ifs.pdb
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution6\07 Sort 3 Numbers with Nested Ifs\obj\Debug\07 Sort 3 Numbers with Nested Ifs.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution6\07 Sort 3 Numbers with Nested Ifs\obj\Debug\07 Sort 3 Numbers with Nested Ifs.pdb

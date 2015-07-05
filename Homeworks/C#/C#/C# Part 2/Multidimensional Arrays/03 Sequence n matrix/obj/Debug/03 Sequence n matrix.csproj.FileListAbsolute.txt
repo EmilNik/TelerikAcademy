@@ -1,0 +1,5 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution8\03 Sequence n matrix\bin\Debug\03 Sequence n matrix.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution8\03 Sequence n matrix\bin\Debug\03 Sequence n matrix.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution8\03 Sequence n matrix\bin\Debug\03 Sequence n matrix.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution8\03 Sequence n matrix\obj\Debug\03 Sequence n matrix.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution8\03 Sequence n matrix\obj\Debug\03 Sequence n matrix.pdb

@@ -1,0 +1,5 @@
+C:\Users\Vucheva\Documents\Visual Studio 2013\Projects\Solution2\PrintNumbers\bin\Debug\PrintNumbers.exe.config
+C:\Users\Vucheva\Documents\Visual Studio 2013\Projects\Solution2\PrintNumbers\obj\Debug\PrintNumbers.exe
+C:\Users\Vucheva\Documents\Visual Studio 2013\Projects\Solution2\PrintNumbers\obj\Debug\PrintNumbers.pdb
+C:\Users\Vucheva\Documents\Visual Studio 2013\Projects\Solution2\PrintNumbers\bin\Debug\PrintNumbers.exe
+C:\Users\Vucheva\Documents\Visual Studio 2013\Projects\Solution2\PrintNumbers\bin\Debug\PrintNumbers.pdb

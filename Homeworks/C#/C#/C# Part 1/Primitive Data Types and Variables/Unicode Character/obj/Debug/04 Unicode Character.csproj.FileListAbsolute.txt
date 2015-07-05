@@ -1,0 +1,9 @@
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\Unicode Character\bin\Debug\Unicode Character.exe.config
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\Unicode Character\bin\Debug\Unicode Character.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\Unicode Character\bin\Debug\Unicode Character.pdb
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\Unicode Character\obj\Debug\Unicode Character.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\Unicode Character\obj\Debug\Unicode Character.pdb
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\Unicode Character\obj\Debug\04 Unicode Character.csprojResolveAssemblyReference.cache
+C:\Users\Emil\Desktop\New folder\Solution3\Unicode Character\bin\Debug\Unicode Character.exe.config
+C:\Users\Emil\Desktop\New folder\Solution3\Unicode Character\obj\Debug\Unicode Character.exe
+C:\Users\Emil\Desktop\New folder\Solution3\Unicode Character\obj\Debug\Unicode Character.pdb

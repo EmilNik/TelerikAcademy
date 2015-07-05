@@ -1,0 +1,9 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\05  Is Third Digit 7\bin\Debug\05  Is Third Digit 7.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\05  Is Third Digit 7\bin\Debug\05  Is Third Digit 7.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\05  Is Third Digit 7\bin\Debug\05  Is Third Digit 7.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\05  Is Third Digit 7\obj\Debug\05  Is Third Digit 7.csprojResolveAssemblyReference.cache
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\05  Is Third Digit 7\obj\Debug\05  Is Third Digit 7.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\05  Is Third Digit 7\obj\Debug\05  Is Third Digit 7.pdb
+C:\Users\Emil\Desktop\New folder\Solution4\05  Is Third Digit 7\bin\Debug\05  Is Third Digit 7.exe.config
+C:\Users\Emil\Desktop\New folder\Solution4\05  Is Third Digit 7\obj\Debug\05  Is Third Digit 7.exe
+C:\Users\Emil\Desktop\New folder\Solution4\05  Is Third Digit 7\obj\Debug\05  Is Third Digit 7.pdb

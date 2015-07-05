@@ -1,0 +1,35 @@
+Eclipse
+
+Many development frameworks are built on Eclipse, a free, open-source editor that was initially a Java environment but a variety of plug-ins have extended its capabilities considerably. Its 
+runtime system is based on Equinox, an implementation of the OSGi core framework specification.
+
+
+NetBeans
+
+NetBeans IDE is a free, open-source, cross-platform IDE with built-in-support for Java Programming Language. Has an intuitive, drag-and-drop interface with project templates, binary and static libraries,
+and many useful functions to make your life simpler, NetBeans is a popular IDE for C and C++ projects.
+
+
+
+SharpDevelop
+
+SharpDevelop is a free IDE for  Microsoft’s .NET platform, with support for all .NET programming languages. SharpDevelop includes features very similar to those found in Visual Studio, or Delphi/Kylix. 
+SharpDevelop integrates Graphic User Interface Designers for the C#,VB.NET, Boo and the IronPython and IronRuby languages.
+
+
+JCreator
+
+
+A powerful IDE for Java, JCreator offers a range of features and functionality in a simple, intuitive interface that can be used easily by developers from beginner to advanced. Its interface is similar 
+to that of Microsoft's Visual Studio. Because it is programmed entirely in C++. Creator is only available on the Windows operating system. However, both the LE and Pro versions of JCreator run adequately 
+on Linux (using Wine).
+
+
+
+
+CodeLite
+
+
+CodeLite is a free, open-source, cross-platform IDE for the C/C++ programming languages.CodeLite offers a variety of features, including two built-in completion engines, compilers, refactoring, 
+code navigation and more.To comply with CodeLite's open source spirit, the program itself is compiled and debugged using only free tools (MinGW and GDB) for Mac OS X, Windows, Linux and FreeBSD, 
+though CodeLite can execute any third-party compiler or tool that has a command-line interface.

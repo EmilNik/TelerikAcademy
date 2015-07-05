@@ -1,0 +1,6 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Numeral Systems\05 Hexadecimal to binary\bin\Debug\05 Hexadecimal to binary.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Numeral Systems\05 Hexadecimal to binary\bin\Debug\05 Hexadecimal to binary.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Numeral Systems\05 Hexadecimal to binary\bin\Debug\05 Hexadecimal to binary.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Numeral Systems\05 Hexadecimal to binary\obj\Debug\05 Hexadecimal to binary.csprojResolveAssemblyReference.cache
+c:\users\vucheva\documents\visual studio 2013\Projects\Numeral Systems\05 Hexadecimal to binary\obj\Debug\05 Hexadecimal to binary.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Numeral Systems\05 Hexadecimal to binary\obj\Debug\05 Hexadecimal to binary.pdb

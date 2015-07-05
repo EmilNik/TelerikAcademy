@@ -1,0 +1,5 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Numeral Systems\03 Decimal to hexadecimal\bin\Debug\03 Decimal to hexadecimal.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Numeral Systems\03 Decimal to hexadecimal\bin\Debug\03 Decimal to hexadecimal.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Numeral Systems\03 Decimal to hexadecimal\bin\Debug\03 Decimal to hexadecimal.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Numeral Systems\03 Decimal to hexadecimal\obj\Debug\03 Decimal to hexadecimal.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Numeral Systems\03 Decimal to hexadecimal\obj\Debug\03 Decimal to hexadecimal.pdb

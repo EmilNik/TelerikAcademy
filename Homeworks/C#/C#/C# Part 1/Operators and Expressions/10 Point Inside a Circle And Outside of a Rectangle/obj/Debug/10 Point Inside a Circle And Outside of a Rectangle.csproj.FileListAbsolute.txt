@@ -1,0 +1,6 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\10 Point Inside a Circle And Outside of a Rectangle\bin\Debug\10 Point Inside a Circle And Outside of a Rectangle.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\10 Point Inside a Circle And Outside of a Rectangle\bin\Debug\10 Point Inside a Circle And Outside of a Rectangle.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\10 Point Inside a Circle And Outside of a Rectangle\bin\Debug\10 Point Inside a Circle And Outside of a Rectangle.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\10 Point Inside a Circle And Outside of a Rectangle\obj\Debug\10 Point Inside a Circle And Outside of a Rectangle.csprojResolveAssemblyReference.cache
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\10 Point Inside a Circle And Outside of a Rectangle\obj\Debug\10 Point Inside a Circle And Outside of a Rectangle.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\10 Point Inside a Circle And Outside of a Rectangle\obj\Debug\10 Point Inside a Circle And Outside of a Rectangle.pdb

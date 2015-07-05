@@ -1,0 +1,9 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\01 Strings in C3\bin\Debug\01 Strings in C3.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\01 Strings in C3\bin\Debug\01 Strings in C3.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\01 Strings in C3\bin\Debug\01 Strings in C3.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\01 Strings in C3\obj\Debug\01 Strings in C3.csprojResolveAssemblyReference.cache
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\01 Strings in C3\obj\Debug\01 Strings in C3.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\01 Strings in C3\obj\Debug\01 Strings in C3.pdb
+C:\Users\Emil\Desktop\New folder\Solution9\01 Strings in C3\bin\Debug\01 Strings in C3.exe.config
+C:\Users\Emil\Desktop\New folder\Solution9\01 Strings in C3\obj\Debug\01 Strings in C3.exe
+C:\Users\Emil\Desktop\New folder\Solution9\01 Strings in C3\obj\Debug\01 Strings in C3.pdb

@@ -1,0 +1,5 @@
+C:\Users\Vucheva\Documents\Visual Studio 2013\Projects\Solution2\PrintMyName\bin\Debug\PrintMyName.exe.config
+C:\Users\Vucheva\Documents\Visual Studio 2013\Projects\Solution2\PrintMyName\obj\Debug\PrintMyName.exe
+C:\Users\Vucheva\Documents\Visual Studio 2013\Projects\Solution2\PrintMyName\obj\Debug\PrintMyName.pdb
+C:\Users\Vucheva\Documents\Visual Studio 2013\Projects\Solution2\PrintMyName\bin\Debug\PrintMyName.exe
+C:\Users\Vucheva\Documents\Visual Studio 2013\Projects\Solution2\PrintMyName\bin\Debug\PrintMyName.pdb

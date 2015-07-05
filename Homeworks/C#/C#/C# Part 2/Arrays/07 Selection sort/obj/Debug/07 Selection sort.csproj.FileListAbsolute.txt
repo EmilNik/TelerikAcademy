@@ -1,0 +1,6 @@
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\07 Selection sort\bin\Debug\07 Selection sort.exe.config
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\07 Selection sort\obj\Debug\07 Selection sort.csprojResolveAssemblyReference.cache
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\07 Selection sort\bin\Debug\07 Selection sort.exe
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\07 Selection sort\bin\Debug\07 Selection sort.pdb
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\07 Selection sort\obj\Debug\07 Selection sort.exe
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\07 Selection sort\obj\Debug\07 Selection sort.pdb

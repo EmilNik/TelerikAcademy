@@ -1,0 +1,1 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Methods\10 N Factorial\bin\Debug\10 N Factorial.exe.config

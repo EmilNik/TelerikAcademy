@@ -1,0 +1,9 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\ConsoleApplication13\03 First before last\bin\Debug\03 First before last.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\ConsoleApplication13\03 First before last\bin\Debug\03 First before last.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\ConsoleApplication13\03 First before last\bin\Debug\03 First before last.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\ConsoleApplication13\03 First before last\obj\Debug\03 First before last.csprojResolveAssemblyReference.cache
+c:\users\vucheva\documents\visual studio 2013\Projects\ConsoleApplication13\03 First before last\obj\Debug\03 First before last.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\ConsoleApplication13\03 First before last\obj\Debug\03 First before last.pdb
+C:\Users\Emil\Desktop\New folder\ConsoleApplication13\03 First before last\bin\Debug\03 First before last.exe.config
+C:\Users\Emil\Desktop\New folder\ConsoleApplication13\03 First before last\obj\Debug\03 First before last.exe
+C:\Users\Emil\Desktop\New folder\ConsoleApplication13\03 First before last\obj\Debug\03 First before last.pdb

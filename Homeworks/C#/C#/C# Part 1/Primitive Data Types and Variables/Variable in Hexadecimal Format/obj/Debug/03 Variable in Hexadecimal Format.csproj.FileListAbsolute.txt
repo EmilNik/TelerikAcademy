@@ -1,0 +1,9 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution3\Variable in Hexadecimal Format\bin\Debug\Variable in Hexadecimal Format.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution3\Variable in Hexadecimal Format\bin\Debug\Variable in Hexadecimal Format.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution3\Variable in Hexadecimal Format\bin\Debug\Variable in Hexadecimal Format.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution3\Variable in Hexadecimal Format\obj\Debug\Variable in Hexadecimal Format.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution3\Variable in Hexadecimal Format\obj\Debug\Variable in Hexadecimal Format.pdb
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\Variable in Hexadecimal Format\obj\Debug\03 Variable in Hexadecimal Format.csprojResolveAssemblyReference.cache
+C:\Users\Emil\Desktop\New folder\Solution3\Variable in Hexadecimal Format\bin\Debug\Variable in Hexadecimal Format.exe.config
+C:\Users\Emil\Desktop\New folder\Solution3\Variable in Hexadecimal Format\obj\Debug\Variable in Hexadecimal Format.exe
+C:\Users\Emil\Desktop\New folder\Solution3\Variable in Hexadecimal Format\obj\Debug\Variable in Hexadecimal Format.pdb

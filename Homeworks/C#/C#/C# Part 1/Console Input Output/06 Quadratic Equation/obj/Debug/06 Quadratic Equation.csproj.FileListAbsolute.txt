@@ -1,0 +1,6 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\06 Quadratic Equation\bin\Debug\06 Quadratic Equation.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\06 Quadratic Equation\bin\Debug\06 Quadratic Equation.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\06 Quadratic Equation\bin\Debug\06 Quadratic Equation.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\06 Quadratic Equation\obj\Debug\06 Quadratic Equation.csprojResolveAssemblyReference.cache
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\06 Quadratic Equation\obj\Debug\06 Quadratic Equation.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\06 Quadratic Equation\obj\Debug\06 Quadratic Equation.pdb

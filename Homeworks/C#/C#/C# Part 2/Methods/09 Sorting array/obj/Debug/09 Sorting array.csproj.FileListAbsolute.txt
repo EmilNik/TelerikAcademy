@@ -1,0 +1,5 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Methods\09 Sorting array\bin\Debug\09 Sorting array.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Methods\09 Sorting array\bin\Debug\09 Sorting array.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Methods\09 Sorting array\bin\Debug\09 Sorting array.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Methods\09 Sorting array\obj\Debug\09 Sorting array.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Methods\09 Sorting array\obj\Debug\09 Sorting array.pdb

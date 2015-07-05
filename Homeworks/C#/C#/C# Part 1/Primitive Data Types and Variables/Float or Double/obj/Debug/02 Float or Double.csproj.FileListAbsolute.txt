@@ -1,0 +1,8 @@
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\Float or Double\bin\Debug\Float or Double.exe.config
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\Float or Double\obj\Debug\Float or Double.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\Float or Double\obj\Debug\Float or Double.pdb
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\Float or Double\bin\Debug\Float or Double.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\Float or Double\bin\Debug\Float or Double.pdb
+C:\Users\Emil\Desktop\New folder\Solution3\Float or Double\bin\Debug\Float or Double.exe.config
+C:\Users\Emil\Desktop\New folder\Solution3\Float or Double\obj\Debug\Float or Double.exe
+C:\Users\Emil\Desktop\New folder\Solution3\Float or Double\obj\Debug\Float or Double.pdb

@@ -1,0 +1,8 @@
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution6\09 Play with Int, Double and String\bin\Debug\09 Play with Int, Double and String.exe.config
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution6\09 Play with Int, Double and String\bin\Debug\09 Play with Int, Double and String.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution6\09 Play with Int, Double and String\bin\Debug\09 Play with Int, Double and String.pdb
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution6\09 Play with Int, Double and String\obj\Debug\09 Play with Int, Double and String.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution6\09 Play with Int, Double and String\obj\Debug\09 Play with Int, Double and String.pdb
+C:\Users\Emil\Desktop\New folder\Solution6\09 Play with Int, Double and String\bin\Debug\09 Play with Int, Double and String.exe.config
+C:\Users\Emil\Desktop\New folder\Solution6\09 Play with Int, Double and String\obj\Debug\09 Play with Int, Double and String.exe
+C:\Users\Emil\Desktop\New folder\Solution6\09 Play with Int, Double and String\obj\Debug\09 Play with Int, Double and String.pdb

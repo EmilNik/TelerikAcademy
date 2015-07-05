@@ -1,0 +1,8 @@
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\DeclareVariables\bin\Debug\DeclareVariables.exe.config
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\DeclareVariables\obj\Debug\DeclareVariables.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\DeclareVariables\obj\Debug\DeclareVariables.pdb
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\DeclareVariables\bin\Debug\DeclareVariables.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\DeclareVariables\bin\Debug\DeclareVariables.pdb
+C:\Users\Emil\Desktop\New folder\Solution3\DeclareVariables\bin\Debug\DeclareVariables.exe.config
+C:\Users\Emil\Desktop\New folder\Solution3\DeclareVariables\obj\Debug\DeclareVariables.exe
+C:\Users\Emil\Desktop\New folder\Solution3\DeclareVariables\obj\Debug\DeclareVariables.pdb

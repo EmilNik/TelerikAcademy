@@ -1,0 +1,5 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution6\04 Multiplication Sign\bin\Debug\04 Multiplication Sign.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution6\04 Multiplication Sign\bin\Debug\04 Multiplication Sign.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution6\04 Multiplication Sign\bin\Debug\04 Multiplication Sign.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution6\04 Multiplication Sign\obj\Debug\04 Multiplication Sign.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution6\04 Multiplication Sign\obj\Debug\04 Multiplication Sign.pdb

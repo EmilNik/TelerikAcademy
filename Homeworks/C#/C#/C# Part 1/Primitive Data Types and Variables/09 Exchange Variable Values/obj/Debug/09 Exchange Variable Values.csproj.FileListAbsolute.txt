@@ -1,0 +1,8 @@
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\09 Exchange Variable Values\bin\Debug\09 Exchange Variable Values.exe.config
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\09 Exchange Variable Values\bin\Debug\09 Exchange Variable Values.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\09 Exchange Variable Values\bin\Debug\09 Exchange Variable Values.pdb
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\09 Exchange Variable Values\obj\Debug\09 Exchange Variable Values.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\09 Exchange Variable Values\obj\Debug\09 Exchange Variable Values.pdb
+C:\Users\Emil\Desktop\New folder\Solution3\09 Exchange Variable Values\bin\Debug\09 Exchange Variable Values.exe.config
+C:\Users\Emil\Desktop\New folder\Solution3\09 Exchange Variable Values\obj\Debug\09 Exchange Variable Values.exe
+C:\Users\Emil\Desktop\New folder\Solution3\09 Exchange Variable Values\obj\Debug\09 Exchange Variable Values.pdb

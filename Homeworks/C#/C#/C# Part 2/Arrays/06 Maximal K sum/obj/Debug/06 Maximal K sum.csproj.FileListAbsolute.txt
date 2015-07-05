@@ -1,0 +1,6 @@
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\06 Maximal K sum\bin\Debug\06 Maximal K sum.exe.config
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\06 Maximal K sum\bin\Debug\06 Maximal K sum.exe
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\06 Maximal K sum\bin\Debug\06 Maximal K sum.pdb
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\06 Maximal K sum\obj\Debug\06 Maximal K sum.csprojResolveAssemblyReference.cache
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\06 Maximal K sum\obj\Debug\06 Maximal K sum.exe
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\06 Maximal K sum\obj\Debug\06 Maximal K sum.pdb

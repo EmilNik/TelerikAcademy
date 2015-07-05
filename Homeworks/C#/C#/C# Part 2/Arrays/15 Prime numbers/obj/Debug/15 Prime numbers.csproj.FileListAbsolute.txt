@@ -1,0 +1,6 @@
+C:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\15 Prime numbers\bin\Debug\15 Prime numbers.exe.config
+C:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\15 Prime numbers\bin\Debug\15 Prime numbers.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\15 Prime numbers\bin\Debug\15 Prime numbers.pdb
+C:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\15 Prime numbers\obj\Debug\15 Prime numbers.csprojResolveAssemblyReference.cache
+C:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\15 Prime numbers\obj\Debug\15 Prime numbers.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\15 Prime numbers\obj\Debug\15 Prime numbers.pdb

@@ -1,0 +1,6 @@
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\04. Maximal sequence\bin\Debug\_04.Maximal_sequence.exe.config
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\04. Maximal sequence\bin\Debug\_04.Maximal_sequence.exe
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\04. Maximal sequence\bin\Debug\_04.Maximal_sequence.pdb
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\04. Maximal sequence\obj\Debug\04 Maximal sequence.csprojResolveAssemblyReference.cache
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\04. Maximal sequence\obj\Debug\_04.Maximal_sequence.exe
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\04. Maximal sequence\obj\Debug\_04.Maximal_sequence.pdb

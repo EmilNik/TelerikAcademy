@@ -1,0 +1,2 @@
+C:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\14 Quick sort\bin\Debug\14 Quick sort.exe.config
+C:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\14 Quick sort\obj\Debug\14 Quick sort.csprojResolveAssemblyReference.cache

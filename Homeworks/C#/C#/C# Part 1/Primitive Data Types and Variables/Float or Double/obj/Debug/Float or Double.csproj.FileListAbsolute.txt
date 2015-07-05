@@ -1,0 +1,5 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution3\Float or Double\bin\Debug\Float or Double.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution3\Float or Double\bin\Debug\Float or Double.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution3\Float or Double\bin\Debug\Float or Double.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution3\Float or Double\obj\Debug\Float or Double.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution3\Float or Double\obj\Debug\Float or Double.pdb

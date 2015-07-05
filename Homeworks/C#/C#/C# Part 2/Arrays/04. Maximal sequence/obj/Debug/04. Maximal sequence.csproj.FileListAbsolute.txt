@@ -1,0 +1,1 @@
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\04. Maximal sequence\bin\Debug\_04.Maximal_sequence.exe.config

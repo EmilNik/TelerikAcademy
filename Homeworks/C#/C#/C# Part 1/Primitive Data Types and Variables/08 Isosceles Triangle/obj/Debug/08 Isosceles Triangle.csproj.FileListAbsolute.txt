@@ -1,0 +1,9 @@
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\08 Isosceles Triangle\bin\Debug\08 Isosceles Triangle.exe.config
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\08 Isosceles Triangle\bin\Debug\08 Isosceles Triangle.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\08 Isosceles Triangle\bin\Debug\08 Isosceles Triangle.pdb
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\08 Isosceles Triangle\obj\Debug\08 Isosceles Triangle.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\08 Isosceles Triangle\obj\Debug\08 Isosceles Triangle.pdb
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\08 Isosceles Triangle\obj\Debug\08 Isosceles Triangle.csprojResolveAssemblyReference.cache
+C:\Users\Emil\Desktop\New folder\Solution3\08 Isosceles Triangle\bin\Debug\08 Isosceles Triangle.exe.config
+C:\Users\Emil\Desktop\New folder\Solution3\08 Isosceles Triangle\obj\Debug\08 Isosceles Triangle.exe
+C:\Users\Emil\Desktop\New folder\Solution3\08 Isosceles Triangle\obj\Debug\08 Isosceles Triangle.pdb

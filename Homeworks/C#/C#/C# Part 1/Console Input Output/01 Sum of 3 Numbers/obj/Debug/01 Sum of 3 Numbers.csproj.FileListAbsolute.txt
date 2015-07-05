@@ -1,0 +1,9 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\01 Sum of 3 Numbers\bin\Debug\01 Sum of 3 Numbers.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\01 Sum of 3 Numbers\bin\Debug\01 Sum of 3 Numbers.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\01 Sum of 3 Numbers\bin\Debug\01 Sum of 3 Numbers.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\01 Sum of 3 Numbers\obj\Debug\01 Sum of 3 Numbers.csprojResolveAssemblyReference.cache
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\01 Sum of 3 Numbers\obj\Debug\01 Sum of 3 Numbers.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution5\01 Sum of 3 Numbers\obj\Debug\01 Sum of 3 Numbers.pdb
+C:\Users\Emil\Desktop\New folder\Solution5\01 Sum of 3 Numbers\bin\Debug\01 Sum of 3 Numbers.exe.config
+C:\Users\Emil\Desktop\New folder\Solution5\01 Sum of 3 Numbers\obj\Debug\01 Sum of 3 Numbers.exe
+C:\Users\Emil\Desktop\New folder\Solution5\01 Sum of 3 Numbers\obj\Debug\01 Sum of 3 Numbers.pdb

@@ -1,0 +1,9 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\HelloCS\HelloCS\bin\Debug\HelloCS.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\HelloCS\HelloCS\bin\Debug\HelloCS.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\HelloCS\HelloCS\bin\Debug\HelloCS.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\HelloCS\HelloCS\obj\Debug\HelloCS.csprojResolveAssemblyReference.cache
+c:\users\vucheva\documents\visual studio 2013\Projects\HelloCS\HelloCS\obj\Debug\HelloCS.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\HelloCS\HelloCS\obj\Debug\HelloCS.pdb
+C:\Users\Emil\Desktop\New folder\HelloCS\HelloCS\bin\Debug\HelloCS.exe.config
+C:\Users\Emil\Desktop\New folder\HelloCS\HelloCS\obj\Debug\HelloCS.exe
+C:\Users\Emil\Desktop\New folder\HelloCS\HelloCS\obj\Debug\HelloCS.pdb

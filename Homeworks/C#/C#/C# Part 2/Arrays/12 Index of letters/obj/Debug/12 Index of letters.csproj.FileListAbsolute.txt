@@ -1,0 +1,6 @@
+C:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\12 Index of letters\bin\Debug\12 Index of letters.exe.config
+C:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\12 Index of letters\bin\Debug\12 Index of letters.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\12 Index of letters\bin\Debug\12 Index of letters.pdb
+C:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\12 Index of letters\obj\Debug\12 Index of letters.csprojResolveAssemblyReference.cache
+C:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\12 Index of letters\obj\Debug\12 Index of letters.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\12 Index of letters\obj\Debug\12 Index of letters.pdb

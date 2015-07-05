@@ -1,0 +1,5 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Methods\04  Appearance count\bin\Debug\04  Appearance count.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Methods\04  Appearance count\bin\Debug\04  Appearance count.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Methods\04  Appearance count\bin\Debug\04  Appearance count.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Methods\04  Appearance count\obj\Debug\04  Appearance count.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Methods\04  Appearance count\obj\Debug\04  Appearance count.pdb

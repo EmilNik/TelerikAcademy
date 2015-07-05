@@ -1,0 +1,6 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\06 String length\bin\Debug\06 String length.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\06 String length\bin\Debug\06 String length.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\06 String length\bin\Debug\06 String length.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\06 String length\obj\Debug\06 String length.csprojResolveAssemblyReference.cache
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\06 String length\obj\Debug\06 String length.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\06 String length\obj\Debug\06 String length.pdb

@@ -1,0 +1,8 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\10 PrintLongSequence\bin\Debug\10 PrintLongSequence.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\10 PrintLongSequence\bin\Debug\10 PrintLongSequence.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\10 PrintLongSequence\bin\Debug\10 PrintLongSequence.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\10 PrintLongSequence\obj\Debug\10 PrintLongSequence.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution2\10 PrintLongSequence\obj\Debug\10 PrintLongSequence.pdb
+C:\Users\Emil\Desktop\New folder\Solution2\10 PrintLongSequence\bin\Debug\10 PrintLongSequence.exe.config
+C:\Users\Emil\Desktop\New folder\Solution2\10 PrintLongSequence\obj\Debug\10 PrintLongSequence.exe
+C:\Users\Emil\Desktop\New folder\Solution2\10 PrintLongSequence\obj\Debug\10 PrintLongSequence.pdb

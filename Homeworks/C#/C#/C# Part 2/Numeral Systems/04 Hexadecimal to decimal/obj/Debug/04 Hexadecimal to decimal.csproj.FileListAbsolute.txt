@@ -1,0 +1,5 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Numeral Systems\04 Hexadecimal to decimal\bin\Debug\04 Hexadecimal to decimal.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Numeral Systems\04 Hexadecimal to decimal\bin\Debug\04 Hexadecimal to decimal.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Numeral Systems\04 Hexadecimal to decimal\bin\Debug\04 Hexadecimal to decimal.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Numeral Systems\04 Hexadecimal to decimal\obj\Debug\04 Hexadecimal to decimal.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Numeral Systems\04 Hexadecimal to decimal\obj\Debug\04 Hexadecimal to decimal.pdb

@@ -1,0 +1,9 @@
+C:\Users\Vucheva\Documents\visual studio 2013\Projects\Defining Classes - Part 2\DefiningClassesPart2\bin\Debug\DefiningClassesPart2.exe.config
+C:\Users\Vucheva\Documents\visual studio 2013\Projects\Defining Classes - Part 2\DefiningClassesPart2\obj\Debug\DefiningClassesPart2.csprojResolveAssemblyReference.cache
+C:\Users\Vucheva\Documents\visual studio 2013\Projects\Defining Classes - Part 2\DefiningClassesPart2\bin\Debug\DefiningClassesPart2.exe
+C:\Users\Vucheva\Documents\visual studio 2013\Projects\Defining Classes - Part 2\DefiningClassesPart2\bin\Debug\DefiningClassesPart2.pdb
+C:\Users\Vucheva\Documents\visual studio 2013\Projects\Defining Classes - Part 2\DefiningClassesPart2\obj\Debug\DefiningClassesPart2.exe
+C:\Users\Vucheva\Documents\visual studio 2013\Projects\Defining Classes - Part 2\DefiningClassesPart2\obj\Debug\DefiningClassesPart2.pdb
+C:\Users\Emil\Desktop\New folder\Defining Classes - Part 2\DefiningClassesPart2\bin\Debug\DefiningClassesPart2.exe.config
+C:\Users\Emil\Desktop\New folder\Defining Classes - Part 2\DefiningClassesPart2\obj\Debug\DefiningClassesPart2.exe
+C:\Users\Emil\Desktop\New folder\Defining Classes - Part 2\DefiningClassesPart2\obj\Debug\DefiningClassesPart2.pdb

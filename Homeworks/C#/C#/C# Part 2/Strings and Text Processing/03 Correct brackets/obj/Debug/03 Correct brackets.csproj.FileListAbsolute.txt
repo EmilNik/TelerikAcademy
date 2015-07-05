@@ -1,0 +1,5 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\03 Correct brackets\bin\Debug\03 Correct brackets.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\03 Correct brackets\bin\Debug\03 Correct brackets.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\03 Correct brackets\bin\Debug\03 Correct brackets.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\03 Correct brackets\obj\Debug\03 Correct brackets.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution9\03 Correct brackets\obj\Debug\03 Correct brackets.pdb

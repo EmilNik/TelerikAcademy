@@ -1,0 +1,6 @@
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\09 Frequent number\bin\Debug\09 Frequent number.exe.config
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\09 Frequent number\obj\Debug\09 Frequent number.csprojResolveAssemblyReference.cache
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\09 Frequent number\bin\Debug\09 Frequent number.exe
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\09 Frequent number\bin\Debug\09 Frequent number.pdb
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\09 Frequent number\obj\Debug\09 Frequent number.exe
+c:\Users\Vucheva\documents\visual studio 2013\Projects\ConsoleApplication8\09 Frequent number\obj\Debug\09 Frequent number.pdb

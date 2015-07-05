@@ -1,0 +1,5 @@
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution6\08 Digit as Word\bin\Debug\08 Digit as Word.exe.config
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution6\08 Digit as Word\bin\Debug\08 Digit as Word.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution6\08 Digit as Word\bin\Debug\08 Digit as Word.pdb
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution6\08 Digit as Word\obj\Debug\08 Digit as Word.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution6\08 Digit as Word\obj\Debug\08 Digit as Word.pdb

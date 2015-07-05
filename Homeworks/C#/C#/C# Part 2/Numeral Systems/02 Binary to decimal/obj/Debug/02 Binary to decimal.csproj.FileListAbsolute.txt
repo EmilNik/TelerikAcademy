@@ -1,0 +1,5 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Numeral Systems\02 Binary to decimal\bin\Debug\02 Binary to decimal.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Numeral Systems\02 Binary to decimal\bin\Debug\02 Binary to decimal.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Numeral Systems\02 Binary to decimal\bin\Debug\02 Binary to decimal.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Numeral Systems\02 Binary to decimal\obj\Debug\02 Binary to decimal.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Numeral Systems\02 Binary to decimal\obj\Debug\02 Binary to decimal.pdb

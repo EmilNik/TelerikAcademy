@@ -1,0 +1,2 @@
+C:\Users\Emil\Desktop\New folder\StudentsAndWorkers\04.Object-Oriented-Programming-Principles-Part-I\01.School\bin\Debug\School.exe.config
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\C#\C#\C# OOP\Object-Oriented-Programming-Principles-Part-I\01.School\bin\Debug\School.exe.config

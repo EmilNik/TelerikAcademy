@@ -1,0 +1,8 @@
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\06 Four-Digit Number\bin\Debug\06 Four-Digit Number.exe.config
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\06 Four-Digit Number\bin\Debug\06 Four-Digit Number.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\06 Four-Digit Number\bin\Debug\06 Four-Digit Number.pdb
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\06 Four-Digit Number\obj\Debug\06 Four-Digit Number.exe
+c:\users\vucheva\documents\visual studio 2013\Projects\Solution4\06 Four-Digit Number\obj\Debug\06 Four-Digit Number.pdb
+C:\Users\Emil\Desktop\New folder\Solution4\06 Four-Digit Number\bin\Debug\06 Four-Digit Number.exe.config
+C:\Users\Emil\Desktop\New folder\Solution4\06 Four-Digit Number\obj\Debug\06 Four-Digit Number.exe
+C:\Users\Emil\Desktop\New folder\Solution4\06 Four-Digit Number\obj\Debug\06 Four-Digit Number.pdb

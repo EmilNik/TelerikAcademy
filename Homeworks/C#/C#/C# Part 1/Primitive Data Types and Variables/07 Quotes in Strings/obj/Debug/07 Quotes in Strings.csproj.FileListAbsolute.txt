@@ -1,0 +1,8 @@
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\07 Quotes in Strings\bin\Debug\07 Quotes in Strings.exe.config
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\07 Quotes in Strings\bin\Debug\07 Quotes in Strings.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\07 Quotes in Strings\bin\Debug\07 Quotes in Strings.pdb
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\07 Quotes in Strings\obj\Debug\07 Quotes in Strings.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\07 Quotes in Strings\obj\Debug\07 Quotes in Strings.pdb
+C:\Users\Emil\Desktop\New folder\Solution3\07 Quotes in Strings\bin\Debug\07 Quotes in Strings.exe.config
+C:\Users\Emil\Desktop\New folder\Solution3\07 Quotes in Strings\obj\Debug\07 Quotes in Strings.exe
+C:\Users\Emil\Desktop\New folder\Solution3\07 Quotes in Strings\obj\Debug\07 Quotes in Strings.pdb

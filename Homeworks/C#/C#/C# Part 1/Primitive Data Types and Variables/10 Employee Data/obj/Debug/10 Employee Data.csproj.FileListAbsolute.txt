@@ -1,0 +1,9 @@
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\10 Employee Data\bin\Debug\10 Employee Data.exe.config
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\10 Employee Data\bin\Debug\10 Employee Data.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\10 Employee Data\bin\Debug\10 Employee Data.pdb
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\10 Employee Data\obj\Debug\10 Employee Data.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\10 Employee Data\obj\Debug\10 Employee Data.pdb
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\10 Employee Data\obj\Debug\10 Employee Data.csprojResolveAssemblyReference.cache
+C:\Users\Emil\Desktop\New folder\Solution3\10 Employee Data\bin\Debug\10 Employee Data.exe.config
+C:\Users\Emil\Desktop\New folder\Solution3\10 Employee Data\obj\Debug\10 Employee Data.exe
+C:\Users\Emil\Desktop\New folder\Solution3\10 Employee Data\obj\Debug\10 Employee Data.pdb

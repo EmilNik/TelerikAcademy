@@ -1,0 +1,8 @@
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\06 Strings and Objects\bin\Debug\06 Strings and Objects.exe.config
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\06 Strings and Objects\bin\Debug\06 Strings and Objects.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\06 Strings and Objects\bin\Debug\06 Strings and Objects.pdb
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\06 Strings and Objects\obj\Debug\06 Strings and Objects.exe
+C:\Users\Vucheva\documents\visual studio 2013\Projects\Solution3\06 Strings and Objects\obj\Debug\06 Strings and Objects.pdb
+C:\Users\Emil\Desktop\New folder\Solution3\06 Strings and Objects\bin\Debug\06 Strings and Objects.exe.config
+C:\Users\Emil\Desktop\New folder\Solution3\06 Strings and Objects\obj\Debug\06 Strings and Objects.exe
+C:\Users\Emil\Desktop\New folder\Solution3\06 Strings and Objects\obj\Debug\06 Strings and Objects.pdb
