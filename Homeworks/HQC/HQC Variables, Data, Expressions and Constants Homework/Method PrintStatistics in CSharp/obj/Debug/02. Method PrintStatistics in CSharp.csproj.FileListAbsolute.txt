@@ -1,0 +1,1 @@
+C:\Users\Emil\Documents\Visual Studio 2013\Projects\HQC\HQC Variables, Data, Expressions and Constants Homework\Method PrintStatistics in CSharp\obj\Debug\02. Method PrintStatistics in CSharp.csprojResolveAssemblyReference.cache
