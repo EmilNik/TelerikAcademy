@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class Main
+    public class MainProgram
     {
         public static void Main()
         {
