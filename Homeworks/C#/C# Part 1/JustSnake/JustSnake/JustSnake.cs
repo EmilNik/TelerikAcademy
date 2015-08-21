@@ -36,7 +36,7 @@
 
             int sleepTime = 100;
 
-            int direction = right;
+            int direction = 0;
 
             Random randomNumberGenerator = new Random();
             Position food = new Position(randomNumberGenerator.Next(0, Console.WindowHeight), randomNumberGenerator.Next(0, Console.WindowWidth));
@@ -60,36 +60,33 @@
                 {
                     ConsoleKeyInfo userInput = Console.ReadKey();
 
+                    if (userInput.Key == ConsoleKey.LeftArrow)
+                    {
+                        if (direction != right)
+                        {
+                            direction = left;
+                        }
+                    }
+
                     if (userInput.Key == ConsoleKey.RightArrow)
                     {
-                        if (userInput.Key == ConsoleKey.LeftArrow)
+                        if (direction != left)
                         {
-                            if (direction != right)
-                            {
-                                direction = left;
-                            }
+                            direction = right;
                         }
-
-                        if (userInput.Key == ConsoleKey.RightArrow)
+                    }
+                    if (userInput.Key == ConsoleKey.UpArrow)
+                    {
+                        if (direction != down)
                         {
-                            if (direction != left)
-                            {
-                                direction = right;
-                            }
+                            direction = up;
                         }
-                        if (userInput.Key == ConsoleKey.UpArrow)
+                    }
+                    if (userInput.Key == ConsoleKey.DownArrow)
+                    {
+                        if (direction != up)
                         {
-                            if (direction != down)
-                            {
-                                direction = up;
-                            }
-                        }
-                        if (userInput.Key == ConsoleKey.DownArrow)
-                        {
-                            if (direction != up)
-                            {
-                                direction = down;
-                            }
+                            direction = down;
                         }
                     }
                 }
@@ -114,7 +111,7 @@
                 if (snakeNewHead.row == food.row && snakeNewHead.col == food.col)
                 {
                     food = new Position(randomNumberGenerator.Next(0, Console.WindowHeight), randomNumberGenerator.Next(0, Console.WindowWidth));
-                    sleepTime -= 5;
+                    sleepTime--;
                 }
                 else
                 {

@@ -4,3 +4,9 @@ c:\users\emil\documents\visual studio 2015\Projects\JustSnake\JustSnake\bin\Debu
 c:\users\emil\documents\visual studio 2015\Projects\JustSnake\JustSnake\obj\Debug\JustSnake.csprojResolveAssemblyReference.cache
 c:\users\emil\documents\visual studio 2015\Projects\JustSnake\JustSnake\obj\Debug\JustSnake.exe
 c:\users\emil\documents\visual studio 2015\Projects\JustSnake\JustSnake\obj\Debug\JustSnake.pdb
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\C#\C# Part 1\JustSnake\JustSnake\bin\Debug\JustSnake.exe.config
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\C#\C# Part 1\JustSnake\JustSnake\obj\Debug\JustSnake.exe
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\C#\C# Part 1\JustSnake\JustSnake\obj\Debug\JustSnake.pdb
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\C#\C# Part 1\JustSnake\JustSnake\bin\Debug\JustSnake.exe
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\C#\C# Part 1\JustSnake\JustSnake\bin\Debug\JustSnake.pdb
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\C#\C# Part 1\JustSnake\JustSnake\obj\Debug\JustSnake.csprojResolveAssemblyReference.cache
