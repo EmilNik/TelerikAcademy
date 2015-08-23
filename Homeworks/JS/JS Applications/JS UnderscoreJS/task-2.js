@@ -9,20 +9,20 @@ Create a function that:
 */
 
 function solve(){
-  return function (students) {
-    _.chain(students)
-      .filter(function(item) {
-        return 17 < item.age && item.age < 25;
-      })
-        .map(function(item){
-          item.fullName = item.firstName + ' ' + item.lastName;
-          return item;
+    return function (students) {
+        _.chain(students)
+        .filter(function(item) {
+            return 17 < item.age && item.age < 25;
         })
-      .sortBy('fullName')
-      .each(function(item) {
-        console.log(item.fullName);
-      })
-  };
+        .map(function(item){
+            item.fullName = item.firstName + ' ' + item.lastName;
+            return item;
+        })
+        .sortBy('fullName')
+        .each(function(item) {
+            console.log(item.fullName);
+        })
+    };
 }
 
 module.exports = solve;
