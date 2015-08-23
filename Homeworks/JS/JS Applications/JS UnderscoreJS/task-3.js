@@ -11,8 +11,32 @@ Create a function that:
 */
 
 function solve(){
-  return function (students) {
-  };
+    return function (students) {
+        var student = _.chain(students)
+            .map(function(item) {
+                var i, len,
+                    averageMark,
+                    sum = 0;
+                
+                item.fullName = item.firstName + ' ' + item.lastName;
+                
+                for(i = 0, len = item.marks.length; i < len; i += 1) {
+                    sum += item.marks[i];
+                }
+                
+                averageMark = sum / len;
+                
+                item.averageMark = averageMark;
+                
+                return item;
+            })
+            .max(function(item) {
+                return item.averageMark;
+            })
+            .value();
+            
+            console.log(student.fullName + ' has an average score of ' + student.averageMark);
+    };
 }
 
 module.exports = solve;
