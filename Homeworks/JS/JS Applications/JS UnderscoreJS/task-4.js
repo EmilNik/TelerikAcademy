@@ -27,6 +27,27 @@ Create a function that:
 
 function solve(){
   return function (animals) {
+      var i, len,
+            groupedBySpeciesDescending = _.chain(animals)
+                                            .sortBy('species')
+                                            .reverse()
+                                            .groupBy('species')
+                                            .value();
+      
+      _.each(groupedBySpeciesDescending, function(item, key){
+          item = _.chain(item)
+                    .sortBy('legsCount')
+                    .sortBy(item, 'name')
+                    .value();
+                    
+          console.log(Array(key.length + 2).join('-'));
+          console.log(key + ':');
+          console.log(Array(key.length + 2).join('-'));
+          
+          for(i = 0, len = item.length; i < len; i += 1){
+            console.log(item[i].name + ' has ' + item[i].legsCount + ' legs');    
+          }
+      });
   };
 }
 
