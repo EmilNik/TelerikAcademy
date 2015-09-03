@@ -1,6 +1,6 @@
 ﻿using System;
 
-class HelloCSahrp
+class HelloCSharp
 {
     static void Main()
     {

@@ -1,0 +1,6 @@
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\C#\C# Part 1\Introduction to Programming\10 PrintLongSequence\bin\Release\10 PrintLongSequence.exe.config
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\C#\C# Part 1\Introduction to Programming\10 PrintLongSequence\bin\Release\10 PrintLongSequence.exe
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\C#\C# Part 1\Introduction to Programming\10 PrintLongSequence\bin\Release\10 PrintLongSequence.pdb
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\C#\C# Part 1\Introduction to Programming\10 PrintLongSequence\obj\Release\10 PrintLongSequence.csprojResolveAssemblyReference.cache
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\C#\C# Part 1\Introduction to Programming\10 PrintLongSequence\obj\Release\10 PrintLongSequence.exe
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\C#\C# Part 1\Introduction to Programming\10 PrintLongSequence\obj\Release\10 PrintLongSequence.pdb

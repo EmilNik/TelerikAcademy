@@ -7,3 +7,6 @@ c:\users\vucheva\documents\visual studio 2013\Projects\HelloCS\HelloCS\obj\Debug
 C:\Users\Emil\Desktop\New folder\HelloCS\HelloCS\bin\Debug\HelloCS.exe.config
 C:\Users\Emil\Desktop\New folder\HelloCS\HelloCS\obj\Debug\HelloCS.exe
 C:\Users\Emil\Desktop\New folder\HelloCS\HelloCS\obj\Debug\HelloCS.pdb
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\C#\C# Part 1\HelloCS\HelloCS\bin\Debug\HelloCS.exe.config
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\C#\C# Part 1\HelloCS\HelloCS\obj\Debug\HelloCS.exe
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\C#\C# Part 1\HelloCS\HelloCS\obj\Debug\HelloCS.pdb
