@@ -1,0 +1,55 @@
+<h1>Welcome to the
+	<strong>Fortune Cookies</strong>
+</h1>
+<hr/>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6">	
+			<a href="#/cookies-add" id="add-cookie-btn" class="btn btn-danger">Add a new Cookie</a>
+		</div>
+		<div class="col-lg-6">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Search for category" id="category-search-val">
+				<span class="input-group-btn">
+					<button class="btn btn-default" type="button" id="category-search-btn">Search</button>
+				</span>
+			</div>
+		</div>
+	</div>
+</div>
+<hr/>
+<div>
+	<p>Sort cookies by: 
+		<select id="cookie-sort">
+			<option value="likes">Likes</option>
+			<option value="date">Date</option>
+		</select>
+	</p>
+</div>
+{{#each this}}
+<div class="container">
+	<h2>
+		{{this.category}}
+	</h2>
+	<h3>
+		{{this.text}}
+	</h3>
+	
+	<img src="{{this.img}}" alt="{{this.text}}" class="img-thumbnail">
+	
+	<p>Likes: {{this.likes}}, Dislikes: {{this.dislikes}}</p>
+	<p>Added {{this.ago}}</p>
+	
+	<div class="like-dislike-buttons">
+		<button type="button" class="btn btn-default like" aria-label="Left Align" id="{{this.id}}">
+			<span class="glyphicon glyphicon-thumbs-up like" aria-hidden="true"> Like</span>
+		</button>
+		<button type="button" class="btn btn-default dis" aria-label="Left Align" id="{{this.id}}">
+			<span class="glyphicon glyphicon-thumbs-down dis" aria-hidden="true"> Dislike</span>
+		</button>
+		<button type="button" class="btn btn-default users-can-see-this" aria-label="Left Align" id="{{this.id}}">
+			<span class="" aria-hidden="true"> Re-share</span>
+		</button>
+	</div>
+</div>
+{{/each}}

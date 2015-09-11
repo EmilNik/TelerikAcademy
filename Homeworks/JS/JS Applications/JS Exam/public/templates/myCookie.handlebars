@@ -1,0 +1,27 @@
+<div class="container">
+	<h1>THIS IS YOUR COOKIE! DON'T SHARE IT WITH ANYONE!</h1>
+	
+	<h2>
+		{{this.category}}
+	</h2>
+	<h3>
+		{{this.text}}
+	</h3>
+	
+	<img src="{{this.img}}" alt="{{this.text}}" class="img-thumbnail">
+	
+	<p>Likes: {{this.likes}}, Dislikes: {{this.dislikes}}</p>
+	<p>Added {{this.ago}}</p>
+	
+	<div class="like-dislike-buttons">
+		<button type="button" class="btn btn-default like" aria-label="Left Align" id="{{this.id}}">
+			<span class="glyphicon glyphicon-thumbs-up like" aria-hidden="true"> Like</span>
+		</button>
+		<button type="button" class="btn btn-default dis" aria-label="Left Align" id="{{this.id}}">
+			<span class="glyphicon glyphicon-thumbs-down dis" aria-hidden="true"> Dislike</span>
+		</button>
+		<button type="button" class="btn btn-default users-can-see-this" aria-label="Left Align" id="re-share-btn" id="{{this.id}}">
+			<span class="" aria-hidden="true"> Re-share</span>
+		</button>
+	</div>
+</div>
