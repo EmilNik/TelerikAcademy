@@ -1,425 +1,200 @@
-﻿using System;
-using System.Data;
-using System.Data.Odbc;
-using System.Data.Sql;
-using System.Data.SqlTypes;
-using System.Collections.Generic;
-
-
-
-using System.Net.Mail;
-using System.Net.Sockets;
-using System.Net.Mime;
-using System.Linq;
-using System.Text;
-using Wintellect.PowerCollections;
-
-namespace ConsoleApplication1
+﻿namespace Phonebook
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
 
-
-
-    namespace Problem_2
+    public static class PhonebookEntryPoint
     {
-        class Class2
+        private const string code = "+359";
+
+        private static IPhonebookRepository data = new
+
+            REPNew(); // this works!
+        private static StringBuilder input = new StringBuilder();
+
+        static void Main()
         {
-
-
-
-
-            private
-                const
-                string
-                code = "+359";
-
-            private static IPhonebookRepository data = new
-
-                REPNew(); // this works!
-            private static StringBuilder
-       input = new StringBuilder();
-
-            static void Main()
+            while (true)
             {
-                while (true)
+                string userLine = Console.ReadLine();
+
+                if (userLine == "End" || userLine == null)
                 {
-                    string data = Console.ReadLine();
-                    if (data == "End" || data == null)
-                    {
-                        // Error reading from console 
-                        break;
-                    }
-
-                    int i = data.IndexOf('('); if (i == -1) { Console.WriteLine("error!"); Environment.Exit(0); }
-
-
-
-                    string k = data.Substring(0, i);
-                    if (!data.EndsWith(")"))
-                    {
-
-
-                        Main();
-                    }
-                    string s =
-                        data.
-                        Substring(
-                        i + 1, data.
-
-
-                            Length -
-                            i -
-                            2);
-                    string[] strings = s.Split(',');
-                    for (int j = 0; j <
-
-                        strings.Length; j++)
-                    {
-                        strings[j
-
-                ] = strings[j].Trim();
-                    }
-
-                    if ((k.StartsWith("AddPhone")) && (strings.Length >= 2)) { Cmd("Cmd3", strings); }
-                    else if ((k == "ChangeРhone") && (strings.Length == 2)) { Cmd("Cmd2", strings); }
-                    else if ((k == "List") && (strings.Length == 2)) { Cmd("Cmd1", strings); }
-                    else { throw new StackOverflowException(); }
+                    // Error reading from console 
+                    break;
                 }
-                Console.Write(input);
-            }
 
+                int i = userLine.IndexOf('('); if (i == -1) { Console.WriteLine("error!"); Environment.Exit(0); }
 
+                string command = userLine.Substring(0, i);
 
-            private static void Cmd(string cmd, string[] strings)
-            {
-
-
-
-
-                if (cmd == "Cmd1") // first command
+                if (!userLine.EndsWith(")"))
                 {
-                    string str0 = strings[0]; var str1 = strings.Skip(1).ToList();
-                    for (int i = 0; i
-
-                        < str1.Count; i++)
-                    {
-                        str1[i] = conv(str1[i]);
-                    }
-                    bool flag = data.AddPhone(str0, str1);
-
-
-
-
-                    if (flag)
-                    {
-                        Print("Phone entry created.");
-                    }
-                    else
-                    {
-                        Print("Phone entry merged");
-                    }
+                    Main();
                 }
-                else if (cmd
-                    == "Cmd2") // second command
+
+                string s = userLine.Substring(i + 1, userLine.Length - i - 2);
+                string[] argumens = s.Split(',');
+
+                for (int j = 0; j < argumens.Length; j++)
                 {
-                    Print("" + data.ChangePhone(conv(strings[0]), conv(strings[1])) + " numbers changed");
+                    argumens[j] = argumens[j].Trim();
                 }
-                else // third command
-                    try
-                    {
-                        IEnumerable<Class1> entries = data.ListEntries(int.Parse(strings[0]), int.Parse(strings[1]));
-                        foreach (var entry in entries) Print(entry.ToString());
-                    }
-                    catch (ArgumentOutOfRangeException)
-                    {
-                        Print("Invalid range");
-                    }
-            }
-            private static string conv(
 
-
-                string num)
-            {
-                StringBuilder sb = new StringBuilder();
-                for (int i = 0; i <= input.Length; i++)
+                if ((command.StartsWith("AddPhone")) && (argumens.Length >= 2))
                 {
-                    sb.Clear(); foreach (char ch in num) if (char.IsDigit(ch) || (ch == '+')) sb.Append(ch);
-                    if (sb.Length >= 2 && sb[0] == '0' && sb[1] == '0')
-                    { sb.Remove(0, 1); sb[0] = '+'; }
-                    while (sb.Length > 0 && sb[0] == '0') sb.Remove(0, 1);
-
-
-                    if (sb.Length > 0 && sb[0] != '+') sb.Insert(0, code);
-                    sb.Clear();
-                    foreach (char ch in num) if (char.IsDigit(ch) || (ch == '+')) sb.Append(ch);
-                    if (sb.Length >= 2 && sb[0] == '0' && sb[1] == '0')
-                    { sb.Remove(0, 1); sb[0] = '+'; }
-
-
-                    while (sb.Length > 0 && sb[0] == '0') sb.Remove(0, 1);
-                    if (sb.Length > 0 && sb[0] != '+') sb.Insert(0, code);
-                    sb.Clear();
-                    foreach (char ch in num) if (char.IsDigit(ch) || (ch == '+')) sb.Append(ch);
-                    if (sb.Length >= 2 && sb[0] == '0' && sb[1] == '0')
-
-
-
-                    { sb.Remove(0, 1); sb[0] = '+'; }
-                    while (sb.Length > 0 && sb[0] == '0') sb.Remove(0, 1);
-                    if (sb.Length > 0 && sb[0] != '+') sb.Insert(0, code);
+                    Cmd("AddPhone", argumens);
                 }
-                return sb.ToString();
-            }
-            private static void Print(string text)
-            {
-                input.AppendLine(text);
-            }
-        }
-
-        class Class1 : IComparable<Class1>
-        {
-            private string name; private string name2; public string Name
-            {
-                get
+                else if ((command == "ChangePhone") && (argumens.Length == 2))
                 {
-
-
-
-
-                    return this.name;
+                    Cmd("ChangeРhone", argumens);
                 }
-                set
+                else if ((command == "List") && (argumens.Length == 2))
                 {
-                    this.name = value;
-
-
-
-
-                    this.name2 = value.ToLowerInvariant();
-                }
-            }
-
-            public SortedSet<string> Strings;
-
-            public override string ToString()
-            {
-                StringBuilder sb = new StringBuilder(); sb.Clear(); sb.Append('[');
-
-
-
-
-                sb.Append(this.Name);
-                bool flag = true;
-                foreach (var phone in this.Strings)
-                {
-                    if (flag)
-
-
-
-
-                    {
-                        sb.Append(": ");
-                        flag = false;
-                    }
-                    else
-                    {
-                        sb.Append(", ");
-                    }
-
-
-
-                    sb.Append(phone);
-                }
-                sb.Append(']');
-                return sb.ToString();
-            }
-
-            public int CompareTo(Class1 other)
-            {
-                return this.name2.CompareTo(other.name2);
-            }
-        }
-
-        class REPNew : IPhonebookRepository
-        {
-            public List<Class1> entries = new List<Class1>();
-
-            public bool AddPhone(string name, IEnumerable<string> nums)
-            {
-                var old = from e in this.entries where e.Name.ToLowerInvariant() == name.ToLowerInvariant() select e;
-
-                bool flag;
-                if (old.Count() == 0)
-                {
-                    Class1 obj = new Class1(); obj.Name = name;
-                    obj.Strings = new SortedSet<string>();
-
-
-
-                    foreach (var num in nums)
-                    {
-                        obj.Strings.Add(num);
-                    }
-                    this.entries.Add(obj);
-
-
-
-
-                    flag = true;
-                }
-                else if (old.Count() == 1)
-                {
-                    Class1 obj2 = old.First();
-                    foreach (var num
-
-
-
-                        in nums)
-                    {
-
-
-
-
-                        obj2.Strings.Add(num);
-                    }
-                    flag = false;
+                    Cmd("List", argumens);
                 }
                 else
                 {
-                    Console.WriteLine("Duplicated name in the phonebook found: " + name);
-                    return false;
+                    throw new ArgumentException("Invalid command!");
                 }
-
-                return flag;
             }
-
-            public int ChangePhone(string oldent, string newent)
-            {
-                var list = from e in this.entries where e.Strings.Contains(oldent) select e;
-
-                int nums = 0;
-                foreach (var entry
-
-
-
-                    in list)
-                {
-                    entry.Strings.Remove(oldent); entry.Strings.Add(newent);
-                    nums++;
-                }
-
-
-
-
-                return nums;
-            }
-
-            public Class1[] ListEntries(int start, int num)
-            {
-                if (start < 0 || start + num > this.entries.Count)
-                {
-
-
-
-                    throw new ArgumentOutOfRangeException("Invalid start index or count.");
-                }
-                this.entries.Sort();
-                Class1[] ent = new Class1[num]; for (int i = start; i <= start + num - 1; i++)
-                {
-                    Class1 entry = this.entries[i];
-                    ent[i -
-
-
-
-                        start] = entry;
-                }
-                return ent;
-            }
+            Console.Write(input);
         }
 
-        class REP : IPhonebookRepository
-        {
-            private OrderedSet<Class1> sorted =
-                new OrderedSet<Class1>(); private Dictionary<string, Class1> dict =
-                 new Dictionary<string, Class1>(); private MultiDictionary<string, Class1> multidict =
-                  new MultiDictionary<string, Class1>(false);
 
-            public bool AddPhone(string name, IEnumerable<string> nums)
+
+        private static void Cmd(string cmd, string[] strings)
+        {
+            if (cmd == "AddPhone") // first command
             {
-                string name2 = name.ToLowerInvariant();
-                Class1 entry; bool flag = !this.dict.TryGetValue(name2, out entry);
+                string str0 = strings[0]; var str1 = strings.Skip(1).ToList();
+
+                for (int i = 0; i < str1.Count; i++)
+                {
+                    str1[i] = conv(str1[i]);
+                }
+
+                bool flag = data.AddPhone(str0, str1);
+
                 if (flag)
                 {
-                    entry = new Class1(); entry.Name = name;
-                    entry.Strings = new SortedSet<string>(); this.dict.Add(name2, entry);
-
-
-
-                    this.sorted.Add(entry);
+                    Print("Phone entry created.");
                 }
-                foreach (var num in nums)
+                else
                 {
-                    this.multidict.Add(num,
-
-
-                    entry);
+                    Print("Phone entry merged");
                 }
-                entry.Strings.UnionWith(nums);
-                return flag;
             }
-
-            public int ChangePhone(string
-
-
-                oldent, string newent)
+            else if (cmd == "ChangeРhone") // second command
             {
-                var found = this.multidict[oldent].ToList(); foreach (var entry in found)
-                {
-                    entry.Strings.Remove(oldent);
-                    this.multidict.Remove(oldent, entry);
-
-
-
-                    entry.Strings.Add(newent); this.multidict.Add(newent, entry);
-                }
-                return found.Count;
+                string output = "" + data.ChangePhone(conv(strings[0]), conv(strings[1])) + " numbers changed";
+                Print(output);
             }
-
-            public Class1[] ListEntries(int first, int num)
+            else // third command (List)
             {
-                if (first < 0 || first + num > this.dict.Count) { Console.WriteLine("Invalid start index or count."); return null; }
-                Class1[] list = new Class1[num];
-
-
-
-                for (int i = first; i <= first + num - 1; i++)
+                try
                 {
-                    Class1 entry = this.sorted[i];
-                    list[i - first] =
+                    IEnumerable<Class1> entries = data.ListEntries(int.Parse(strings[0]), int.Parse(strings[1]));
 
-
-                        entry;
-
-
-
-
+                    foreach (var entry in entries)
+                    {
+                        Print(entry.ToString());
+                    }
                 }
-                return list;
+                catch (ArgumentOutOfRangeException)
+                {
+                    Print("Invalid range");
+                }
             }
         }
 
-        interface IPhonebookRepository
+        private static string conv(string num)
         {
-            bool AddPhone(string name,
+            StringBuilder builder = new StringBuilder();
+
+            for (int i = 0; i <= input.Length; i++)
+            {
+                builder.Clear();
+
+                foreach (char ch in num)
+                {
+                    if (char.IsDigit(ch) || (ch == '+')) builder.Append(ch);
+                }
+
+                if (builder.Length >= 2 && builder[0] == '0' && builder[1] == '0')
+                {
+                    builder.Remove(0, 1); builder[0] = '+';
+                }
+
+                while (builder.Length > 0 && builder[0] == '0')
+                {
+                    builder.Remove(0, 1);
+                }
+
+                if (builder.Length > 0 && builder[0] != '+')
+                {
+                    builder.Insert(0, code);
+                }
+
+                builder.Clear();
+
+                foreach (char ch in num)
+                {
+                    if (char.IsDigit(ch) || (ch == '+'))
+                    {
+                        builder.Append(ch);
+                    }
+                }
+
+                if (builder.Length >= 2 && builder[0] == '0' && builder[1] == '0')
+                {
+                    builder.Remove(0, 1); builder[0] = '+';
+                }
 
 
-IEnumerable<string> phoneNumbers);
+                while (builder.Length > 0 && builder[0] == '0')
+                {
+                    builder.Remove(0, 1);
+                }
 
-            int ChangePhone(
+                if (builder.Length > 0 && builder[0] != '+')
+                {
+                    builder.Insert(0, code);
+                }
 
+                builder.Clear();
 
-                string oldPhoneNumber, string newPhoneNumber);
+                foreach (char ch in num)
+                {
+                    if (char.IsDigit(ch) || (ch == '+'))
+                    {
+                        builder.Append(ch);
+                    }
+                }
 
-            Class1[] ListEntries(int startIndex, int count);
+                if (builder.Length >= 2 && builder[0] == '0' && builder[1] == '0')
+                {
+                    builder.Remove(0, 1); builder[0] = '+';
+                }
+
+                while (builder.Length > 0 && builder[0] == '0')
+                {
+                    builder.Remove(0, 1);
+                }
+
+                if (builder.Length > 0 && builder[0] != '+')
+                {
+                    builder.Insert(0, code);
+                }
+            }
+            return builder.ToString();
+        }
+
+        private static void Print(string text)
+        {
+            input.AppendLine(text);
         }
     }
 }

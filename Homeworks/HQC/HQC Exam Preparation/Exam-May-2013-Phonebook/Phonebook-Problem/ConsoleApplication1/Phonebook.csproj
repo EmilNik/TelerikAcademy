@@ -7,7 +7,7 @@
     <ProjectGuid>{D60D857E-37F2-4205-BAB5-EE3C4B7B1911}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <RootNamespace>Phonebook</RootNamespace>
     <AssemblyName>ConsoleApplication1</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -44,7 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="IPhonebookRepository.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="REP.cs" />
+    <Compile Include="REPNew.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
