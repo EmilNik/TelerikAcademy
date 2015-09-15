@@ -8,9 +8,21 @@ namespace Phonebook.Command
 {
     class ChangePhoneCommand : IPhonebookCommand
     {
-        public void Execute(string[] argumens)
+        private IPrinter printer;
+        private IPhonebookRepository data;
+        private IPhonebookSanitizer sanitizer;
+
+        public ChangePhoneCommand(IPrinter printer, IPhonebookRepository data, IPhonebookSanitizer sanitizer)
         {
-            throw new NotImplementedException();
+            this.printer = printer;
+            this.data = data;
+            this.sanitizer = sanitizer;
+        }
+
+        public void Execute(string[] arguments)
+        {
+            string output = "" + data.ChangePhone(sanitizer.Sanitize(arguments[0]), sanitizer.Sanitize(arguments[1])) + " numbers changed";
+            printer.Print(output);
         }
     }
 }

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Phonebook.Command
+namespace Phonebook
 {
-    interface IPhonebookCommand
+    interface IPhonebookSanitizer
     {
-        void Execute(string[] arguments);
+        string Sanitize(string phoneNumber);
     }
 }

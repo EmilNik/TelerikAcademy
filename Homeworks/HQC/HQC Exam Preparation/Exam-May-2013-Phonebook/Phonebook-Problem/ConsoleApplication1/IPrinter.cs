@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Phonebook.Command
+namespace Phonebook
 {
-    interface IPhonebookCommand
+    interface IPrinter
     {
-        void Execute(string[] arguments);
+        void Print(string text);
+
+        string GetAllText();
     }
 }
