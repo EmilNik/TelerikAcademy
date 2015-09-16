@@ -1,6 +1,7 @@
 ﻿namespace Phonebook
 {
     using System;
+    using System.Linq;
     using Command;
 
     public static class PhonebookEntryPoint
@@ -12,6 +13,7 @@
             IPhonebookSanitizer sanitizer = new PhonebookSanitizer();
 
             ICommandFactory commandFactory = new CommandFactoryWithLazyLoading(data, printer, sanitizer);
+            ICommandParser commandParser = new CommandParser();
 
             while (true)
             {
@@ -23,35 +25,14 @@
                     break;
                 }
 
-                int i = userLine.IndexOf('(');
+                var commandInfo = commandParser.Parse(userLine);
 
-                if (i == -1)
-                {
-                    Console.WriteLine("error!");
-                    Environment.Exit(0);
-                }
+                IPhonebookCommand command = commandFactory.CreateCommand(commandInfo.CommandName, commandInfo.Arguments.Count());
 
-                string k = userLine.Substring(0, i);
-
-                if (!userLine.EndsWith(")"))
-                {
-                    Main();
-                }
-
-                string s = userLine.Substring(i + 1, userLine.Length - i - 2);
-                string[] strings = s.Split(',');
-
-                for (int j = 0; j < strings.Length; j++)
-                {
-                    strings[j] = strings[j].Trim();
-                }
-
-                IPhonebookCommand command = commandFactory.CreateCommand(k, strings.Length);
-
-                command.Execute(strings);
+                command.Execute(commandInfo.Arguments.ToArray());
             }
 
-            Console.Write(printer.GetAllText());
+            printer.Accept(new ConsolePrinterVisitorWithNewLine());
         }
     }
 }

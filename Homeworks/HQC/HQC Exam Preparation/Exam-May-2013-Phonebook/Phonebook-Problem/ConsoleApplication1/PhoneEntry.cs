@@ -32,9 +32,19 @@
             entryToString.Append(this.Name);
             entryToString.Append(": ");
 
+            var first = true;
+
             foreach (var phone in this.PhoneNumbers)
             {
-                entryToString.Append(", ");
+                if (first)
+                {
+                    first = false;
+                }
+                else
+                {
+                    entryToString.Append(", ");
+                }
+
                 entryToString.Append(phone);
             }
 

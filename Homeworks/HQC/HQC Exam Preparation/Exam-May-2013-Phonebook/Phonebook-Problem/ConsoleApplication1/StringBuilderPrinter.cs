@@ -1,5 +1,6 @@
 ﻿namespace Phonebook
 {
+    using System;
     using System.Text;
 
     public class StringBuilderPrinter : IPrinter
@@ -11,9 +12,9 @@
             this.output.AppendLine(text);
         }
 
-        public string GetAllText()
+        public void Accept(IPrinterVisitor visitor)
         {
-            return this.output.ToString();
+            visitor.Visit(this.output.ToString());
         }
     }
 }

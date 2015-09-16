@@ -29,7 +29,7 @@
 
             if (phoneEntryCreated)
             {
-                this.printer.Print("Phone entry created.");
+                this.printer.Print("Phone entry created");
             }
             else
             {
