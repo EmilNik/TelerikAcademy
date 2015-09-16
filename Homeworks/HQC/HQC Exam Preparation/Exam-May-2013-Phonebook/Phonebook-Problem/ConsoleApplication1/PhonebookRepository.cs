@@ -7,32 +7,46 @@
 
     public class PhonebookRepository : IPhonebookRepository
     {
-        private OrderedSet<PhoneEntry> sorted = new OrderedSet<PhoneEntry>();
+        private OrderedSet<PhoneEntry> entriesSorted = new OrderedSet<PhoneEntry>();
+        private Dictionary<string, PhoneEntry> entriesByName = new Dictionary<string, PhoneEntry>();
+        private MultiDictionary<string, PhoneEntry> entriesByPhone = new MultiDictionary<string, PhoneEntry>(false);
+        
+        public int EntriesCount
+        {
+            get
+            {
+                return this.entriesByName.Count;
+            }
+        }
 
-        private Dictionary<string, PhoneEntry> dict = new Dictionary<string, PhoneEntry>();
-
-        private MultiDictionary<string, PhoneEntry> multidict = new MultiDictionary<string, PhoneEntry>(false);
+        public int PhonesCount
+        {
+            get
+            {
+                return this.entriesByPhone.Count;
+            }
+        }
 
         public bool AddPhone(string name, IEnumerable<string> nums)
         {
             string name2 = name.ToLowerInvariant();
 
             PhoneEntry entry;
-            bool flag = !this.dict.TryGetValue(name2, out entry);
+            bool flag = !this.entriesByName.TryGetValue(name2, out entry);
 
             if (flag)
             {
                 entry = new PhoneEntry();
                 entry.Name = name;
                 entry.PhoneNumbers = new SortedSet<string>();
-                this.dict.Add(name2, entry);
+                this.entriesByName.Add(name2, entry);
 
-                this.sorted.Add(entry);
+                this.entriesSorted.Add(entry);
             }
 
             foreach (var num in nums)
             {
-                this.multidict.Add(num, entry);
+                this.entriesByPhone.Add(num, entry);
             }
 
             entry.PhoneNumbers.UnionWith(nums);
@@ -42,14 +56,14 @@
 
         public int ChangePhone(string oldent, string newent)
         {
-            var found = this.multidict[oldent].ToList();
+            var found = this.entriesByPhone[oldent].ToList();
 
             foreach (var entry in found)
             {
                 entry.PhoneNumbers.Remove(oldent);
-                this.multidict.Remove(oldent, entry);
+                this.entriesByPhone.Remove(oldent, entry);
                 entry.PhoneNumbers.Add(newent);
-                this.multidict.Add(newent, entry);
+                this.entriesByPhone.Add(newent, entry);
             }
 
             return found.Count;
@@ -57,7 +71,7 @@
 
         public PhoneEntry[] ListEntries(int first, int num)
         {
-            if (first < 0 || first + num > this.dict.Count)
+            if (first < 0 || first + num > this.entriesByName.Count)
             {
                 throw new ArgumentOutOfRangeException();
             }
@@ -66,7 +80,7 @@
 
             for (int i = first; i <= first + num - 1; i++)
             {
-                PhoneEntry entry = this.sorted[i];
+                PhoneEntry entry = this.entriesSorted[i];
                 list[i - first] = entry;
             }
 

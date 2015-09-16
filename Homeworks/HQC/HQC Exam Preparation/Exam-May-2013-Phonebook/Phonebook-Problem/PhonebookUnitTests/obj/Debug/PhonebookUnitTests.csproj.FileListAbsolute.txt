@@ -1,0 +1,10 @@
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-May-2013-Phonebook\Phonebook-Problem\PhonebookUnitTests\bin\Debug\PhonebookUnitTests.dll
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-May-2013-Phonebook\Phonebook-Problem\PhonebookUnitTests\bin\Debug\PhonebookUnitTests.pdb
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-May-2013-Phonebook\Phonebook-Problem\PhonebookUnitTests\bin\Debug\ConsoleApplication1.exe
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-May-2013-Phonebook\Phonebook-Problem\PhonebookUnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-May-2013-Phonebook\Phonebook-Problem\PhonebookUnitTests\bin\Debug\PowerCollections.dll
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-May-2013-Phonebook\Phonebook-Problem\PhonebookUnitTests\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-May-2013-Phonebook\Phonebook-Problem\PhonebookUnitTests\bin\Debug\PowerCollections.xml
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-May-2013-Phonebook\Phonebook-Problem\PhonebookUnitTests\obj\Debug\PhonebookUnitTests.csprojResolveAssemblyReference.cache
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-May-2013-Phonebook\Phonebook-Problem\PhonebookUnitTests\obj\Debug\PhonebookUnitTests.dll
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-May-2013-Phonebook\Phonebook-Problem\PhonebookUnitTests\obj\Debug\PhonebookUnitTests.pdb
