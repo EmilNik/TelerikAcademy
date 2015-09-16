@@ -59,7 +59,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="CommandFactoryWithLazyLoading.cs" />
+    <Compile Include="ICommandFactory.cs" />
+    <Compile Include="PhoneEntry.cs" />
     <Compile Include="Command\AddPhoneCommand.cs" />
     <Compile Include="Command\ChangePhoneCommand.cs" />
     <Compile Include="Command\IPhonebookCommand.cs" />
@@ -69,8 +71,7 @@
     <Compile Include="IPrinter.cs" />
     <Compile Include="PhonebookEntryPoint.cs" />
     <Compile Include="PhonebookSanitizer.cs" />
-    <Compile Include="REP.cs" />
-    <Compile Include="REPNew.cs" />
+    <Compile Include="PhonebookRepository.cs" />
     <Compile Include="StringBuilderPrinter.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,18 +1,17 @@
 ﻿namespace Phonebook
 {
-    using Command;
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
+    using Command;
 
     public static class PhonebookEntryPoint
     {
-        private static IPhonebookRepository data = new REPNew(); // this works!
-        static void Main()
+        public static void Main()
         {
+            IPhonebookRepository data = new PhonebookRepository();
             IPrinter printer = new StringBuilderPrinter();
             IPhonebookSanitizer sanitizer = new PhonebookSanitizer();
+
+            ICommandFactory commandFactory = new CommandFactoryWithLazyLoading(data, printer, sanitizer);
 
             while (true)
             {
@@ -24,7 +23,13 @@
                     break;
                 }
 
-                int i = userLine.IndexOf('('); if (i == -1) { Console.WriteLine("error!"); Environment.Exit(0); }
+                int i = userLine.IndexOf('(');
+
+                if (i == -1)
+                {
+                    Console.WriteLine("error!");
+                    Environment.Exit(0);
+                }
 
                 string k = userLine.Substring(0, i);
 
@@ -41,27 +46,11 @@
                     strings[j] = strings[j].Trim();
                 }
 
-                IPhonebookCommand command;
-
-                if ((k.StartsWith("AddPhone")) && (strings.Length >= 2))
-                {
-                    command = new AddPhoneCommand(printer, data, sanitizer);
-                }
-                else if ((k == "ChangePhone") && (strings.Length == 2))
-                {
-                    command = new ChangePhoneCommand(printer, data, sanitizer);
-                }
-                else if ((k == "List") && (strings.Length == 2))
-                {
-                    command = new ListPhonesCommand(printer, data, sanitizer);
-                }
-                else
-                {
-                    throw new ArgumentException("Invalid command!");
-                }
+                IPhonebookCommand command = commandFactory.CreateCommand(k, strings.Length);
 
                 command.Execute(strings);
             }
+
             Console.Write(printer.GetAllText());
         }
     }

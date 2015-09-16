@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Phonebook
+﻿namespace Phonebook
 {
-    interface IPhonebookSanitizer
+    public interface IPhonebookSanitizer
     {
         string Sanitize(string phoneNumber);
     }

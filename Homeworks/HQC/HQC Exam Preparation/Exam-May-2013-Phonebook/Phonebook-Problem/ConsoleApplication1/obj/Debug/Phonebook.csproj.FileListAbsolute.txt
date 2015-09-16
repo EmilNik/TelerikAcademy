@@ -2,6 +2,6 @@ C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation
 C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-May-2013-Phonebook\Phonebook-Problem\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
 C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-May-2013-Phonebook\Phonebook-Problem\ConsoleApplication1\bin\Debug\PowerCollections.dll
 C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-May-2013-Phonebook\Phonebook-Problem\ConsoleApplication1\bin\Debug\PowerCollections.xml
-C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-May-2013-Phonebook\Phonebook-Problem\ConsoleApplication1\obj\Debug\Phonebook.csprojResolveAssemblyReference.cache
 C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-May-2013-Phonebook\Phonebook-Problem\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-May-2013-Phonebook\Phonebook-Problem\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-May-2013-Phonebook\Phonebook-Problem\ConsoleApplication1\obj\Debug\Phonebook.csprojResolveAssemblyReference.cache

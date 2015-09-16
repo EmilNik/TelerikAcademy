@@ -1,23 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Phonebook
+﻿namespace Phonebook
 {
-    class StringBuilderPrinter : IPrinter
+    using System.Text;
+
+    public class StringBuilderPrinter : IPrinter
     {
-        StringBuilder output = new StringBuilder();
+        private StringBuilder output = new StringBuilder();
 
         public void Print(string text)
         {
-            output.AppendLine(text);
+            this.output.AppendLine(text);
         }
 
         public string GetAllText()
         {
-            return output.ToString();
+            return this.output.ToString();
         }
     }
 }

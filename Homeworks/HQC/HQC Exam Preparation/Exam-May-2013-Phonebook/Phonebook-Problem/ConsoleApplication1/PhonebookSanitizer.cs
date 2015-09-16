@@ -1,92 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Phonebook
+﻿namespace Phonebook
 {
-    class PhonebookSanitizer : IPhonebookSanitizer
+    using System.Text;
+
+    public class PhonebookSanitizer : IPhonebookSanitizer
     {
-        private const string code = "+359";
+        private const string Code = "+359";
 
         public string Sanitize(string phoneNumber)
         {
-            StringBuilder sb = new StringBuilder();
-
-            sb.Clear();
-
-            foreach (char ch in phoneNumber)
-            {
-                if (char.IsDigit(ch) || (ch == '+')) sb.Append(ch);
-            }
-
-            if (sb.Length >= 2 && sb[0] == '0' && sb[1] == '0')
-            {
-                sb.Remove(0, 1); sb[0] = '+';
-            }
-
-            while (sb.Length > 0 && sb[0] == '0')
-            {
-                sb.Remove(0, 1);
-            }
-
-            if (sb.Length > 0 && sb[0] != '+')
-            {
-                sb.Insert(0, code);
-            }
-
-            sb.Clear();
-
+            StringBuilder phoneNumberSanitazed = new StringBuilder();
+            
             foreach (char ch in phoneNumber)
             {
                 if (char.IsDigit(ch) || (ch == '+'))
                 {
-                    sb.Append(ch);
+                    phoneNumberSanitazed.Append(ch);
                 }
             }
 
-            if (sb.Length >= 2 && sb[0] == '0' && sb[1] == '0')
+            if (phoneNumberSanitazed.Length >= 2 && phoneNumberSanitazed[0] == '0' && phoneNumberSanitazed[1] == '0')
             {
-                sb.Remove(0, 1); sb[0] = '+';
+                phoneNumberSanitazed.Remove(0, 1);
+                phoneNumberSanitazed[0] = '+';
             }
 
-
-            while (sb.Length > 0 && sb[0] == '0')
+            while (phoneNumberSanitazed.Length > 0 && phoneNumberSanitazed[0] == '0')
             {
-                sb.Remove(0, 1);
+                phoneNumberSanitazed.Remove(0, 1);
             }
 
-            if (sb.Length > 0 && sb[0] != '+')
+            if (phoneNumberSanitazed.Length > 0 && phoneNumberSanitazed[0] != '+')
             {
-                sb.Insert(0, code);
+                phoneNumberSanitazed.Insert(0, Code);
             }
 
-            sb.Clear();
-
-            foreach (char ch in phoneNumber)
-            {
-                if (char.IsDigit(ch) || (ch == '+'))
-                {
-                    sb.Append(ch);
-                }
-            }
-
-            if (sb.Length >= 2 && sb[0] == '0' && sb[1] == '0')
-            {
-                sb.Remove(0, 1); sb[0] = '+';
-            }
-
-            while (sb.Length > 0 && sb[0] == '0')
-            {
-                sb.Remove(0, 1);
-            }
-
-            if (sb.Length > 0 && sb[0] != '+')
-            {
-                sb.Insert(0, code);
-            }
-            return sb.ToString();
-    }
+            return phoneNumberSanitazed.ToString();
+        }
     }
 }
