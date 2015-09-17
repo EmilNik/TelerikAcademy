@@ -21,7 +21,6 @@
 
                 if (userLine == "End" || userLine == null)
                 {
-                    // Error reading from console 
                     break;
                 }
 
