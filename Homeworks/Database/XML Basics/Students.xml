@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="style.xslt" ?>
+<students>
+  <student xmlns:students="urn:students-ninja">
+    <name>Johny Bravo</name>
+    <sex>Male</sex>
+    <birthDate>1994-10-02</birthDate>
+    <phone>++359123456789</phone>
+    <email>handsome.guy@cartoonnetwork.com</email>
+    <course>Handsome</course>
+    <specialty>Pretty</specialty>
+    <facultyNumber>4628471</facultyNumber>
+    <exams>
+      <exam>
+        <name>C# OOP</name>
+        <tutor>Nikolay Kostov</tutor>
+        <score>280</score>
+      </exam>
+      <exam>
+        <name>Handsomness</name>
+        <tutor>Evlogi Hristov</tutor>
+        <score>OVER 9000</score>
+      </exam>
+    </exams>
+  </student>
+  <student>
+    <name>Jane Bravo</name>
+    <sex>Female</sex>
+    <birthDate>1996-01-19</birthDate>
+    <phone>+35998765421</phone>
+    <email>handsome.girl@cartoonnetwork.com</email>
+    <course>Handsome</course>
+    <specialty>Pratty</specialty>
+    <facultyNumber>4548245</facultyNumber>
+    <exams>
+      <exam>
+        <name>C# OOP</name>
+        <tutor>Ivaylo Kenov</tutor>
+        <score>500</score>
+      </exam>
+      <exam>
+        <name>JS APPS</name>
+        <tutor>Doncho Minkov</tutor>
+        <score>80</score>
+      </exam>
+    </exams>
+  </student>
+</students>
