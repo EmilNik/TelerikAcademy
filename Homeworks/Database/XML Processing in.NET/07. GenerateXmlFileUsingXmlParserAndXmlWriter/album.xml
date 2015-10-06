@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+  <album>
+    <name>Thriller</name>
+    <artist>Michael Jackson</artist>
+  </album>
+  <album>
+    <name>Back in Black</name>
+    <artist>AC/DC</artist>
+  </album>
+  <album>
+    <name>The Dark Side of The Moon</name>
+    <artist>Pink Floyd</artist>
+  </album>
+  <album>
+    <name>Jazz</name>
+    <artist>Queen</artist>
+  </album>
+  <album>
+    <name>Bad</name>
+    <artist>Michael Jackson</artist>
+  </album>
+  <album>
+    <name>A Night At The Opera</name>
+    <artist>Queen</artist>
+  </album>
+  <album>
+    <name>Bat Out of Hell</name>
+    <artist>Elvis Presley</artist>
+  </album>
+</catalog>
