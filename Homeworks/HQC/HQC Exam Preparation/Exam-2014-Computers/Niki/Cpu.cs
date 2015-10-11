@@ -1,9 +1,6 @@
-﻿namespace Computers4
-{
-    using Computers1;
-    using Computers11;
+﻿namespace Computers.UI.Console
+{ 
     using System;
-    using Computers8;
 
     class Cpu
     {

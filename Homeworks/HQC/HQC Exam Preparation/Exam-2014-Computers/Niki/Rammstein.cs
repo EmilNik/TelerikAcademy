@@ -1,4 +1,4 @@
-﻿namespace Computers1
+﻿namespace Computers.UI.Console
 {
     class Rammstein
     {
