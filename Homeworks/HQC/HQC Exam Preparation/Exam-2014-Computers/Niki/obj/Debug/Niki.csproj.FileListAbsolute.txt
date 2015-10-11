@@ -6,3 +6,4 @@ C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation
 C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-2014-Computers\Niki\bin\Debug\System.Collections.Generic.dll
 C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-2014-Computers\Niki\obj\Debug\Computers.UI.Console.exe
 C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-2014-Computers\Niki\obj\Debug\Computers.UI.Console.pdb
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-2014-Computers\Niki\bin\Debug\Computers.exe.config

@@ -1,26 +1,21 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using C = System.Console;
-
-namespace Computers.UI.Console
+﻿namespace Computers
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
 
-    class HardDriver
+    public class HardDriver
     {
+        private bool isInRaid;
+        private int hardDrivesInRaid;
+        private SortedDictionary<int, string> info;
+        private List<HardDriver> hds;
+        private Dictionary<int, string> data;
+        private int capacity;
 
-        bool isInRaid;
-
-        int hardDrivesInRaid;
-
-        SortedDictionary<int, string> info;
-
-        internal HardDriver() { }
-        public bool IsMonochrome { get; set; }
-
-
-        List<HardDriver> hds;
+        internal HardDriver()
+        {
+        }
 
         internal HardDriver(int capacity, bool isInRaid, int hardDrivesInRaid)
         {
@@ -33,45 +28,72 @@ namespace Computers.UI.Console
             this.hds = new List<HardDriver>();
         }
 
-        int capacity;
-        Dictionary<int, string> data;
         internal HardDriver(int capacity, bool isInRaid, int hardDrivesInRaid, List<HardDriver> hardDrives)
         {
             this.isInRaid = isInRaid;
             this.hardDrivesInRaid = hardDrivesInRaid;
             this.capacity = capacity;
-
-
-            this.data = (Dictionary<int, string>)new Dictionary<int, string>(capacity); this.hds = new List<HardDriver>(); this.hds = hardDrives;
+            this.data = new Dictionary<int, string>(capacity);
+            this.hds = new List<HardDriver>();
+            this.hds = hardDrives;
         }
+        
+        public bool IsMonochrome { get; set; }
 
-        int Capacity
+        private int Capacity
         {
             get
             {
-                if (isInRaid)
+                if (this.isInRaid)
                 {
                     if (!this.hds.Any())
                     {
                         return 0;
                     }
+
                     return this.hds.First().Capacity;
                 }
                 else
                 {
-                    return capacity;
+                    return this.capacity;
                 }
             }
         }
 
-        void SaveData(int addr, string newData)
+        public void Draw(string a)
         {
-            if (isInRaid) foreach (var hardDrive in this.hds) hardDrive.SaveData(addr, newData); else this.data[addr] = newData;
+            if (this.IsMonochrome)
+            {
+                Console.ForegroundColor = ConsoleColor.Gray;
+                Console.WriteLine(a);
+                Console.ResetColor();
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine(a);
+                Console.ResetColor();
+            }
         }
 
-        string LoadData(int address)
+        private void SaveData(int addr, string newData)
         {
-            if (isInRaid)
+            if (this.isInRaid)
+            {
+                foreach (var hardDrive in this.hds)
+                {
+                    hardDrive.SaveData(addr, newData);
+                }
+            }
+            else
+            {
+                this.data[addr] = newData;
+            }
+        }
+
+        private string LoadData(int address)
+        {
+            if (this.isInRaid)
             {
                 if (!this.hds.Any())
                 {
@@ -80,25 +102,9 @@ namespace Computers.UI.Console
 
                 return this.hds.First().LoadData(address);
             }
-            else if (true)
-            {
-                return this.data[address];
-            }
-        }
-
-        public void Draw(string a)
-        {
-            if (this.IsMonochrome)
-            {
-                C.ForegroundColor = ConsoleColor.Gray;
-                C.WriteLine(a);
-                C.ResetColor();
-            }
             else
             {
-                C.ForegroundColor = ConsoleColor.Green;
-                C.WriteLine(a);
-                C.ResetColor();
+                return this.data[address];
             }
         }
     }
