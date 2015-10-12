@@ -1,11 +1,10 @@
 ﻿namespace Computers
 {
     using System;
-    using System.Collections.Generic;
     using ComputerType;
     using Manufactorers;
 
-    public class Computers
+    public static class Computers
     {
         private static PersonalComputer pc;
         private static Laptop laptop;
