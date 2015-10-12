@@ -1,4 +1,4 @@
-﻿namespace Computers
+﻿namespace Computers.ComputerType
 {
     using System.Collections.Generic;
 
