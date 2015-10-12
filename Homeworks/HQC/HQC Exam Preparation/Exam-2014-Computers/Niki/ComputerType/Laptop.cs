@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Computers.ComputerType
+﻿namespace Computers.ComputerType
 {
+    using System.Collections.Generic;
+
     public class Laptop : Computer
     {
         private readonly LaptopBattery battery;

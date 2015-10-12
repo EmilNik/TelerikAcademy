@@ -1,82 +1,59 @@
 ﻿namespace Computers
 {
-    using ComputerType;
     using System;
     using System.Collections.Generic;
+    using ComputerType;
+    using Manufactorers;
 
     public class Computers
     {
-        private const int Eight = 8;
-
         private static PersonalComputer pc;
         private static Laptop laptop;
         private static Server server;
 
         public static void Main()
         {
+            CreateComputers();
+            ProcessCommand();
+        }
+
+        private static void CreateComputers()
+        {
             var manufacturer = Console.ReadLine();
+            IComputersFactory computerFactory;
+
             if (manufacturer == "HP")
             {
-                var ram = new Rammstein(Eight / 4);
-                var videoCard = new HardDriver() { IsMonochrome = false };
-                pc = new PersonalComputer(
-                    new Cpu(Eight / 4, 32, ram, videoCard), 
-                    ram, 
-                    new[] { new HardDriver(500, false, 0) }, 
-                    videoCard);
-
-                var serverRam = new Rammstein(Eight * 4);
-                var serverVideo = new HardDriver();
-
-                server = new Server(
-                    new Cpu(Eight / 2, 32, serverRam, serverVideo),
-                    serverRam,
-                    new List<HardDriver> { new HardDriver(0, true, 2, new List<HardDriver> { new HardDriver(1000, false, 0), new HardDriver(1000, false, 0) }) },
-                    serverVideo);
-                {
-                    var card = new HardDriver()
-                    {
-                        IsMonochrome
-                        = false
-                    };
-                    var ram1 = new Rammstein(Eight / 2);
-                    laptop = new Laptop(
-                        new Cpu(Eight / 4, 64, ram1, card),
-                        ram1,
-                        new[] { new HardDriver(500, false, 0) },
-                        card,
-                        new LaptopBattery());
-                }
+                computerFactory = new HPComputersFactory();
             }
             else if (manufacturer == "Dell")
             {
-                var ram = new Rammstein(Eight);
-                var videoCard = new HardDriver() { IsMonochrome = false };
-                pc = new PersonalComputer(new Cpu(Eight / 2, 64, ram, videoCard), ram, new[] { new HardDriver(1000, false, 0) }, videoCard);
-                var ram1 = new Rammstein(Eight * Eight);
-                var card = new HardDriver();
-                server = new Server(new Cpu(Eight, 64, ram1, card), ram1, new List<HardDriver> { new HardDriver(0, true, 2, new List<HardDriver> { new HardDriver(2000, false, 0), new HardDriver(2000, false, 0) }) }, card);
-                var ram2 = new Rammstein(Eight);
-                var videoCard1 = new HardDriver() { IsMonochrome = false };
-                laptop = new Laptop(new Cpu(Eight / 2, 32, ram2, videoCard1), ram2, new[] { new HardDriver(1000, false, 0) }, videoCard1, new LaptopBattery());
+                computerFactory = new DellComputersFactory();
             }
             else
             {
                 throw new InvalidArgumentException("Invalid manufacturer!");
             }
 
+            pc = computerFactory.CreatePersonalComputer();
+            laptop = computerFactory.CreateLaptop();
+            server = computerFactory.CreateServer();
+        }
+
+        private static void ProcessCommand()
+        {
             while (true)
             {
                 var c = Console.ReadLine();
 
                 if (c == null)
                 {
-                    return;
+                    break;
                 }
 
                 if (c.StartsWith("Exit"))
                 {
-                    return;
+                    break;
                 }
 
                 var cp = c.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
@@ -88,26 +65,34 @@
                     }
                 }
 
-                var cn = cp[0];
-                var ca = int.Parse(cp[1]);
+                var commandName = cp[0];
+                var commandArgument = int.Parse(cp[1]);
 
-                if (cn == "Charge")
+                if (commandName == "Charge")
                 {
-                    laptop.ChargeBattery(ca);
+                    laptop.ChargeBattery(commandArgument);
                 }
-                else if (cn == "Process")
+                else if (commandName == "Process")
                 {
-                    server.Process(ca);
+                    server.Process(commandArgument);
                 }
-                else if (cn == "Play")
+                else if (commandName == "Play")
                 {
-                    pc.Play(ca);
+                    pc.Play(commandArgument);
                 }
                 else
                 {
                     Console.WriteLine("Invalid command!");
                 }
             }
+        }
+
+        private static void HP()
+        {
+        }
+
+        private static void Dell()
+        {
         }
     }
 }
