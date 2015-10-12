@@ -1,5 +1,6 @@
 ﻿namespace Computers
 {
+    using ComputerType;
     using System;
     using System.Collections.Generic;
 
