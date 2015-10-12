@@ -4,20 +4,19 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    public class HardDriver
+    public class HardDrive
     {
         private bool isInRaid;
         private int hardDrivesInRaid;
-        private SortedDictionary<int, string> info;
-        private List<HardDriver> hds;
+        private List<HardDrive> hds;
         private Dictionary<int, string> data;
         private int capacity;
 
-        internal HardDriver()
+        internal HardDrive()
         {
         }
 
-        internal HardDriver(int capacity, bool isInRaid, int hardDrivesInRaid)
+        internal HardDrive(int capacity, bool isInRaid, int hardDrivesInRaid)
         {
             this.isInRaid = isInRaid;
             this.hardDrivesInRaid = hardDrivesInRaid;
@@ -25,16 +24,16 @@
             this.capacity = capacity;
             this.data = new Dictionary<int, string>(capacity);
 
-            this.hds = new List<HardDriver>();
+            this.hds = new List<HardDrive>();
         }
 
-        internal HardDriver(int capacity, bool isInRaid, int hardDrivesInRaid, List<HardDriver> hardDrives)
+        internal HardDrive(int capacity, bool isInRaid, int hardDrivesInRaid, List<HardDrive> hardDrives)
         {
             this.isInRaid = isInRaid;
             this.hardDrivesInRaid = hardDrivesInRaid;
             this.capacity = capacity;
             this.data = new Dictionary<int, string>(capacity);
-            this.hds = new List<HardDriver>();
+            this.hds = new List<HardDrive>();
             this.hds = hardDrives;
         }
         

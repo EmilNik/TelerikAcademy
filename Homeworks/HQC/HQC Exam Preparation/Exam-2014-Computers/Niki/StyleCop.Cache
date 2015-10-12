@@ -299,11 +299,11 @@
     </timestamps>
     <violations />
   </sourcecode>
-  <sourcecode name="Program.cs" parser="StyleCop.CSharp.CsParser">
+  <sourcecode name="Laptop.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015.09.30 13:35:59.158</styleCop>
       <settingsFile>2015.10.11 12:30:47.277</settingsFile>
-      <sourceFile>2015.10.12 13:24:28.359</sourceFile>
+      <sourceFile>2015.10.12 13:31:50.250</sourceFile>
       <parser>2015.09.30 13:35:59.158</parser>
       <StyleCop.CSharp.DocumentationRules>2015.09.30 13:35:59.158</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>962409562</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -322,11 +322,11 @@
     </timestamps>
     <violations />
   </sourcecode>
-  <sourcecode name="Laptop.cs" parser="StyleCop.CSharp.CsParser">
+  <sourcecode name="IComputersFactory.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015.09.30 13:35:59.158</styleCop>
       <settingsFile>2015.10.11 12:30:47.277</settingsFile>
-      <sourceFile>2015.10.12 13:31:50.250</sourceFile>
+      <sourceFile>2015.10.12 13:32:10.688</sourceFile>
       <parser>2015.09.30 13:35:59.158</parser>
       <StyleCop.CSharp.DocumentationRules>2015.09.30 13:35:59.158</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>962409562</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -352,7 +352,7 @@
     <timestamps>
       <styleCop>2015.09.30 13:35:59.158</styleCop>
       <settingsFile>2015.10.11 12:30:47.277</settingsFile>
-      <sourceFile>2015.10.12 13:32:10.720</sourceFile>
+      <sourceFile>2015.10.12 13:36:32.690</sourceFile>
       <parser>2015.09.30 13:35:59.158</parser>
       <StyleCop.CSharp.DocumentationRules>2015.09.30 13:35:59.158</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>962409562</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -371,11 +371,11 @@
     </timestamps>
     <violations />
   </sourcecode>
-  <sourcecode name="IComputersFactory.cs" parser="StyleCop.CSharp.CsParser">
+  <sourcecode name="Program.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015.09.30 13:35:59.158</styleCop>
       <settingsFile>2015.10.11 12:30:47.277</settingsFile>
-      <sourceFile>2015.10.12 13:32:10.688</sourceFile>
+      <sourceFile>2015.10.12 13:33:51.218</sourceFile>
       <parser>2015.09.30 13:35:59.158</parser>
       <StyleCop.CSharp.DocumentationRules>2015.09.30 13:35:59.158</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>962409562</StyleCop.CSharp.DocumentationRules.FilesHashCode>

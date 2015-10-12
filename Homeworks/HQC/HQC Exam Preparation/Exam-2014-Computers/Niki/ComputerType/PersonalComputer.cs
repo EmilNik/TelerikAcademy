@@ -7,8 +7,8 @@
         public PersonalComputer(
             Cpu cpu,
             Rammstein ram,
-            IEnumerable<HardDriver> hardDrives,
-            HardDriver videoCard)
+            IEnumerable<HardDrive> hardDrives,
+            HardDrive videoCard)
             : base(cpu, ram, hardDrives, videoCard)
         {
         }
