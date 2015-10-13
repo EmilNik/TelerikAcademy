@@ -22,9 +22,9 @@
             }
         }
 
-        public override void SaveData(int addr, string newData)
+        public override void SaveData(int address, string newData)
         {
-            this.data[addr] = newData;
+            this.data[address] = newData;
         }
 
         public override string LoadData(int address)

@@ -4,6 +4,12 @@
 
     public abstract class Cpu : IMotherboardComponent
     {
+        private const string SquareRootStringFormat = "Square of {0} is {1}.";
+
+        private const string NumberTooHighMessage = "Number too high.";
+
+        private const string NumberTooLowMessage = "Number too low.";
+        
         private static readonly Random Random = new Random();
 
         private readonly Ram ram;
@@ -25,23 +31,23 @@
 
             if (data < 0)
             {
-                this.motherboard.DrawOnVideoCard("Number too low.");
+                this.motherboard.DrawOnVideoCard(NumberTooLowMessage);
             }
             else if (data > this.GetMaxValue())
             {
-                this.motherboard.DrawOnVideoCard("Number too high.");
+                this.motherboard.DrawOnVideoCard(NumberTooHighMessage);
             }
             else
             {
                 int value = data * data;
 
-                this.motherboard.DrawOnVideoCard(string.Format("Square of {0} is {1}.", data, value));
+                this.motherboard.DrawOnVideoCard(string.Format(SquareRootStringFormat, data, value));
             }
         }
 
-        public void Rand(int a, int b)
+        public void Rand(int minValue, int maxValue)
         {
-            int randomNumber = Random.Next(1, 11);
+            int randomNumber = Random.Next(minValue, maxValue + 1);
             this.motherboard.SaveRamValue(randomNumber);
         }
 

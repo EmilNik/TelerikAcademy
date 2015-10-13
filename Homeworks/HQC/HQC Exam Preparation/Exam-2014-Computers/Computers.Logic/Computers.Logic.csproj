@@ -62,6 +62,7 @@
     <Compile Include="Manufactorers\HPComputersFactory.cs" />
     <Compile Include="Manufactorers\IComputersFactory.cs" />
     <Compile Include="Manufactorers\LenovoComputersFactory.cs" />
+    <Compile Include="Manufactorers\ManufactorerFactory.cs" />
     <Compile Include="Motherboard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ram.cs" />

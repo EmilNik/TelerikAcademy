@@ -1,12 +1,16 @@
 ﻿namespace Computers.UI
 {
     using System;
-    using Logic;
     using Logic.ComputerType;
     using Logic.Manufactorers;
 
     public static class Computers
     {
+        private const string ExitCommand = "Exit";
+        private const string ChargeCommandName = "Charge";
+        private const string ProcessCommandName = "Process";
+        private const string PlayCommandName = "Play";
+
         private static PersonalComputer pc;
         private static Laptop laptop;
         private static Server server;
@@ -19,26 +23,12 @@
 
         private static void CreateComputers()
         {
+            var manufactorerFactory = new ManufactorerFactory();
             var manufacturer = Console.ReadLine();
-            IComputersFactory computerFactory;
 
-            if (manufacturer == "HP")
-            {
-                computerFactory = new HPComputersFactory();
-            }
-            else if (manufacturer == "Dell")
-            {
-                computerFactory = new DellComputersFactory();
-            }
-            else if (manufacturer == "Lenovo")
-            {
-                computerFactory = new LenovoComputersFactory();
-            }
-            else
-            {
-                throw new InvalidArgumentException("Invalid manufacturer!");
-            }
-
+            IComputersFactory computerFactory =
+                manufactorerFactory.GetManufactorer(manufacturer);
+            
             pc = computerFactory.CreatePersonalComputer();
             laptop = computerFactory.CreateLaptop();
             server = computerFactory.CreateServer();
@@ -48,39 +38,39 @@
         {
             while (true)
             {
-                var c = Console.ReadLine();
+                var userInput = Console.ReadLine();
 
-                if (c == null)
+                if (userInput == null)
                 {
                     break;
                 }
 
-                if (c.StartsWith("Exit"))
+                if (userInput.StartsWith(ExitCommand))
                 {
                     break;
                 }
 
-                var cp = c.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                var commandParts = userInput.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-                if (cp.Length != 2)
+                if (commandParts.Length != 2)
                 {
                     {
                         throw new ArgumentException("Invalid command!");
                     }
                 }
 
-                var commandName = cp[0];
-                var commandArgument = int.Parse(cp[1]);
+                var commandName = commandParts[0];
+                var commandArgument = int.Parse(commandParts[1]);
 
-                if (commandName == "Charge")
+                if (commandName == ChargeCommandName)
                 {
                     laptop.ChargeBattery(commandArgument);
                 }
-                else if (commandName == "Process")
+                else if (commandName == ProcessCommandName)
                 {
                     server.Process(commandArgument);
                 }
-                else if (commandName == "Play")
+                else if (commandName == PlayCommandName)
                 {
                     pc.Play(commandArgument);
                 }
@@ -89,14 +79,6 @@
                     Console.WriteLine("Invalid command!");
                 }
             }
-        }
-
-        private static void HP()
-        {
-        }
-
-        private static void Dell()
-        {
         }
     }
 }

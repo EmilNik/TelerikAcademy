@@ -8,6 +8,8 @@
 
     public class LenovoComputersFactory : IComputersFactory
     {
+        public const string Name = "Lenovo";
+
         public PersonalComputer CreatePersonalComputer()
         {
             var pc = new PersonalComputer(

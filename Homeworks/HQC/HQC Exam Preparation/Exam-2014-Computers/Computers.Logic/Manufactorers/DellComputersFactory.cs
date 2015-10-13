@@ -8,6 +8,8 @@
 
     public class DellComputersFactory : IComputersFactory
     {
+        public const string Name = "Dell";
+
         public PersonalComputer CreatePersonalComputer()
         {
             var pc = new PersonalComputer(

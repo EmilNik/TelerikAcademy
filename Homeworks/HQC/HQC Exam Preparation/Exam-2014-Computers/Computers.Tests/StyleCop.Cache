@@ -23,11 +23,11 @@
     </timestamps>
     <violations />
   </sourcecode>
-  <sourcecode name="LaptopBatteryChargeTests.cs" parser="StyleCop.CSharp.CsParser">
+  <sourcecode name="CpuSqrtTests.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015.09.30 13:35:59.158</styleCop>
       <settingsFile>2015.10.13 14:54:21.163</settingsFile>
-      <sourceFile>2015.10.13 16:48:59.728</sourceFile>
+      <sourceFile>2015.10.13 20:42:40.284</sourceFile>
       <parser>2015.09.30 13:35:59.158</parser>
       <StyleCop.CSharp.DocumentationRules>2015.09.30 13:35:59.158</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>962409562</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -46,11 +46,11 @@
     </timestamps>
     <violations />
   </sourcecode>
-  <sourcecode name="CpuSqrtTests.cs" parser="StyleCop.CSharp.CsParser">
+  <sourcecode name="LaptopBatteryChargeTests.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015.09.30 13:35:59.158</styleCop>
       <settingsFile>2015.10.13 14:54:21.163</settingsFile>
-      <sourceFile>2015.10.13 20:42:40.284</sourceFile>
+      <sourceFile>2015.10.14 01:09:49.335</sourceFile>
       <parser>2015.09.30 13:35:59.158</parser>
       <StyleCop.CSharp.DocumentationRules>2015.09.30 13:35:59.158</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>962409562</StyleCop.CSharp.DocumentationRules.FilesHashCode>

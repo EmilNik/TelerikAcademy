@@ -4,6 +4,8 @@
 
     public class Laptop : Computer
     {
+        private const string BatteryStatusStringFormat = "Battery status: {0}";
+
         private readonly ILaptopBattery battery;
 
         public Laptop(
@@ -21,7 +23,7 @@
         {
             this.battery.Charge(percentage);
 
-            this.VideoCard.Draw(string.Format("Battery status: {0}", this.battery.Percentage));
+            this.VideoCard.Draw(string.Format(BatteryStatusStringFormat, this.battery.Percentage));
         }
     }
 }

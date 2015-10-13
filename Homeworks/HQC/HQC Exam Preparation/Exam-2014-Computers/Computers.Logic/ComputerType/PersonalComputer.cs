@@ -4,6 +4,9 @@
 
     public class PersonalComputer : Computer
     {
+        private const string WinMessage = "You win!";
+        private const string WrongNumberStringFormat = "You didn't guess the number {0}.";
+
         public PersonalComputer(
             Cpu cpu,
             Ram ram,
@@ -17,13 +20,13 @@
         {
             Cpu.Rand(1, 10);
             var number = this.Ram.LoadValue();
-            if (number + 1 != guessNumber + 1)
+            if (number != guessNumber)
             {
-                this.VideoCard.Draw(string.Format("You didn't guess the number {0}.", number));
+                this.VideoCard.Draw(string.Format(WrongNumberStringFormat, number));
             }
             else
             {
-                this.VideoCard.Draw("You win!");
+                this.VideoCard.Draw(WinMessage);
             }
         }
     }
