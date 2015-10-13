@@ -13,8 +13,7 @@
         {
             var cpu = new Cpu32(4);
             var motherboard = new Mock<IMotherboard>();
-            motherboard.Setup(x => x.LoadRamValue()).
-                Returns(123);
+            motherboard.Setup(x => x.LoadRamValue()).Returns(123);
             cpu.AttachTo(motherboard.Object);
             cpu.SquareNumber();
 
@@ -27,8 +26,7 @@
         {
             var cpu = new Cpu32(4);
             var motherboard = new Mock<IMotherboard>();
-            motherboard.Setup(x => x.LoadRamValue()).
-                Returns(-123);
+            motherboard.Setup(x => x.LoadRamValue()).Returns(-123);
             cpu.AttachTo(motherboard.Object);
             cpu.SquareNumber();
 
@@ -41,8 +39,7 @@
         {
             var cpu = new Cpu32(4);
             var motherboard = new Mock<IMotherboard>();
-            motherboard.Setup(x => x.LoadRamValue()).
-                Returns(123123);
+            motherboard.Setup(x => x.LoadRamValue()).Returns(123123);
             cpu.AttachTo(motherboard.Object);
             cpu.SquareNumber();
 

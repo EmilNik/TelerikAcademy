@@ -4,7 +4,7 @@
 
     public class Laptop : Computer
     {
-        private const string BatteryStatusStringFormat = "Battery status: {0}";
+        private const string BatteryStatusStringFormat = "Battery status: {0}%";
 
         private readonly ILaptopBattery battery;
 
