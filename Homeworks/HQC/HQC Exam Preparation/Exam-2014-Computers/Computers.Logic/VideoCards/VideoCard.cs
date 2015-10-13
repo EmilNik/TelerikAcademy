@@ -2,13 +2,13 @@
 {
     using System;
 
-    public abstract class VideoCard
+    public abstract class VideoCard : IVideoCard
     {
-        public void Draw(string a)
+        public void Draw(string text)
         {
             Console.ForegroundColor = this.GetColor();
 
-            Console.WriteLine(a);
+            Console.WriteLine(text);
             Console.ResetColor();
         }
 

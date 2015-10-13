@@ -1,6 +1,6 @@
 ﻿namespace Computers.Logic
 {
-    public class Ram
+    public class Ram : IRam
     {
         private int value;
 
@@ -9,7 +9,7 @@
             this.Amount = a;
         }
 
-        private int Amount { get; set; }
+        public int Amount { get; private set; }
 
         public void SaveValue(int newValue)
         {

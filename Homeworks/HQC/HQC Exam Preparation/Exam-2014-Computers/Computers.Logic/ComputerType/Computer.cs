@@ -8,9 +8,9 @@
 
         internal Computer(
             Cpu cpu,
-            Ram ram,
+            IRam ram,
             HardDrive hardDrives,
-            VideoCard videoCard)
+            IVideoCard videoCard)
         {
             this.Cpu = cpu;
             this.Ram = ram;
@@ -21,10 +21,10 @@
 
         protected HardDrive HardDrives { get; set; }
 
-        protected VideoCard VideoCard { get; set; }
+        protected IVideoCard VideoCard { get; set; }
 
         protected Cpu Cpu { get; set; }
 
-        protected Ram Ram { get; set; }
+        protected IRam Ram { get; set; }
     }
 }

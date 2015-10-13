@@ -2,16 +2,16 @@
 {
     public class Motherboard : IMotherboard
     {
-        public Motherboard(Cpu cpu, Ram ram, VideoCard videoCard)
+        public Motherboard(Cpu cpu, IRam ram, IVideoCard videoCard)
         {
             cpu.AttachTo(this);
             this.Ram = ram;
             this.VideoCard = videoCard;
         }
 
-        public Ram Ram { get; set; }
+        public IRam Ram { get; set; }
 
-        public VideoCard VideoCard { get; set; }
+        public IVideoCard VideoCard { get; set; }
 
         public void DrawOnVideoCard(string data)
         {
