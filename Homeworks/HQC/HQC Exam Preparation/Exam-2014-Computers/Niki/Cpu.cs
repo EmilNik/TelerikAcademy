@@ -17,6 +17,7 @@
             this.numberOfBits = numberOfBits;
             this.ram = ram;
             this.NumberOfCores = numberOfCores;
+            this.videoCard = videoCard;
         }
 
         public byte NumberOfCores { get; set; }
@@ -31,6 +32,24 @@
             if (this.numberOfBits == 64)
             {
                 this.SquareNumber(1000);
+            }
+            if (this.numberOfBits == 128)
+            {
+                this.SquareNumber(2000);
+            }
+        }
+
+        internal void Rand(int a, int b)
+        {
+            int randomNumber;
+
+            do
+            {
+                randomNumber = Random.Next(0, 1000);
+            }
+            while (!(randomNumber >= a && randomNumber <= b));
+            {
+                this.ram.SaveValue(randomNumber);
             }
         }
 
@@ -55,20 +74,6 @@
                 }
 
                 this.videoCard.Draw(string.Format("Square of {0} is {1}.", data, value));
-            }
-        }
-
-        internal void Rand(int a, int b)
-        {
-            int randomNumber;
-
-            do
-            {
-                randomNumber = Random.Next(0, 1000);
-            }
-            while (!(randomNumber >= a && randomNumber <= b));
-            {
-                this.ram.SaveValue(randomNumber);
             }
         }
     }

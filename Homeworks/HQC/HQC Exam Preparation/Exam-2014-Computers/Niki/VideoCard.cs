@@ -4,6 +4,11 @@
 
     public class VideoCard
     {
+        internal VideoCard()
+        {
+            this.IsMonochrome = true;
+        }
+
         public bool IsMonochrome { get; set; }
 
         public void Draw(string a)
@@ -16,6 +21,7 @@
             {
                 Console.ForegroundColor = ConsoleColor.Green;
             }
+
             Console.WriteLine(a);
             Console.ResetColor();
         }

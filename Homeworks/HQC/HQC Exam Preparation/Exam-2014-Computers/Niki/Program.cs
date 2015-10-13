@@ -29,6 +29,10 @@
             {
                 computerFactory = new DellComputersFactory();
             }
+            else if (manufacturer == "Lenovo")
+            {
+                computerFactory = new LenovoComputersFactory();
+            }
             else
             {
                 throw new InvalidArgumentException("Invalid manufacturer!");
