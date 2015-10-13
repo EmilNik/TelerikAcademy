@@ -53,12 +53,14 @@
     <Compile Include="HardDrives\RaidArray.cs" />
     <Compile Include="HardDrives\SingleHardDrive.cs" />
     <Compile Include="IMotherboard.cs" />
+    <Compile Include="IMotherboardComponent.cs" />
     <Compile Include="InvalidArgumentException.cs" />
     <Compile Include="LaptopBattery.cs" />
     <Compile Include="Manufactorers\DellComputersFactory.cs" />
     <Compile Include="Manufactorers\HPComputersFactory.cs" />
     <Compile Include="Manufactorers\IComputersFactory.cs" />
     <Compile Include="Manufactorers\LenovoComputersFactory.cs" />
+    <Compile Include="Motherboard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ram.cs" />
     <Compile Include="VideoCards\ColorfulVideoCard.cs" />

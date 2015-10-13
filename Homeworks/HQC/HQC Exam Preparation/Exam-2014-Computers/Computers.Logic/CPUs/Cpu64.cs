@@ -2,8 +2,8 @@
 {
     public class Cpu64 : Cpu
     {
-        internal Cpu64(byte numberOfCores, Ram ram, VideoCard videoCard)
-            : base(numberOfCores, ram, videoCard)
+        internal Cpu64(byte numberOfCores)
+            : base(numberOfCores)
         {
         }
 

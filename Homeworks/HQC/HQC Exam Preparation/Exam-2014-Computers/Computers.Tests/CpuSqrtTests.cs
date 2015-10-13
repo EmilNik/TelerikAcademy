@@ -1,6 +1,6 @@
 ﻿namespace Computers.Tests
 {
-    using Logic;
+    using Logic.CPUs;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     [TestClass]
@@ -9,10 +9,6 @@
         [TestMethod]
         public void ChargeShouldAddToPercentageWhenGivenPositiveNumber()
         {
-            var battery = new LaptopBattery();
-            battery.Percentage = 50;
-            battery.Charge(10);
-            Assert.AreEqual(60, battery.Percentage);
         }
     }
 }

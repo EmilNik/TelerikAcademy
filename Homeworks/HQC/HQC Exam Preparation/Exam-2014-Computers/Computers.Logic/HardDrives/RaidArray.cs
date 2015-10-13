@@ -7,12 +7,9 @@
     public class RaidArray : HardDrive
     {
         private List<HardDrive> hardDrives;
-        private int hardDrivesInRaid;
-        private int capacity;
 
-        internal RaidArray(int hardDrivesInRaid, List<HardDrive> hardDrives)
+        internal RaidArray(List<HardDrive> hardDrives)
         {
-            this.hardDrivesInRaid = hardDrivesInRaid;
             this.hardDrives = hardDrives;
         }
 
