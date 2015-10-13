@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class ColorfullVideoCard : VideoCard
+    public class ColorfulVideoCard : VideoCard
     {
         protected override ConsoleColor GetColor()
         {

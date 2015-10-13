@@ -20,7 +20,7 @@
         public Laptop CreateLaptop()
         {
             var ram = new Ram(16);
-            var videoCard = new ColorfullVideoCard();
+            var videoCard = new ColorfulVideoCard();
 
             var laptop = new Laptop(new Cpu64(2, ram, videoCard), ram, new[] { new HardDrive(1000, false, 0) }, videoCard, new LaptopBattery());
 

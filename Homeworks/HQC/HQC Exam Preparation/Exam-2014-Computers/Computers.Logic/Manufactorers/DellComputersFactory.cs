@@ -11,7 +11,7 @@
         public PersonalComputer CreatePersonalComputer()
         {
             var ram = new Ram(8);
-            var videoCard = new ColorfullVideoCard();
+            var videoCard = new ColorfulVideoCard();
 
             var pc = new PersonalComputer(new Cpu64(4, ram, videoCard), ram, new[] { new HardDrive(1000, false, 0) }, videoCard);
 
@@ -21,7 +21,7 @@
         public Laptop CreateLaptop()
         {
             var ram = new Ram(8);
-            var videoCard = new ColorfullVideoCard();
+            var videoCard = new ColorfulVideoCard();
 
             var laptop = new Laptop(new Cpu32(4, ram, videoCard), ram, new[] { new HardDrive(1000, false, 0) }, videoCard, new LaptopBattery());
 
