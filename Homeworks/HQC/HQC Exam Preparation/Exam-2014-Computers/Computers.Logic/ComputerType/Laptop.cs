@@ -1,6 +1,6 @@
 ﻿namespace Computers.Logic.ComputerType
 {
-    using System.Collections.Generic;
+    using HardDrives;
 
     public class Laptop : Computer
     {
@@ -9,7 +9,7 @@
         public Laptop(
                Cpu cpu,
                Ram ram,
-               IEnumerable<HardDrive> hardDrives,
+               HardDrive hardDrives,
                VideoCard videoCard,
                LaptopBattery battery)
             : base(cpu, ram, hardDrives, videoCard)

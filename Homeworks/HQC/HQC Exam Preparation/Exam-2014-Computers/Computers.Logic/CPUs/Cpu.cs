@@ -18,7 +18,7 @@
         }
 
         public byte NumberOfCores { get; set; }
-        
+
         public void SquareNumber()
         {
             var data = this.ram.LoadValue();
@@ -33,11 +33,7 @@
             }
             else
             {
-                int value = 0;
-                for (int i = 0; i < data; i++)
-                {
-                    value += data;
-                }
+                int value = data * data;
 
                 this.videoCard.Draw(string.Format("Square of {0} is {1}.", data, value));
             }
@@ -45,16 +41,8 @@
 
         internal void Rand(int a, int b)
         {
-            int randomNumber;
-
-            do
-            {
-                randomNumber = Random.Next(0, 1000);
-            }
-            while (!(randomNumber >= a && randomNumber <= b));
-            {
-                this.ram.SaveValue(randomNumber);
-            }
+            int randomNumber = Random.Next(1, 11);
+            this.ram.SaveValue(randomNumber);
         }
 
         protected abstract int GetMaxValue();

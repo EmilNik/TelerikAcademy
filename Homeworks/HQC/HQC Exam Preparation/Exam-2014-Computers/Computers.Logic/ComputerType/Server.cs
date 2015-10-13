@@ -1,17 +1,13 @@
 ﻿namespace Computers.Logic.ComputerType
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    
+    using HardDrives;
+
     public class Server : Computer
     {
         public Server(
             Cpu cpu,
             Ram ram,
-            IEnumerable<HardDrive> hardDrives,
+            HardDrive hardDrives,
             VideoCard videoCard)
             : base(cpu, ram, hardDrives, videoCard)
         {

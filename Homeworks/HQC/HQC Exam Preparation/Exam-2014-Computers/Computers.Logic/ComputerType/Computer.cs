@@ -1,13 +1,13 @@
 ﻿namespace Computers.Logic.ComputerType
 {
-    using System.Collections.Generic;
+    using HardDrives;
 
     public class Computer
     {
         internal Computer(
             Cpu cpu,
             Ram ram,
-            IEnumerable<HardDrive> hardDrives,
+            HardDrive hardDrives,
             VideoCard videoCard)
         {
             this.Cpu = cpu;
@@ -16,7 +16,7 @@
             this.VideoCard = videoCard;
         }
 
-        protected IEnumerable<HardDrive> HardDrives { get; set; }
+        protected HardDrive HardDrives { get; set; }
 
         protected VideoCard VideoCard { get; set; }
 

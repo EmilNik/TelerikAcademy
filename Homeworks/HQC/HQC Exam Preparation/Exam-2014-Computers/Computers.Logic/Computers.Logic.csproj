@@ -49,7 +49,9 @@
     <Compile Include="CPUs\Cpu128.cs" />
     <Compile Include="CPUs\Cpu32.cs" />
     <Compile Include="CPUs\Cpu64.cs" />
-    <Compile Include="HardDrive.cs" />
+    <Compile Include="HardDrives\HardDrive.cs" />
+    <Compile Include="HardDrives\RaidArray.cs" />
+    <Compile Include="HardDrives\SingleHardDrive.cs" />
     <Compile Include="IMotherboard.cs" />
     <Compile Include="InvalidArgumentException.cs" />
     <Compile Include="LaptopBattery.cs" />
@@ -59,7 +61,7 @@
     <Compile Include="Manufactorers\LenovoComputersFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ram.cs" />
-    <Compile Include="VideoCards\ColorfullVideoCard.cs" />
+    <Compile Include="VideoCards\ColorfulVideoCard.cs" />
     <Compile Include="VideoCards\MonochromeVideoCard.cs" />
     <Compile Include="VideoCards\VideoCard.cs" />
   </ItemGroup>

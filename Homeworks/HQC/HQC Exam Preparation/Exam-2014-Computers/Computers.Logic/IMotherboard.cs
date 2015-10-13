@@ -11,8 +11,8 @@
         /// <summary>
         /// Saves a given value in the RAM.
         /// </summary>
-        /// <param name="value">The value to save.</param>
-        void SaveRamValue(int value);
+        /// <param name="value">The value to be saved.</param>
+        void SaveRamValue(int value);   
 
         /// <summary>
         /// Draws on the Video Card.

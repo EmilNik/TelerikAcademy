@@ -1,13 +1,13 @@
 ﻿namespace Computers.Logic.ComputerType
 {
-    using System.Collections.Generic;
+    using HardDrives;
 
     public class PersonalComputer : Computer
     {
         public PersonalComputer(
             Cpu cpu,
             Ram ram,
-            IEnumerable<HardDrive> hardDrives,
+            HardDrive hardDrives,
             VideoCard videoCard)
             : base(cpu, ram, hardDrives, videoCard)
         {
