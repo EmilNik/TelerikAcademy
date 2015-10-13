@@ -1,4 +1,4 @@
-﻿namespace Computers
+﻿namespace Computers.UI
 {
     using System;
     using ComputerType;

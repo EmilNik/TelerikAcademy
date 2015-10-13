@@ -7,7 +7,7 @@
     <ProjectGuid>{920382DC-166F-4C55-8AF7-70D668191107}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Computers</RootNamespace>
+    <RootNamespace>Computers.UI</RootNamespace>
     <AssemblyName>Computers</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -40,28 +40,18 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ComputerType\Computer.cs" />
-    <Compile Include="ComputerType\Laptop.cs" />
-    <Compile Include="ComputerType\PersonalComputer.cs" />
-    <Compile Include="ComputerType\Server.cs" />
-    <Compile Include="Cpu.cs" />
-    <Compile Include="HardDrive.cs" />
-    <Compile Include="IMotherboard.cs" />
-    <Compile Include="InvalidArgumentException.cs" />
-    <Compile Include="LaptopBattery.cs" />
-    <Compile Include="Manufactorers\DellComputersFactory.cs" />
-    <Compile Include="Manufactorers\HPComputersFactory.cs" />
-    <Compile Include="Manufactorers\IComputersFactory.cs" />
-    <Compile Include="Manufactorers\LenovoComputersFactory.cs" />
-    <Compile Include="Ram.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VideoCard.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Computers.Logic\Computers.Logic.csproj">
+      <Project>{54a92f54-2f35-4361-a5d4-0cde842f9baf}</Project>
+      <Name>Computers.Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
