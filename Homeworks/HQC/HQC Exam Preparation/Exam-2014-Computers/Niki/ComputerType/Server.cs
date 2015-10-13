@@ -10,9 +10,9 @@
     {
         public Server(
             Cpu cpu,
-            Rammstein ram,
+            Ram ram,
             IEnumerable<HardDrive> hardDrives,
-            HardDrive videoCard)
+            VideoCard videoCard)
             : base(cpu, ram, hardDrives, videoCard)
         {
         }

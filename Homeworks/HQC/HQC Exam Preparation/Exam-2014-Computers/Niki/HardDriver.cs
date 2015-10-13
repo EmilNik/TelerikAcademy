@@ -7,9 +7,13 @@
     public class HardDrive
     {
         private bool isInRaid;
+
         private int hardDrivesInRaid;
+
         private List<HardDrive> hds;
+
         private Dictionary<int, string> data;
+
         private int capacity;
 
         internal HardDrive()
@@ -20,10 +24,8 @@
         {
             this.isInRaid = isInRaid;
             this.hardDrivesInRaid = hardDrivesInRaid;
-
             this.capacity = capacity;
             this.data = new Dictionary<int, string>(capacity);
-
             this.hds = new List<HardDrive>();
         }
 
@@ -36,8 +38,6 @@
             this.hds = new List<HardDrive>();
             this.hds = hardDrives;
         }
-        
-        public bool IsMonochrome { get; set; }
 
         private int Capacity
         {
@@ -56,22 +56,6 @@
                 {
                     return this.capacity;
                 }
-            }
-        }
-
-        public void Draw(string a)
-        {
-            if (this.IsMonochrome)
-            {
-                Console.ForegroundColor = ConsoleColor.Gray;
-                Console.WriteLine(a);
-                Console.ResetColor();
-            }
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine(a);
-                Console.ResetColor();
             }
         }
 

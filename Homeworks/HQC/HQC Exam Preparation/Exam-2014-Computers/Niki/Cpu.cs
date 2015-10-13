@@ -8,11 +8,11 @@
 
         private readonly byte numberOfBits;
 
-        private readonly Rammstein ram;
+        private readonly Ram ram;
 
-        private readonly HardDrive videoCard;
+        private readonly VideoCard videoCard;
 
-        internal Cpu(byte numberOfCores, byte numberOfBits, Rammstein ram, HardDrive videoCard)
+        internal Cpu(byte numberOfCores, byte numberOfBits, Ram ram, VideoCard videoCard)
         {
             this.numberOfBits = numberOfBits;
             this.ram = ram;

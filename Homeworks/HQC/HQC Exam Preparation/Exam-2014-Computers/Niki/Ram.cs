@@ -1,10 +1,10 @@
 ﻿namespace Computers
 {
-    public class Rammstein
+    public class Ram
     {
         private int value;
 
-        internal Rammstein(int a)
+        internal Ram(int a)
         {
             this.Amount = a;
         }

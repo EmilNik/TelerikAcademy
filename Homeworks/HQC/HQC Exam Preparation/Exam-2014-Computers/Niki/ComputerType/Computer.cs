@@ -6,9 +6,9 @@
     {
         internal Computer(
             Cpu cpu,
-            Rammstein ram,
+            Ram ram,
             IEnumerable<HardDrive> hardDrives,
-            HardDrive videoCard)
+            VideoCard videoCard)
         {
             this.Cpu = cpu;
             this.Ram = ram;
@@ -18,10 +18,10 @@
 
         protected IEnumerable<HardDrive> HardDrives { get; set; }
 
-        protected HardDrive VideoCard { get; set; }
+        protected VideoCard VideoCard { get; set; }
 
         protected Cpu Cpu { get; set; }
 
-        protected Rammstein Ram { get; set; }
+        protected Ram Ram { get; set; }
     }
 }
