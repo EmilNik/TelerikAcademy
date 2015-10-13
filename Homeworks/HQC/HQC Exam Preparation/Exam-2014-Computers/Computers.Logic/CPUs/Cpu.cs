@@ -4,11 +4,9 @@
 
     public abstract class Cpu : IMotherboardComponent
     {
+        public const string NumberTooHighMessage = "Number too high.";
+        public const string NumberTooLowMessage = "Number too low.";
         private const string SquareRootStringFormat = "Square of {0} is {1}.";
-
-        private const string NumberTooHighMessage = "Number too high.";
-
-        private const string NumberTooLowMessage = "Number too low.";
         
         private static readonly Random Random = new Random();
 

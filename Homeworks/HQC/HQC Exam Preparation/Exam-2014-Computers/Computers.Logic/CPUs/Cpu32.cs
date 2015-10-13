@@ -2,7 +2,7 @@
 {
     public class Cpu32 : Cpu
     {
-        internal Cpu32(byte numberOfCores)
+        public Cpu32(byte numberOfCores)
             : base(numberOfCores)
         {
         }

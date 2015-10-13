@@ -2,7 +2,7 @@
 {
     public class Cpu128 : Cpu
     {
-        internal Cpu128(byte numberOfCores)
+        public Cpu128(byte numberOfCores)
             : base(numberOfCores)
         {
         }
