@@ -1,0 +1,5 @@
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-2014-Computers\Computers.Logic\bin\Debug\Computers.Logic.dll
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-2014-Computers\Computers.Logic\bin\Debug\Computers.Logic.pdb
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-2014-Computers\Computers.Logic\obj\Debug\Computers.Logic.csprojResolveAssemblyReference.cache
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-2014-Computers\Computers.Logic\obj\Debug\Computers.Logic.dll
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\HQC\HQC Exam Preparation\Exam-2014-Computers\Computers.Logic\obj\Debug\Computers.Logic.pdb
