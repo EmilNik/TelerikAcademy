@@ -1,4 +1,4 @@
-﻿namespace Computers.UI.ComputerType
+﻿namespace Computers.Logic.ComputerType
 {
     using System;
     using System.Collections.Generic;

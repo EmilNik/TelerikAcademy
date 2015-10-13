@@ -1,8 +1,9 @@
 ﻿namespace Computers.UI
 {
     using System;
-    using ComputerType;
-    using Manufactorers;
+    using Logic;
+    using Logic.ComputerType;
+    using Logic.Manufactorers;
 
     public static class Computers
     {

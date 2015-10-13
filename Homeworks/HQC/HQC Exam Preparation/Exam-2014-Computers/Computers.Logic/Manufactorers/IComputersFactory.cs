@@ -1,4 +1,4 @@
-﻿namespace Computers.UI.Manufactorers
+﻿namespace Computers.Logic.Manufactorers
 {
     using ComputerType;
 
