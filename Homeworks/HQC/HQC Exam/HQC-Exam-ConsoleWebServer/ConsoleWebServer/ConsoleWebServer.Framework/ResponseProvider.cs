@@ -4,10 +4,11 @@ namespace ConsoleWebServer.Framework
     using System;
     using System.Linq;
     using System.Net;
+    using Exceptions;
 
     public class ResponseProvider
     {
-        private HttpResponse Process(HttpRq request)
+        private HttpResponse Process(HttpRequest request)
         {
             if (request.Method.ToLower() == "options")
             {
@@ -57,7 +58,7 @@ namespace ConsoleWebServer.Framework
             }
         }
 
-        private Controller CreateController(HttpRq request)
+        private Controller CreateController(HttpRequest request)
         {
             var controllerClassName = request.Action.ControllerName + "Controller";
             var type =
@@ -79,11 +80,11 @@ namespace ConsoleWebServer.Framework
 
         public HttpResponse GetResponse(string requestAsString)
         {
-            HttpRq request;
+            HttpRequest request;
 
             try
             {
-                var requestParser = new HttpRq("GET", "/", "1.1");
+                var requestParser = new HttpRequest("GET", "/", "1.1");
                 request = requestParser.Parse(requestAsString);
             }
             catch (Exception ex)

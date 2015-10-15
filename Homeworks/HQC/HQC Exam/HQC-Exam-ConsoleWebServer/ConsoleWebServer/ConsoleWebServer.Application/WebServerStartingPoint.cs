@@ -2,27 +2,21 @@
 {
     using System;
     using System.Text;
-    using ConsoleWebServer.Framework;
+    using Framework;
 
-    public class WebServerConsole5
+    public class WebServerStartingPoint
     {
-        private readonly ResponseProvider responseProvider;
-
-        public WebServerConsole5()
-        {
-            this.responseProvider = new ResponseProvider();
-        }
-
-        public void Start()
+        public static void Main()
         {
             var requestBuilder = new StringBuilder();
             string inputLine;
+            var responseProvider = new ResponseProvider();
 
             while ((inputLine = Console.ReadLine()) != null)
             {
                 if (string.IsNullOrWhiteSpace(inputLine))
                 {
-                    var response = this.responseProvider.GetResponse(requestBuilder.ToString());
+                    var response = responseProvider.GetResponse(requestBuilder.ToString());
                     Console.ForegroundColor = ConsoleColor.DarkGray;
                     Console.WriteLine(response);
                     Console.ResetColor();

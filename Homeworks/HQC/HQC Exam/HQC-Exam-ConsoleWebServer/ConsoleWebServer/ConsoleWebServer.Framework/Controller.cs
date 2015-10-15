@@ -2,7 +2,7 @@
 {
     public abstract class Controller
     {
-        public HttpRq Request { get; private set; }
+        public HttpRequest Request { get; private set; }
 
         protected IActionResult Content(object model)
         {
@@ -14,9 +14,9 @@
             return new JsonActionResult(this.Request, model);
         }
 
-        protected Controller(HttpRq r)
+        protected Controller(HttpRequest request)
         {
-            this.Request = r;
+            this.Request = request;
         }
     }
 }

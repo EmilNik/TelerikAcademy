@@ -1,26 +1,29 @@
 ﻿namespace ConsoleWebServer.Framework
 {
+    using Exceptions;
     using System;
     using System.Collections.Generic;
     using System.IO;
     using System.Text;
 
-    public class HttpRq
+    public class HttpRequest
     {
-        public Version ProtocolVersion { get; protected set; }
-
-        public HttpRq(string m, string uri, string httpVersion)
+        public HttpRequest(string method, string uri, string protocolVersion)
         {
-            this.ProtocolVersion = Version.Parse(httpVersion.ToLower().Replace("HTTP/".ToLower(), string.Empty));
+            this.ProtocolVersion = Version.Parse(protocolVersion.ToLower().Replace("HTTP/".ToLower(), string.Empty));
             this.Headers = new SortedDictionary<string, ICollection<string>>();
             this.Uri = uri;
-            this.Method = m;
+            this.Method = method;
             this.Action = new ActionDescriptor(uri);
         }
 
         public IDictionary<string, ICollection<string>> Headers { get; protected set; }
 
+        public Version ProtocolVersion { get; protected set; }
+
         public string Uri { get; private set; }
+
+        public string Method { get; private set; }
 
         public void AddHeader(string name, string valueValueValue)
         {
@@ -31,8 +34,6 @@
 
             this.Headers[name].Add(valueValueValue);
         }
-
-        public string Method { get; private set; }
 
         public override string ToString()
         {
@@ -52,7 +53,7 @@
 
         public ActionDescriptor Action { get; private set; }
 
-        public HttpRq Parse(string reqAsStr)
+        public HttpRequest Parse(string reqAsStr)
         {
             var textReader = new StringReader(reqAsStr);
             var firstLine = textReader.ReadLine();
@@ -68,22 +69,22 @@
             return requestObject;
         }
 
-        private HttpRq CreateRequest(string frl)
+        private HttpRequest CreateRequest(string frl)
         {
             var firstRequestLineParts = frl.Split(' ');
 
             if (firstRequestLineParts.Length != 3)
             {
-                throw new HttpNotFound.ParserException(
+                throw new ParserException(
                     "Invalid format for the first request line. Expected format: [Method] [Uri] HTTP/[Version]");
             }
 
-            var requestObject = new HttpRq(firstRequestLineParts[0], firstRequestLineParts[1], firstRequestLineParts[2]);
+            var requestObject = new HttpRequest(firstRequestLineParts[0], firstRequestLineParts[1], firstRequestLineParts[2]);
 
             return requestObject;
         }
 
-        private void AddHeaderToRequest(HttpRq r, string headerLine)
+        private void AddHeaderToRequest(HttpRequest r, string headerLine)
         {
             var hp = headerLine.Split(new[] { ':' }, 2);
             var hn = hp[0].Trim();

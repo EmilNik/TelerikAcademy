@@ -1,5 +1,6 @@
 ﻿namespace ConsoleWebServer.Framework
 {
+    using Exceptions;
     using System.Linq;
     using System.Reflection;
 

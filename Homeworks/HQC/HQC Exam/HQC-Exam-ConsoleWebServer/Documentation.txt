@@ -15,8 +15,9 @@ Design pattern: Decorator
 	* 
 
 Found bugs:
-	* 
-	* 
+	* Added missing IActionResult Forum controller
+	* Added missing IActionResult ReturnMe controller (renamed GetJson)
+	* File not found!
 	* 
 
 Found bottleneck:

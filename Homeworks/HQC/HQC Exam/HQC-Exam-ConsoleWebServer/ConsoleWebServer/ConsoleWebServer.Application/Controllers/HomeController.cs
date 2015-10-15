@@ -4,7 +4,7 @@
 
     public class HomeController : Controller
     {
-        public HomeController(HttpRq request)
+        public HomeController(HttpRequest request)
             : base(request)
         {
         }
@@ -22,6 +22,12 @@
         public IActionResult LivePageForAjax(string param)
         {
             return new ContentActionResultWithCorsWithoutCaching(this.Request, "Live page with no caching and CORS", "*");
+        }
+
+        public IActionResult Forum(string param)
+        {
+            // TODO asdasd
+            return null;
         }
     }
 }
