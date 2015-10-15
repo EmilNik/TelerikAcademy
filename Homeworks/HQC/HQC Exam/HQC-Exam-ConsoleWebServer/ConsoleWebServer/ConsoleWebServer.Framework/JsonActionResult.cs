@@ -1,55 +1,73 @@
-﻿using System;
-using System.Collections.Generic;using System.Text;
-using System.Net;
+﻿namespace ConsoleWebServer.Framework
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Net;
+    using Newtonsoft.Json;
 
-using Newtonsoft.Json;
-
-public class JsonActionResult : IActionResult {
-    public virtual HttpStatusCode GetStatusCode() {
-        return HttpStatusCode.OK;
-    }
-    public JsonActionResult(HttpRq rq, object m)
+    public class JsonActionResult : IActionResult
     {
-        model = m;
-        Request = rq;
-        ResponseHeaders = new List<KeyValuePair<string, string>>();
-    }
-    public HttpRq Request { get; private set; }
-    public List<KeyValuePair<string, string>> ResponseHeaders { get; private set; }
-    public string GetContent() {
-        return JsonConvert.SerializeObject(model);
-    }
-    public readonly object model;
-    public HttpResponse GetResponse()
-    {
-        var response = new HttpResponse(Request.ProtocolVersion, GetStatusCode(), GetContent(), HighQualityCodeExamPointsProvider.GetContentType());
-        foreach (var responseHeader in ResponseHeaders)
+        public virtual HttpStatusCode GetStatusCode()
         {
-            response.AddHeader(responseHeader.Key, responseHeader.Value);
+            return HttpStatusCode.OK;
         }
-        return response;
+
+        public JsonActionResult(HttpRq rq, object m)
+        {
+            model = m;
+            Request = rq;
+            ResponseHeaders = new List<KeyValuePair<string, string>>();
+        }
+
+        public HttpRq Request { get; private set; }
+
+        public List<KeyValuePair<string, string>> ResponseHeaders { get; private set; }
+
+        public string GetContent()
+        {
+            return JsonConvert.SerializeObject(model);
+        }
+
+        public readonly object model;
+
+        public HttpResponse GetResponse()
+        {
+            var response = new HttpResponse(Request.ProtocolVersion, GetStatusCode(), GetContent(), HighQualityCodeExamPointsProvider.GetContentType());
+            foreach (var responseHeader in ResponseHeaders)
+            {
+                response.AddHeader(responseHeader.Key, responseHeader.Value);
+            }
+
+            return response;
+        }
     }
-}
-public class JsonActionResultWithCors : JsonActionResult{
-    public JsonActionResultWithCors(HttpRq request, object model, string corsSettings)
-        : base(request, model)
+
+    public class JsonActionResultWithCors : JsonActionResult
     {
-        this.ResponseHeaders.Add(new KeyValuePair<string, string>("Access-Control-Allow-Origin", corsSettings));
+        public JsonActionResultWithCors(HttpRq request, object model, string corsSettings)
+            : base(request, model)
+        {
+            this.ResponseHeaders.Add(new KeyValuePair<string, string>("Access-Control-Allow-Origin", corsSettings));
+        }
     }
-}
-public class JsonActionResultWithoutCaching : JsonActionResult{
-    public JsonActionResultWithoutCaching(HttpRq r, object model)
-        : base(r, model)
+
+    public class JsonActionResultWithoutCaching : JsonActionResult
     {
-        this.ResponseHeaders.Add(new KeyValuePair<string, string>("Cache-Control", "private, max-age=0, no-cache"));
-        throw new Exception();
+        public JsonActionResultWithoutCaching(HttpRq r, object model)
+            : base(r, model)
+        {
+            this.ResponseHeaders.Add(new KeyValuePair<string, string>("Cache-Control", "private, max-age=0, no-cache"));
+            throw new Exception();
+        }
     }
-}
-public class JsonActionResultWithCorsWithoutCaching : JsonActionResult{
-    public JsonActionResultWithCorsWithoutCaching(HttpRq request, object model, string corsSettings)
-        : base(request, model)
+
+    public class JsonActionResultWithCorsWithoutCaching : JsonActionResult
     {
-        this.ResponseHeaders.Add(new KeyValuePair<string, string>("Access-Control-Allow-Origin", corsSettings));
-        this.ResponseHeaders.Add(new KeyValuePair<string, string>("Cache-Control", "private, max-age=0, no-cache"));
+        public JsonActionResultWithCorsWithoutCaching(HttpRq request, object model, string corsSettings)
+            : base(request, model)
+        {
+            this.ResponseHeaders.Add(new KeyValuePair<string, string>("Access-Control-Allow-Origin", corsSettings));
+            this.ResponseHeaders.Add(new KeyValuePair<string, string>("Cache-Control", "private, max-age=0, no-cache"));
+        }
     }
 }

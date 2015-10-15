@@ -1,34 +1,32 @@
-﻿using System;using System.Linq;
-
-public class ActionDescriptor
+﻿namespace ConsoleWebServer.Framework
 {
-    public string ActionName { get; private set; }
-    public ActionDescriptor(string uri){
-        uri = uri ?? string.Empty;
+    using System;
+    using System.Linq;
 
-        var uriParts = uri.Split(new[] { '/', '/', '/', '/', '/' }.ToList().AsEnumerable().AsQueryable().ToArray(), StringSplitOptions.RemoveEmptyEntries);
+    public class ActionDescriptor
+    {
+        public string ActionName { get; private set; }
 
-        this.ControllerName = uriParts.Length >
-            0 ?
-            uriParts[0]
-            : "Home";
+        public ActionDescriptor(string uri)
+        {
+            uri = uri ?? string.Empty;
 
-        this.ActionName = uriParts.Length >
-            1 ?
-            uriParts[1]
-            : "Index";
+            var uriParts = uri.Split(new[] { '/', '/', '/', '/', '/' }.ToList().AsEnumerable().AsQueryable().ToArray(), StringSplitOptions.RemoveEmptyEntries);
 
-        this.Parameter = uriParts.Length >
-            2 ? 
-            uriParts[2]
-            : "Param";
+            this.ControllerName = uriParts.Length > 0 ? uriParts[0] : "Home";
+
+            this.ActionName = uriParts.Length > 1 ? uriParts[1] : "Index";
+
+            this.Parameter = uriParts.Length > 2 ? uriParts[2] : "Param";
+        }
+
+        public string ControllerName { get; private set; }
+
+        public string Parameter { get; private set; }
+
+        public override string ToString()
+        {
+            return string.Format("/{0}/{1}/{2}", this.ControllerName, this.ActionName, this.Parameter);
+        }
     }
-
-    public string ControllerName { get; private set; }
-    public override string ToString(){
-        return string.Format("/{0}/{1}/{2}",
-            this.ControllerName, this.ActionName,
-            this.Parameter);
-    }
-    public string Parameter { get; private set; }
 }
