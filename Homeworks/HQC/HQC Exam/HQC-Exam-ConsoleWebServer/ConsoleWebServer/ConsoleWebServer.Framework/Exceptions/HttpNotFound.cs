@@ -6,6 +6,9 @@
     {
         public const string ClassName = "HttpNotFoundException";
 
-        public HttpNotFound(string message) : base(message) { }
+        public HttpNotFound(string message)
+            : base(message)
+        {
+        }
     }
 }

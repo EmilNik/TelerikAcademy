@@ -3,6 +3,8 @@
     using Framework;
     using System;
     using System.Linq;
+    using ConsoleWebServer.Framework.ActionResults.ContentActions;
+    using Framework.ActionResults;
 
     public class ApiController : Controller
     {
@@ -29,9 +31,8 @@
             {
                 throw new ArgumentException("Invalid referer!");
             }
-
-            return new JsonActionResultWithCors(this.Request, new { date = DateTime.Now.ToString("yyyy-MM-dd"), moreInfo = "Data available for " + domainName }, domainName);
-            ;
+            
+            return new WithCors(domainName, new JsonActionResult(this.Request, new { date = DateTime.Now.ToString("yyyy-MM-dd"), moreInfo = "Data available for " + domainName }));
         }
     }
 }

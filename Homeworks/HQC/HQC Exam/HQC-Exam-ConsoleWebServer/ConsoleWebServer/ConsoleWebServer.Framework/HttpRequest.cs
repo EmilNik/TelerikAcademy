@@ -1,10 +1,10 @@
 ﻿namespace ConsoleWebServer.Framework
 {
-    using Exceptions;
     using System;
     using System.Collections.Generic;
     using System.IO;
     using System.Text;
+    using Exceptions;
 
     public class HttpRequest
     {
@@ -24,6 +24,8 @@
         public string Uri { get; private set; }
 
         public string Method { get; private set; }
+
+        public ActionDescriptor Action { get; private set; }
 
         public void AddHeader(string name, string valueValueValue)
         {
@@ -51,13 +53,11 @@
             return sb.ToString();
         }
 
-        public ActionDescriptor Action { get; private set; }
-
         public HttpRequest Parse(string reqAsStr)
         {
             var textReader = new StringReader(reqAsStr);
             var firstLine = textReader.ReadLine();
-            var requestObject = CreateRequest(firstLine);
+            var requestObject = this.CreateRequest(firstLine);
 
             string line;
 
@@ -84,12 +84,12 @@
             return requestObject;
         }
 
-        private void AddHeaderToRequest(HttpRequest r, string headerLine)
+        private void AddHeaderToRequest(HttpRequest request, string headerLine)
         {
             var hp = headerLine.Split(new[] { ':' }, 2);
-            var hn = hp[0].Trim();
-            var hv = hp.Length == 2 ? hp[1].Trim() : string.Empty;
-            r.AddHeader(hn, hv);
+            var headerName = hp[0].Trim();
+            var headerValue = hp.Length == 2 ? hp[1].Trim() : string.Empty;
+            request.AddHeader(headerName, headerValue);
         }
     }
 }

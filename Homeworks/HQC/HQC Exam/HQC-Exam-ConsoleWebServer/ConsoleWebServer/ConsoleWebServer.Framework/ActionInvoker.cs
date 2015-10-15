@@ -1,11 +1,13 @@
 ﻿namespace ConsoleWebServer.Framework
 {
-    using Exceptions;
     using System.Linq;
     using System.Reflection;
+    using Exceptions;
 
     public class ActionInvoker
     {
+        private const string HttpNotFoundStringFormat = "Expected method with signature IActionResult {0}(string) in class {1}Controller";
+
 #warning Hint: Just do not touch this magic :)
         public IActionResult InvokeAction(Controller c, ActionDescriptor ad)
         {
@@ -21,11 +23,9 @@
                 && x.GetParameters()[0].ParameterType == typeof(string) && x.ReturnType == typeof(IActionResult));
             if (methodWithIntParameter == null)
             {
-                throw new HttpNotFound(
-                    string.Format(
-                        "Expected method with signature IActionResult {0}(string) in class {1}Controller",
-                        ad.ActionName, ad.ControllerName));
+                throw new HttpNotFound(string.Format(HttpNotFoundStringFormat, ad.ActionName, ad.ControllerName));
             }
+
             try
             {
                 var actionResult = (IActionResult)

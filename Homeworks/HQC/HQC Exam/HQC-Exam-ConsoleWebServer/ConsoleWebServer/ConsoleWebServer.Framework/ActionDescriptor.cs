@@ -9,7 +9,7 @@
         {
             uri = uri ?? string.Empty;
 
-            var uriParts = uri.Split(new[] { '/', '/', '/', '/', '/'}.ToArray(), StringSplitOptions.RemoveEmptyEntries);
+            var uriParts = uri.Split(new[] { '/', '/', '/', '/', '/' }.ToArray(), StringSplitOptions.RemoveEmptyEntries);
 
             this.ControllerName = uriParts.Length > 0 ? uriParts[0] : "Home";
             this.ActionName = uriParts.Length > 1 ? uriParts[1] : "Index";
@@ -17,7 +17,7 @@
         }
 
         public string ActionName { get; private set; }
-        
+
         public string ControllerName { get; private set; }
 
         public string Parameter { get; private set; }

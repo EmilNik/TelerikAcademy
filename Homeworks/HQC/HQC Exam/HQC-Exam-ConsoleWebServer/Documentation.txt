@@ -12,12 +12,11 @@ Design pattern: Chain of Responsibility
 	* 
 
 Design pattern: Decorator
-	* 
+	* Json and Content Action results with cores withouth caching...
 
 Found bugs:
-	* Added missing IActionResult Forum controller
 	* Added missing IActionResult ReturnMe controller (renamed GetJson)
-	* File not found!
+	* File not found! Added "!"
 	* 
 
 Found bottleneck:

@@ -1,4 +1,7 @@
-﻿namespace ConsoleWebServer.Framework
+﻿using ConsoleWebServer.Framework.ActionResults;
+using ConsoleWebServer.Framework.ActionResults.ContentActions;
+
+namespace ConsoleWebServer.Framework
 {
     public abstract class Controller
     {
