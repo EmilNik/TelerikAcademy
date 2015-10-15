@@ -7,6 +7,8 @@
 
     public class StaticFileHandler
     {
+        private const string FileNotFound = "File not found!";
+
         public bool CanHandle(HttpRequest request)
         {
             return request.Uri.LastIndexOf(".", StringComparison.Ordinal) > request.Uri.LastIndexOf("/", StringComparison.Ordinal);
@@ -18,7 +20,7 @@
 
             if (!this.FileExists("C:\\", filePath, 3))
             {
-                return new HttpResponse(request.ProtocolVersion, HttpStatusCode.NotFound, "File not found!");
+                return new HttpResponse(request.ProtocolVersion, HttpStatusCode.NotFound, FileNotFound);
             }
 
             string fileContents = File.ReadAllText(filePath);
@@ -45,14 +47,6 @@
                 }
 
                 var directoryPaths = Directory.GetDirectories(path);
-
-                foreach (var directoryPath in directoryPaths)
-                {
-                    if (this.FileExists(directoryPath, filePath, depth - 1))
-                    {
-                        return true;
-                    }
-                }
 
                 return false;
             }

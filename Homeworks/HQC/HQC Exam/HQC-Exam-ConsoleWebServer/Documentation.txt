@@ -20,7 +20,7 @@ Found bugs:
 	* 
 
 Found bottleneck:
-	* In class ActionDescriptor, in the constructor, uri
+	* The mothod FileExists. There is a recursion.
 
 Single responsibility principle
 	* Extracted methods from classes so each class has only one reponsibility.

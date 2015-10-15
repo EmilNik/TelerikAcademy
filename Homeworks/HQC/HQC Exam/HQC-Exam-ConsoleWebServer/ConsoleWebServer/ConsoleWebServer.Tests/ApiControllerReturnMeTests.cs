@@ -1,17 +1,31 @@
 ﻿namespace ConsoleWebServer.Tests
 {
-    using System;
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Application.Controllers;
     using Framework;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using Moq;
 
     [TestClass]
     public class ApiControllerReturnMeTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ReturnMeTestWhenAValidParamIsPassed()
         {
-            ApiController controller = new ApiController(new HttpRequest("get", "/api/returnme/someparam123", "1.1"));
+            // Using Moq
+            ApiController controller = new ApiController(new Mock<HttpRequest>().Object);
+            IActionResult actionResult = controller.ReturnMe("someparam123");
+
+            Assert.AreEqual("{\"param\":\"someparam123\"}", actionResult);
+        }
+
+        [TestMethod]
+        public void ReturnMeTestWhenAnEmptyStringIsPassed()
+        {
+            // Using Moq
+            ApiController controller = new ApiController(new Mock<HttpRequest>().Object);
+            IActionResult actionResult = controller.ReturnMe(string.Empty);
+
+            Assert.AreEqual("{\"param\":\"Param\"}", actionResult);
         }
     }
 }
