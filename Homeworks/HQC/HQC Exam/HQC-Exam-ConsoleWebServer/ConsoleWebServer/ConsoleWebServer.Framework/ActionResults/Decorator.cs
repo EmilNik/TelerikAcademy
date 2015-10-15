@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace ConsoleWebServer.Framework.ActionResults.ContentActions
+﻿namespace ConsoleWebServer.Framework.ActionResults.ContentActions
 {
+    using System;
+    using System.Collections.Generic;
+
     public abstract class Decorator : IActionResult
     {
         protected Decorator(IActionResult actionResult)

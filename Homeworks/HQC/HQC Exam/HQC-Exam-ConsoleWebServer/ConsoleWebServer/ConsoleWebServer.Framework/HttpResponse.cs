@@ -7,18 +7,27 @@
 
     public class HttpResponse
     {
+        private const string ConsoleWebServerStringFormat = "ConsoleWebServer";
+        private const string ServerNameStringFormat = "Server";
+        private const string ContentLengthStringFormat = "Content-Length";
+        private const string ContentTypeStringFormat = "Content-Type";
+        private const string HTTPSlashStringFormat = "HTTP/";
+        private const string StringBuilderLineToAppendStringFormat = "{0}{1} {2} {3}";
+        private const string StringBuilderSecondLineToAppendStringFormat = "{0}: {1}";
+        private const string HttpResponseContentType = "text/plain; charset=utf-8";
+
         private string ServerEngineName;
 
-        public HttpResponse(Version httpVersion, HttpStatusCode statusCode, string body, string contentType = "text/plain; charset=utf-8")
+        public HttpResponse(Version httpVersion, HttpStatusCode statusCode, string body, string contentType = HttpResponseContentType)
         {
-            this.ServerEngineName = "ConsoleWebServer";
-            this.ProtocolVersion = Version.Parse(httpVersion.ToString().ToLower()); // .Replace("HTTP/".ToLower(), string.Empty));
+            this.ServerEngineName = ConsoleWebServerStringFormat;
+            this.ProtocolVersion = Version.Parse(httpVersion.ToString().ToLower());
             this.Headers = new SortedDictionary<string, ICollection<string>>();
             this.Body = body;
             this.StatusCode = statusCode;
-            this.AddHeader("Server", this.ServerEngineName);
-            this.AddHeader("Content-Length", body.Length.ToString());
-            this.AddHeader("Content-Type", contentType);
+            this.AddHeader(ServerNameStringFormat, this.ServerEngineName);
+            this.AddHeader(ContentLengthStringFormat, body.Length.ToString());
+            this.AddHeader(ContentTypeStringFormat, contentType);
         }
 
         public Version ProtocolVersion { get; protected set; }
@@ -50,12 +59,12 @@
         public override string ToString()
         {
             var stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine(string.Format("{0}{1} {2} {3}", "HTTP/", this.ProtocolVersion, (int)this.StatusCode, this.StatusCodeAsString));
+            stringBuilder.AppendLine(string.Format(StringBuilderLineToAppendStringFormat, HTTPSlashStringFormat, this.ProtocolVersion, (int)this.StatusCode, this.StatusCodeAsString));
             var headerStringBuilder = new StringBuilder();
 
             foreach (var key in this.Headers.Keys)
             {
-                headerStringBuilder.AppendLine(string.Format("{0}: {1}", key, string.Join("; ", this.Headers[key])));
+                headerStringBuilder.AppendLine(string.Format(StringBuilderSecondLineToAppendStringFormat, key, string.Join("; ", this.Headers[key])));
             }
 
             stringBuilder.AppendLine(headerStringBuilder.ToString());

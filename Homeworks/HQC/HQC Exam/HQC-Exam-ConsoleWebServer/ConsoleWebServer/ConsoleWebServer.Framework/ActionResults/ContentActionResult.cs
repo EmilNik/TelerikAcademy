@@ -15,7 +15,7 @@
         {
             var response = new HttpResponse(this.Request.ProtocolVersion, HttpStatusCode.OK, this.Model.ToString(), "text/plain; charset=utf-8");
 
-            return base.ReturnResponse(response);
+            return this.ReturnResponse(response);
         }
     }
 }

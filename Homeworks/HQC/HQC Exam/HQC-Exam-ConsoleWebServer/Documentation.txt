@@ -1,18 +1,18 @@
 Design pattern: Factory Method
-	* 
+	* Added ResponseFactory
 
 Design pattern: Strategy
-	* 
+	* Added strategy pattern in the work of controllers
 
 Design pattern: Template Method
-	* 
-	* 
+	* Added template methods in the creating of controllers
+	* and in the creating and using of responses
 
 Design pattern: Chain of Responsibility
 	* 
 
 Design pattern: Decorator
-	* Json and Content Action results with cores withouth caching...
+	* Json and Content Action results with cores withouth caching... (С това се гордея най-много)
 
 Found bugs:
 	* Added missing IActionResult ReturnMe controller (renamed GetJson)

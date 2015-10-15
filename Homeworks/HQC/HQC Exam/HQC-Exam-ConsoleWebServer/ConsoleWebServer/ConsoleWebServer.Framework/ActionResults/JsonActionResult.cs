@@ -26,7 +26,7 @@
         {
             var response = new HttpResponse(this.Request.ProtocolVersion, this.GetStatusCode(), this.GetContent(), HighQualityCodeExamPointsProvider.GetContentType());
 
-            return base.ReturnResponse(response);
+            return this.ReturnResponse(response);
         }
     }
 }

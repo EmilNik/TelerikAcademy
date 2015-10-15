@@ -53,9 +53,9 @@
             return sb.ToString();
         }
 
-        public HttpRequest Parse(string reqAsStr)
+        public HttpRequest Parse(string requestAsString)
         {
-            var textReader = new StringReader(reqAsStr);
+            var textReader = new StringReader(requestAsString);
             var firstLine = textReader.ReadLine();
             var requestObject = this.CreateRequest(firstLine);
 

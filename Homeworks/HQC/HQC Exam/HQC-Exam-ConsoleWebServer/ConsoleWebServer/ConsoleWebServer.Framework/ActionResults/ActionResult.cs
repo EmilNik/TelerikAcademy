@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleWebServer.Framework.ActionResults
+﻿namespace ConsoleWebServer.Framework.ActionResults
 {
+    using System.Collections.Generic;
+
     public abstract class ActionResult : IActionResult
     {
         public readonly object Model;
