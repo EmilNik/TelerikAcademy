@@ -5,7 +5,7 @@ namespace ConsoleWebServer.Framework
 
     public class ResponseProvider
     {
-        private ResponseFactory responseFactory;
+        private IResponseFactory responseFactory;
 
         public ResponseProvider()
         {

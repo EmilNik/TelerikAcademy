@@ -1,10 +1,15 @@
-﻿using ConsoleWebServer.Framework.ActionResults;
-using ConsoleWebServer.Framework.ActionResults.ContentActions;
-
-namespace ConsoleWebServer.Framework
+﻿namespace ConsoleWebServer.Framework
 {
+    using ActionResults;
+    using ActionResults.ContentActions;
+
     public abstract class Controller
     {
+        protected Controller(HttpRequest request)
+        {
+            this.Request = request;
+        }
+
         public HttpRequest Request { get; private set; }
 
         protected IActionResult Content(object model)
@@ -15,11 +20,6 @@ namespace ConsoleWebServer.Framework
         protected IActionResult Json(object model)
         {
             return new JsonActionResult(this.Request, model);
-        }
-
-        protected Controller(HttpRequest request)
-        {
-            this.Request = request;
         }
     }
 }

@@ -1,13 +1,13 @@
 ﻿namespace ConsoleWebServer.Framework
 {
-    using System.Reflection;
     using System;
+    using System.Collections.Generic;
     using System.Linq;
     using System.Net;
+    using System.Reflection;
     using Exceptions;
-    using System.Collections.Generic;
 
-    public class ResponseFactory
+    public class ResponseFactory : IResponseFactory
     {
         private List<string> routes;
 
@@ -21,10 +21,10 @@
             {
                 if (this.routes == null)
                 {
-                    this.routes = GetRoutes();
+                    this.routes = this.GetRoutes();
                 }
 
-                return new HttpResponse(request.ProtocolVersion, HttpStatusCode.OK, string.Join(Environment.NewLine, routes));
+                return new HttpResponse(request.ProtocolVersion, HttpStatusCode.OK, string.Join(Environment.NewLine, this.routes));
             }
             else if (new StaticFileHandler().CanHandle(request))
             {
@@ -36,7 +36,7 @@
 
                 try
                 {
-                    Controller controller = CreateController(request);
+                    Controller controller = this.CreateController(request);
                     NewActionInvoker actionInvoker = new NewActionInvoker();
                     IActionResult actionResult = actionInvoker.InvokeAction(controller, request.Action);
                     response = actionResult.GetResponse();
@@ -49,6 +49,7 @@
                 {
                     response = new HttpResponse(request.ProtocolVersion, HttpStatusCode.InternalServerError, exception.Message);
                 }
+
                 return response;
             }
             else

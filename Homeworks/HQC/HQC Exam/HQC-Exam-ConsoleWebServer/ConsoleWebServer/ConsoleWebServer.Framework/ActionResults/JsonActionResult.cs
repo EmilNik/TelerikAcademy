@@ -6,6 +6,8 @@
 
     public class JsonActionResult : ActionResult
     {
+        private const string JsonContentType = "application/json";
+
         public JsonActionResult(HttpRequest request, object model) 
             : base(request, model)
         {
@@ -24,7 +26,7 @@
 
         public override HttpResponse GetResponse()
         {
-            var response = new HttpResponse(this.Request.ProtocolVersion, this.GetStatusCode(), this.GetContent(), HighQualityCodeExamPointsProvider.GetContentType());
+            var response = new HttpResponse(this.Request.ProtocolVersion, this.GetStatusCode(), this.GetContent(), JsonContentType);
 
             return this.ReturnResponse(response);
         }

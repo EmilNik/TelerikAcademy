@@ -16,16 +16,16 @@
         private const string StringBuilderSecondLineToAppendStringFormat = "{0}: {1}";
         private const string HttpResponseContentType = "text/plain; charset=utf-8";
 
-        private string ServerEngineName;
+        private string serverEngineName;
 
         public HttpResponse(Version httpVersion, HttpStatusCode statusCode, string body, string contentType = HttpResponseContentType)
         {
-            this.ServerEngineName = ConsoleWebServerStringFormat;
+            this.serverEngineName = ConsoleWebServerStringFormat;
             this.ProtocolVersion = Version.Parse(httpVersion.ToString().ToLower());
             this.Headers = new SortedDictionary<string, ICollection<string>>();
             this.Body = body;
             this.StatusCode = statusCode;
-            this.AddHeader(ServerNameStringFormat, this.ServerEngineName);
+            this.AddHeader(ServerNameStringFormat, this.serverEngineName);
             this.AddHeader(ContentLengthStringFormat, body.Length.ToString());
             this.AddHeader(ContentTypeStringFormat, contentType);
         }

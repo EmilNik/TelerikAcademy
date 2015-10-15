@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace ConsoleWebServer.Framework
+﻿namespace ConsoleWebServer.Framework
 {
+    using System.Collections.Generic;
+
     /// <summary>
     /// Basic Action Result interface that contains the method GetResponse();
     /// </summary>

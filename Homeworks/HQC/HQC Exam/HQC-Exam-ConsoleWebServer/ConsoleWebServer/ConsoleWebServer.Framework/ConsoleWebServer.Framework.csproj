@@ -74,9 +74,9 @@
     <Compile Include="ActionResults\WithCors.cs" />
     <Compile Include="ActionResults\WithoutCaching.cs" />
     <Compile Include="ActionResults\Decorator.cs" />
+    <Compile Include="IResponseFactory.cs" />
     <Compile Include="ResponseFactory.cs" />
     <Compile Include="Exceptions\ParserException.cs" />
-    <Compile Include="HighQualityCodeExamPointsProvider.cs" />
     <Compile Include="ActionResults\JsonActionResult.cs" />
     <Compile Include="ActionResults\ContentActionResult.cs" />
     <Compile Include="NewActionInvoker.cs" />

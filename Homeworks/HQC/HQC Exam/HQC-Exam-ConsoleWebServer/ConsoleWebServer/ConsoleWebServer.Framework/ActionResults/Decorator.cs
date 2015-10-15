@@ -8,6 +8,7 @@
         protected Decorator(IActionResult actionResult)
         {
             this.ActionResult = actionResult;
+            this.ResponseHeaders = new List<KeyValuePair<string, string>>();
         }
         
         public List<KeyValuePair<string, string>> ResponseHeaders { get; private set; }

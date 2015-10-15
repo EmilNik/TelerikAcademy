@@ -20,19 +20,19 @@ Found bugs:
 	* 
 
 Found bottleneck:
-	* 
+	* In class ActionDescriptor, in the constructor, uri
 
 Single responsibility principle
-	* 
+	* Extracted methods from classes so each class has only one reponsibility.
 
 Open/closed principle
-	* 
+	* Can easily add new 
 
 Liskov substitution principle
-	* 
+	* Used interfaces and base classes in creating Controllers
 
 Interface segregation principle
-	* 
+	* Used interfaces for creating Response factory in ResponseProvider
 
 Dependency inversion principle
-	* 
+	* Used interfaces and base classes that can easily be changed. In the Action Results.

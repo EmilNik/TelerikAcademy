@@ -1,13 +1,18 @@
 ﻿namespace ConsoleWebServer.Application.Controllers
 {
-    using Framework;
     using System;
     using System.Linq;
-    using ConsoleWebServer.Framework.ActionResults.ContentActions;
+    using Framework;
     using Framework.ActionResults;
+    using Framework.ActionResults.ContentActions;
 
     public class ApiController : Controller
     {
+        private const string RefererStringFormat = "Referer";
+        private const string InvalidRefererStringFormat = "Invalid referer!";
+        private const string DateAvailableForStringFormat = "Data available for ";
+        private const string DateStringFormat = "yyyy-MM-dd";
+
         public ApiController(HttpRequest request)
             : base(request)
         {
@@ -22,17 +27,17 @@
         {
             var requestReferer = string.Empty;
 
-            if (this.Request.Headers.ContainsKey("Referer"))
+            if (this.Request.Headers.ContainsKey(RefererStringFormat))
             {
-                requestReferer = this.Request.Headers["Referer"].FirstOrDefault();
+                requestReferer = this.Request.Headers[RefererStringFormat].FirstOrDefault();
             }
 
             if (string.IsNullOrWhiteSpace(requestReferer) || !requestReferer.Contains(domainName))
             {
-                throw new ArgumentException("Invalid referer!");
+                throw new ArgumentException(InvalidRefererStringFormat);
             }
-            
-            return new WithCors(domainName, new JsonActionResult(this.Request, new { date = DateTime.Now.ToString("yyyy-MM-dd"), moreInfo = "Data available for " + domainName }));
+
+            return new WithCors(domainName, new JsonActionResult(this.Request, new { date = DateTime.Now.ToString(DateStringFormat), moreInfo = DateAvailableForStringFormat + domainName }));
         }
     }
 }

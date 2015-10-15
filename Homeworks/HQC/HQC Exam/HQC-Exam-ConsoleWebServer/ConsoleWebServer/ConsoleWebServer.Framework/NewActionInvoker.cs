@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace ConsoleWebServer.Framework
+﻿namespace ConsoleWebServer.Framework
 {
+    using System;
+
     public class NewActionInvoker
     {
         public IActionResult InvokeAction(Controller controller, ActionDescriptor actionDescriptor)

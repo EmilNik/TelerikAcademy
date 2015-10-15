@@ -1,8 +1,8 @@
 ﻿namespace ConsoleWebServer.Framework
 {
     using System;
-    using System.Linq;
     using System.IO;
+    using System.Linq;
     using System.Net;
 
     public class StaticFileHandler
@@ -34,6 +34,7 @@
             {
                 return File.Exists(filePath);
             }
+
             try
             {
                 var filePaths = Directory.GetFiles(path);
@@ -47,7 +48,7 @@
 
                 foreach (var directoryPath in directoryPaths)
                 {
-                    if (FileExists(directoryPath, filePath, depth - 1))
+                    if (this.FileExists(directoryPath, filePath, depth - 1))
                     {
                         return true;
                     }
