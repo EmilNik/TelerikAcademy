@@ -37,11 +37,11 @@
                 try
                 {
                     Controller controller = this.CreateController(request);
-                    NewActionInvoker actionInvoker = new NewActionInvoker();
+                    ActionInvoker actionInvoker = new ActionInvoker();
                     IActionResult actionResult = actionInvoker.InvokeAction(controller, request.Action);
                     response = actionResult.GetResponse();
                 }
-                catch (HttpNotFound exception)
+                catch (HttpNotFoundException exception)
                 {
                     response = new HttpResponse(request.ProtocolVersion, HttpStatusCode.NotFound, exception.Message);
                 }
@@ -69,7 +69,7 @@
 
             if (type == null)
             {
-                throw new HttpNotFound(
+                throw new HttpNotFoundException(
                     string.Format("Controller with name {0} not found!", controllerClassName));
             }
 

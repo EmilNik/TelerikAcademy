@@ -25,7 +25,7 @@
             ApiController controller = new ApiController(new Mock<HttpRequest>().Object);
             IActionResult actionResult = controller.ReturnMe(string.Empty);
 
-            Assert.AreEqual("{\"param\":\"Param\"}", actionResult);
+            Assert.AreEqual("{\"param\":\"\"}", actionResult);
         }
     }
 }

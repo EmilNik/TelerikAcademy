@@ -17,7 +17,7 @@
 
             if (methodWithIntParameter == null)
             {
-                throw new HttpNotFound(string.Format(HttpNotFoundStringFormat, ad.ActionName, ad.ControllerName));
+                throw new HttpNotFoundException(string.Format(HttpNotFoundStringFormat, ad.ActionName, ad.ControllerName));
             }
 
             try

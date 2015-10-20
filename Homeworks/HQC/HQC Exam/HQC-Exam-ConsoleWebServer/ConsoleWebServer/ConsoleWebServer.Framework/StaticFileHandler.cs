@@ -18,7 +18,7 @@
         {
             string filePath = Environment.CurrentDirectory + "/" + request.Uri;
 
-            if (!this.FileExists("C:\\", filePath, 3))
+            if (!this.FileExists(filePath))
             {
                 return new HttpResponse(request.ProtocolVersion, HttpStatusCode.NotFound, FileNotFound);
             }
@@ -30,30 +30,9 @@
             return response;
         }
 
-        private bool FileExists(string path, string filePath, int depth)
+        private bool FileExists(string filePath)
         {
-            if (depth <= 0)
-            {
-                return File.Exists(filePath);
-            }
-
-            try
-            {
-                var filePaths = Directory.GetFiles(path);
-
-                if (filePaths.Contains(filePath))
-                {
-                    return true;
-                }
-
-                var directoryPaths = Directory.GetDirectories(path);
-
-                return false;
-            }
-            catch (Exception)
-            {
-                return false;
-            }
+            return File.Exists(filePath);
         }
     }
 }
