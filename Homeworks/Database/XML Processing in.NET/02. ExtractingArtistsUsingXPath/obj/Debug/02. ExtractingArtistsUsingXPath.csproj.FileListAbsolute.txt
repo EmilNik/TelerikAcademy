@@ -1,0 +1,1 @@
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\Database\XML Processing in.NET\02. ExtractingArtistsUsingXPath\bin\Debug\_02.ExtractingArtistsUsingXPath.exe.config
