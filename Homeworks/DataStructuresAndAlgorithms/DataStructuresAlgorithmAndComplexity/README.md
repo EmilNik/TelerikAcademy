@@ -59,7 +59,7 @@
    ```cs
    O(n^2)
    ```
-   - Therefore the runnng time of the C# code should be less than one second when `n` is less than 10000. If `n` is 10000 the runnng time should be around 2 sec and if `n` is 100000 the running time should be around 2-3min.
+   - Therefore the runnng time of the C# code should be less than one second when `n` is between 1 than 10000. If `n` is 10000 the runnng time should be around 2 sec and if `n` is 100000 the running time should be around 2-3min.
 
 2. What is the expected running time of the following C# code?
   - Explain why using Markdown.
@@ -77,6 +77,14 @@
       return count;
   }
   ```
+   
+   - The `for` loop is going to be executed `n` times
+   - In the worst case scenarion the secont `for` loop is going to be executed `m` times
+   - Therefore the complexity of this C# code should be
+   
+   ```cs
+   O(n*m)
+   ```
 
 3. (*) What is the expected running time of the following C# code?
   - Explain why using Markdown.
@@ -94,4 +102,12 @@
   }
   
   Console.WriteLine(CalcSum(matrix, 0));
+  ```
+  
+  - The first `for` loop is going to be executed `n` times
+  - In the worrst case scenario the second `for` loop is going to be executed `m` times
+  - Therefore the complexity of the given C# code is
+  
+  ```cs
+  O(n*m)
   ```
