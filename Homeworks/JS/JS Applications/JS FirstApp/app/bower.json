@@ -1,0 +1,21 @@
+{
+  "name": "Moni",
+  "version": "0.0.0",
+  "authors": [
+    "Emil Nik <emil.nik1002@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "toastr": "~2.1.2",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5"
+  }
+}

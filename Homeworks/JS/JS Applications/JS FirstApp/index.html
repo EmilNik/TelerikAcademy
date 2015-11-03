@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Обичам Мони</title>
+	<link rel="stylesheet" href="app/bower_components/bootstrap/dist/css/bootstrap.css"/>
+	<link rel="stylesheet" href="app/bower_components/toastr/toastr.css"/>
+	<link rel="stylesheet" href="app/main.css"/>
+</head>
+
+<body>
+	<div class="root">
+		<div class="container">
+			<h1 class="page-header col-md-6">Such WoW
+			<small>Much Cool</small>
+		</h1>
+		</div>
+		<form class="form-inline col-md-6" id="form-input">
+			<div class="form-group" id="form-title">
+				<label class="text" for="title-input">Мит:</label>
+				<input class="form-control" id="title-input" type="text">
+			</div>
+			<br/>
+			<div class="form-group">
+				<label class="text" for="for-input">Истина:</label>
+				<input class="form-control" id="for-input" type="text">
+			</div>
+			<div class="form-group">
+				<label class="text" for="against-input">Лъжа:</label>
+				<input class="form-control" id="against-input" type="text">
+			</div>
+			<a href="#" id="submit" class="btn btn-default">Submit</a>
+		</form>
+		<h2>Общо: Истина: <span id="for-output">0</span>%, Лъжа: <span id="against-output">0</span>%</h2>
+		<hr/>
+		<br/>
+		<div id="container">
+			<div class="row">
+				<ul id="append">
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="app/bower_components/jquery/dist/jquery.js"></script>
+	<script src="app/bower_components/toastr/toastr.js"></script>
+	<script src="app/index.js"></script>
+</body>
+
+</html>
