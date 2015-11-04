@@ -1,0 +1,1 @@
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\DataStructuresAndAlgorithms\LinearDataStructures\06. RemoveOddNumberOfOccurrence\bin\Debug\_06.RemoveOddNumberOfOccurrence.exe.config

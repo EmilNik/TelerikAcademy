@@ -1,0 +1,5 @@
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\DataStructuresAndAlgorithms\LinearDataStructures\05. RemoveNegativeNumbers\bin\Debug\_05.RemoveNegativeNumbers.exe.config
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\DataStructuresAndAlgorithms\LinearDataStructures\05. RemoveNegativeNumbers\bin\Debug\_05.RemoveNegativeNumbers.exe
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\DataStructuresAndAlgorithms\LinearDataStructures\05. RemoveNegativeNumbers\bin\Debug\_05.RemoveNegativeNumbers.pdb
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\DataStructuresAndAlgorithms\LinearDataStructures\05. RemoveNegativeNumbers\obj\Debug\_05.RemoveNegativeNumbers.exe
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\DataStructuresAndAlgorithms\LinearDataStructures\05. RemoveNegativeNumbers\obj\Debug\_05.RemoveNegativeNumbers.pdb

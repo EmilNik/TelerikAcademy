@@ -1,0 +1,7 @@
+C:\Users\Emil\Documents\Visual Studio 2015\Projects\DataStructuresAndAlgorithms\01. ReadSequenceOfInts\03. ReadIntsFromConsoleAndSortThem\bin\Debug\_03.ReadIntsFromConsoleAndSortThem.exe.config
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\DataStructuresAndAlgorithms\LinearDataStructures\03. ReadIntsFromConsoleAndSortThem\bin\Debug\_03.ReadIntsFromConsoleAndSortThem.exe.config
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\DataStructuresAndAlgorithms\LinearDataStructures\03. ReadIntsFromConsoleAndSortThem\bin\Debug\_03.ReadIntsFromConsoleAndSortThem.exe
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\DataStructuresAndAlgorithms\LinearDataStructures\03. ReadIntsFromConsoleAndSortThem\bin\Debug\_03.ReadIntsFromConsoleAndSortThem.pdb
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\DataStructuresAndAlgorithms\LinearDataStructures\03. ReadIntsFromConsoleAndSortThem\obj\Debug\03. ReadIntsFromConsoleAndSortThem.csprojResolveAssemblyReference.cache
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\DataStructuresAndAlgorithms\LinearDataStructures\03. ReadIntsFromConsoleAndSortThem\obj\Debug\_03.ReadIntsFromConsoleAndSortThem.exe
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\DataStructuresAndAlgorithms\LinearDataStructures\03. ReadIntsFromConsoleAndSortThem\obj\Debug\_03.ReadIntsFromConsoleAndSortThem.pdb

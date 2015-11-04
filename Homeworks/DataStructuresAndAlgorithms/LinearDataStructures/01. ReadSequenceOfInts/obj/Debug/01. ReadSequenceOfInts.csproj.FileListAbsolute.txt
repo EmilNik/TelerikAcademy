@@ -1,0 +1,9 @@
+C:\Users\Emil\Documents\Visual Studio 2015\Projects\DataStructuresAndAlgorithms\01. ReadSequenceOfInts\01. ReadSequenceOfInts\bin\Debug\_01.ReadSequenceOfInts.exe.config
+C:\Users\Emil\Documents\Visual Studio 2015\Projects\DataStructuresAndAlgorithms\01. ReadSequenceOfInts\01. ReadSequenceOfInts\bin\Debug\_01.ReadSequenceOfInts.exe
+C:\Users\Emil\Documents\Visual Studio 2015\Projects\DataStructuresAndAlgorithms\01. ReadSequenceOfInts\01. ReadSequenceOfInts\bin\Debug\_01.ReadSequenceOfInts.pdb
+C:\Users\Emil\Documents\Visual Studio 2015\Projects\DataStructuresAndAlgorithms\01. ReadSequenceOfInts\01. ReadSequenceOfInts\obj\Debug\01. ReadSequenceOfInts.csprojResolveAssemblyReference.cache
+C:\Users\Emil\Documents\Visual Studio 2015\Projects\DataStructuresAndAlgorithms\01. ReadSequenceOfInts\01. ReadSequenceOfInts\obj\Debug\_01.ReadSequenceOfInts.exe
+C:\Users\Emil\Documents\Visual Studio 2015\Projects\DataStructuresAndAlgorithms\01. ReadSequenceOfInts\01. ReadSequenceOfInts\obj\Debug\_01.ReadSequenceOfInts.pdb
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\DataStructuresAndAlgorithms\LinearDataStructures\01. ReadSequenceOfInts\bin\Debug\_01.ReadSequenceOfInts.exe.config
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\DataStructuresAndAlgorithms\LinearDataStructures\01. ReadSequenceOfInts\obj\Debug\_01.ReadSequenceOfInts.exe
+C:\Users\Emil\Documents\GitHub\TelerikAcademy\Homeworks\DataStructuresAndAlgorithms\LinearDataStructures\01. ReadSequenceOfInts\obj\Debug\_01.ReadSequenceOfInts.pdb

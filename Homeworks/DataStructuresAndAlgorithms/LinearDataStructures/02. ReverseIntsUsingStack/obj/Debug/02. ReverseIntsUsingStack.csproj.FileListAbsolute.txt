@@ -1,0 +1,5 @@
+C:\Users\Emil\Documents\Visual Studio 2015\Projects\DataStructuresAndAlgorithms\01. ReadSequenceOfInts\02. ReverseIntsUsingStack\bin\Debug\_02.ReverseIntsUsingStack.exe.config
+C:\Users\Emil\Documents\Visual Studio 2015\Projects\DataStructuresAndAlgorithms\01. ReadSequenceOfInts\02. ReverseIntsUsingStack\bin\Debug\_02.ReverseIntsUsingStack.exe
+C:\Users\Emil\Documents\Visual Studio 2015\Projects\DataStructuresAndAlgorithms\01. ReadSequenceOfInts\02. ReverseIntsUsingStack\bin\Debug\_02.ReverseIntsUsingStack.pdb
+C:\Users\Emil\Documents\Visual Studio 2015\Projects\DataStructuresAndAlgorithms\01. ReadSequenceOfInts\02. ReverseIntsUsingStack\obj\Debug\_02.ReverseIntsUsingStack.exe
+C:\Users\Emil\Documents\Visual Studio 2015\Projects\DataStructuresAndAlgorithms\01. ReadSequenceOfInts\02. ReverseIntsUsingStack\obj\Debug\_02.ReverseIntsUsingStack.pdb
