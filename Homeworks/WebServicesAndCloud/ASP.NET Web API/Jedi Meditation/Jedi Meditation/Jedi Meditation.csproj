@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{083478F2-12FB-417C-9CAE-D7EAACA8DD77}</ProjectGuid>
+    <ProjectGuid>{E3A08033-11E2-4D20-853D-390E5EDBC199}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_06.RemoveOddNumberOfOccurrence</RootNamespace>
-    <AssemblyName>_06.RemoveOddNumberOfOccurrence</AssemblyName>
+    <RootNamespace>Jedi_Meditation</RootNamespace>
+    <AssemblyName>Jedi Meditation</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="06. Startup.cs" />
+    <Compile Include="JediStart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
