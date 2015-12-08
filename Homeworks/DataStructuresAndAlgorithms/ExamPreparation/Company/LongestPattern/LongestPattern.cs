@@ -8,8 +8,8 @@
     {
         static void MockInput()
         {
-            var input = @"-=input=-
-put-=42";
+            var input = @"=iasdasdasdnput=-
+asdasd-=42;";
             Console.SetIn(new StringReader(input));
         }
 
@@ -67,25 +67,19 @@ put-=42";
                 hashes2.Add(hash1.Value2);
             }
 
-            var hash2 = new Hash(str1.Substring(0, length));
-            if (hashes.Contains(hash2.Value1))
+            var hash2 = new Hash(str2.Substring(0, length));
+            if (hashes.Contains(hash2.Value1) && hashes2.Contains(hash2.Value2))
             {
-                if (hashes2.Contains(hash2.Value2))
-                {
-                    return true;
-                }
+                return true;
             }
 
             for (int i = 0; i < str2.Length - length; i++)
             {
                 hash2.Add(str2[length + i]);
                 hash2.Remove(str2[i], length);
-                if (hashes.Contains(hash2.Value1))
+                if (hashes.Contains(hash2.Value1) && hashes2.Contains(hash2.Value2))
                 {
-                    if (hashes2.Contains(hash2.Value2))
-                    {
-                        return true;
-                    }
+                    return true;
                 }
             }
 
@@ -122,6 +116,7 @@ put-=42";
         public Hash(string str)
         {
             this.Value1 = 0;
+            this.Value2 = 0;
 
             foreach (char c in str)
             {
@@ -132,7 +127,7 @@ put-=42";
         public void Add(char c)
         {
             this.Value1 = (this.Value1 * BASE1 + c) % MOD;
-            this.Value1 = (this.Value2 * BASE2 + c) % MOD;
+            this.Value2 = (this.Value2 * BASE2 + c) % MOD;
         }
 
         public void Remove(char c, int n)
