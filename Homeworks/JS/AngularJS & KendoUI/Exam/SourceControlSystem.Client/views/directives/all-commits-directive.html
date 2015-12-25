@@ -1,0 +1,21 @@
+<table class="table table-bordered">
+    <tr>
+        <th class="text-center">
+            Username
+        </th>
+        <th class="text-center">
+            Created On
+        </th>
+    </tr>
+    <tr ng-repeat="commit in vm.commits" ng-class-even="'even-class'" ng-class-odd="'odd-class'">
+        <td class="text-center">
+            <a href="#/commits/{{commit.Id}}">{{commit.UserName}}</a>
+        </td>
+        <td class="text-center">
+            {{commit.CreatedOn | beautifulDate}}
+        </td>
+        <td class="text-center" ng-if="vm.identity && vm.identity.isAuthenticated()">
+            <img ng-src="/img/{{trip.isMine ? 'ok.jpg' : 'no-ok.png'}}" />
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row" ng-show="!!vm.currentCommit">
+    	<div class="col-md-3">
+    		<h4>Username:<hr />{{vm.currentCommit.UserName}}</h4>
+    	</div>
+    	<div class="col-md-3">
+    		<h4>Created On:<hr />{{vm.currentCommit.CreatedOn | beautifulDate}}</h4>
+    	</div>
+    </div>
+    <div ng-show="!vm.currentCommit">Not found</div>
+</div>
