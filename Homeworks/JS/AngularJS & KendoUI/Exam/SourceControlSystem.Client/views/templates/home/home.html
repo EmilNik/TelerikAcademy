@@ -1,0 +1,58 @@
+﻿<h1>
+    Welcome to the JustGit Source Control System!
+</h1>
+<hr />
+<h4 ng-controller="HomeController as vm">
+    Users: {{vm.statistics.Users}} Projects: {{vm.statistics.Projects}} Commits: {{vm.statistics.Commits}}
+</h4>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h2>Projects</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>License</th>
+                        <th>Name</th>
+                        <th>Added</th>
+                    </tr>
+                </thead>
+                <tbody ng-controller="HomeController as vm">
+                    <tr ng-repeat="project in vm.projects">
+                        <td>{{project.License}}</td>
+                        <td><strong><a href="/projects/{{project.Id}}">{{project.Name}}</a></strong></td>
+                        <td>{{moment(project.createdOn).fromNow()}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h2>Commits</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>UserName</th>
+                        <th>Added</th>
+                    </tr>
+                </thead>
+                <tbody ng-controller="CommitsController as vm">
+                    <tr ng-repeat="commit in vm.commits">
+                        <td>{{commit.Id}}</td>
+                        <td><strong><a href="/commits/{{commit.Id}}">{{commit.UserName}}</a></strong></td>
+                        <td>{{moment(commit.createdOn).fromNow()}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="container">
+        <div class="row">
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,69 @@
+﻿<h1>Filter Projcets</h1>
+
+<div class="row" ng-controller="FilterProjectsController as vm">
+    <div class="col-md-4">
+        <form class="form-horizontal" name="FilterProjectForm">
+            <fieldset>
+                <legend>Filter projects</legend>
+                <div class="form-group">
+                    <label for="projectName" class="col-lg-2 control-label">Filter by name or description</label>
+                    <div class="col-lg-10">
+                        <input type="text" ng-change="vm.getAll(project)" ng-model="project.Filter" min="1" max="100" class="form-control" id="projectName" placeholder="Project Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="projectDescription" class="col-lg-2 control-label">PageSize</label>
+                    <div class="col-lg-10">
+                        <input type="number" min="1" max="50" ng-change="vm.getAll(project)" ng-model="project.PageSize" value="10" class="form-control" id="filterPageSize" placeholder="PageSize">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="projectDescription" class="col-lg-2 control-label">Page</label>
+                    <div class="col-lg-10">
+                        <input type="number" ng-change="vm.getAll(project)" ng-model="project.Page" value="1" class="form-control" id="filterPage" placeholder="Page">
+                    </div>
+                </div>
+                <div class="form-group col-lg-offset-2 col-md-offset-2">
+                    <label for="sel1">Only Public:</label>
+                    <select class="form-control" id="sel1" ng-change="vm.getAll(project)" ng-model="project.OnlyPublic">
+                        <option value=true>True</option>
+                        <option value=false>False</option>
+                    </select>
+                </div>
+                div class="form-group">
+                <label for="projectName" class="col-lg-2 control-label">By user</label>
+                <div class="col-lg-10">
+                    <input type="text" ng-change="vm.getAll(project)" ng-model="project.ByUser" class="form-control" id="ByUser" placeholder="By User">
+                </div>
+                <div class="form-group ">
+                    <div class="col-lg-10 col-lg-offset-2 ">
+                        <button class="btn btn-primary " ng-click="vm.getAll(project)" ng-disabled="addProjectForm.$invalid ">Submit</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h2>Projects</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>License</th>
+                            <th>Name</th>
+                            <th>Added</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="project in vm.projects">
+                            <td>{{$index + 1}}. {{project.License}}</td>
+                            <td><strong><a href="/projects/{{project.Id}}">{{project.Name}}</a></strong></td>
+                            <td>{{moment(project.createdOn).fromNow()}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
