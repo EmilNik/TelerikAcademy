@@ -86,8 +86,8 @@ function getMessages(members) {
                 console.log(err);
                 return
             }
-            console.log(receivedMessages.length + ' messages between ' + members.with + ' and ' + members.and + ' in total.');
-            console.log('All messages between ' + members.with + ' and ' + members.and + ':');
+            console.log(receivedMessages.length + ' messages between ' + members.with + ' and ' + members.and + '.');
+            console.log('All messages:');
 
             receivedMessages.forEach(function (message) {
                 console.log('From: ' + message.from + '\t To: ' + message.to);
