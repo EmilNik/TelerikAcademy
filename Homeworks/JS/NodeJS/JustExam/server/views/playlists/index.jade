@@ -1,0 +1,24 @@
+extends ../shared/layout
+block main-content
+    h1 Welcome to YouTube Playlists System
+    .container
+        .row
+            .col-md-6.col-md-offset-3
+                h1.text-center 8 Most Popular Playlists
+                br
+                table.table-bordered.table
+                    tr
+                        th Title
+                        th Creator
+                        th Category
+                        th Views
+                        th Operations
+                    each playlist in playlists
+                        tr
+                            td #{playlist.title}
+                            td 
+                                a(href="/profiles/#{playlist.creator}") #{playlist.creator}
+                            td #{playlist.category}
+                            td #{playlist.views}
+                            td
+                                a.btn.btn-lg.btn-primary(href="/playlists/details/#{playlist._id}") View

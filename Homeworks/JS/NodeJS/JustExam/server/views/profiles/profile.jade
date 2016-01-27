@@ -1,0 +1,44 @@
+extends ../shared/layout
+block main-content
+    if(user)
+        .col-md-4
+            h2 Info:
+            img(src="#{user.avatar}" alt="Profile picture" width="250")
+            h4 <strong>Username:</strong> #{user.username}
+            h4 <strong>Number Of Playlists:</strong> #{playlists.length}
+            p <strong>First Name:</strong> #{user.firstName}
+            p <strong>Last Name:</strong> #{user.lastName}
+            p <strong>Rating:</strong> #{user.rating} (#{user.allRatings.length}rates)
+            br
+            if (isAuth)
+                a(href="/profiles/update") Update profile
+        .col-md-8
+            h1.text-center All Public Playlists
+            br
+            table.table-bordered.table
+                tr
+                    th Title
+                    th Creator
+                    th Category
+                    th Rating
+                    th isPublic
+                    th Videos
+                    th Comments
+                    th Views
+                    th Operations
+                each playlist in playlists
+                    tr
+                        td #{playlist.title}
+                        td 
+                            a(href="/profiles/#{playlist.creator}") #{playlist.creator}
+                        td #{playlist.category}
+                        td #{playlist.rating}
+                        td #{playlist.isPublic}
+                        td #{playlist.videoURLs.length}
+                        td #{playlist.comments.length}
+                        td #{playlist.views}
+                        td
+                            a.btn.btn-lg.btn-primary(href="/playlists/details/#{playlist._id}") View
+            br
+    else
+        h1 Sorry, there is no such user

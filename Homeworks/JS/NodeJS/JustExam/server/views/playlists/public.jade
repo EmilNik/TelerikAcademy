@@ -1,0 +1,42 @@
+extends ../shared/layout
+block main-content
+    .container
+        .row
+            .col-md-3
+                form(method="post")
+                    label(for="category") Category
+                    select(id="category" class="form-control" name="category")
+                        option(value="") Choose Category (Wisely)
+                        each category in categories
+                            option(value="#{category}") #{category}
+                    br
+                    label(for="rate") Sort By:
+                    select(id="rate" class="form-control" name="rate")
+                        option(value="") Date
+                        option(value="rate") Rating
+                    br
+                    input(type="submit" class="btn btn-md" value="Sort By")
+            .col-md-6
+                h1.text-center All Public Playlists
+                br
+                table.table-bordered.table
+                    tr
+                        th Title
+                        th Creator
+                        th Category
+                        th Rating
+                        th Operations
+                    each playlist in data.playlists
+                        tr
+                            td #{playlist.title}
+                            td 
+                                a(href="/profiles/#{playlist.creator}") #{playlist.creator}
+                            td #{playlist.category}
+                            td #{playlist.rating}
+                            td
+                                a.btn.btn-lg.btn-primary(href="/playlists/details/#{playlist._id}") View
+                br
+                ul.list-unstyled.list-inline.text-center
+                    - for(var i = 1; i <= data.total / data.pageSize; i++)
+                        li
+                            a.btn.btn-lf.btn-primary(href="/playlists/public?page=#{i+1}&pageSize=#{data.pageSize}") #{i}

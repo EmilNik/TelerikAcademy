@@ -1,27 +1,29 @@
+"use strict";
+
 var formidable = require('formidable'),
   http = require('http'),
-  fs = require('fs');
+  fs = require('fs'),
+  filePath = '';
 
 function S4() {
   return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
 }
 
-function getExtensions(fileName) {
-  var index = fileName.lastIndexOf('.');
+var Guid = function () {
+  return (S4() + S4() + "-" + S4() + "-4" + S4().substr(0, 3) + "-" + S4() + "-" + S4() + S4() + S4()).toLowerCase();
+};
 
-  var ext = fileName.substring(index, fileName.length);
-  return ext;
+function getExtensions(fileName) {
+  return fileName.substring(fileName.lastIndexOf('.'));
 }
 
 http.createServer(function (req, res) {
-  var filePath = '';
-
-  if (req.url == '/upload' && req.method.toLowerCase() == 'post') {
+  if (req.url === '/upload' && req.method.toLowerCase() === 'post') {
     var form = new formidable.IncomingForm();
     form.uploadDir = 'files';
     form.keepExtensions = true;
 
-    var guid = (S4() + S4() + "-" + S4() + "-4" + S4().substr(0, 3) + "-" + S4() + "-" + S4() + S4() + S4()).toLowerCase();
+    var guid = Guid();
 
     form.on('fileBegin', function (name, file) {
       file.path = form.uploadDir + '/' + guid + getExtensions(file.name);
@@ -37,14 +39,26 @@ http.createServer(function (req, res) {
         return;
       }
 
-      res.end('<form action="/download" enctype="multipart/form-data" method="get">' +
-        '<input type="submit" value="Download ' + files.upload.name + '" multiple="multiple"><br>' +
-        '</form>');
+      res.end('<div><a href="/download">Download ' + files.upload.name + ' </a></div>');
     });
 
     return;
-  } else if (req.url == '/download?' && req.method.toLowerCase() == 'get') {
-    // download file logic
+  } else if (req.url === '/download') {
+    fs.readFile(filePath, 'utf8',
+      function (error, fileText) {
+        if (error) {
+          console.log('File cannot be read: ' + error);
+          return;
+        }
+        var fileName = filePath.substring(filePath.lastIndexOf('/') + 1);
+        fs.writeFile('downloads/' + fileName, fileText, function (err) {
+          if (err) {
+            console.log('File cannot be write: ' + err);
+          } else {
+            alert('File downloaded');
+          }
+        });
+      });
   }
 
   res.writeHead(200, { 'content-type': 'text/html' });

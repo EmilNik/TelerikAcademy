@@ -1,0 +1,57 @@
+extends ../shared/layout
+block main-content
+    .container
+        .row
+            h1.text-center #{playlist.title}
+            if(isAuth)
+                form(method="post" action="/deletePlaylist")
+                    input(id="id" class="hidden form-control" type="text" name="id" placeholder="id" value="#{playlist._id}")
+                    input(type="submit" class="btn btn-md btn-danger" value="Delete Playlist")
+                    p This button actually works... i don't know wy it doesn't redirect :/
+                    p Just go to another page after you click it... sorry :/
+            .col-md-4
+                h2 Info:
+                h4 <strong>Creator:</strong> 
+                    a(href="/profiles/#{playlist.creator}") #{playlist.creator}
+                h4 <strong>Category:</strong> #{playlist.category}
+                p <strong>Description:</strong> #{playlist.description}
+                h4 <strong>Playlist rating:</strong> #{playlist.rating} (#{playlist.allRatings.length}rates)
+                h4 <strong>Views:</strong> #{playlist.views}
+                br
+                if (isAuth)
+                else
+                    form(method="post")
+                        label(for="rate") Rate Playlist
+                        input(id="rate" class="form-control" type="number" min="1" max="5" name="rate" placeholder="5" value="5")
+                        br
+                        input(type="submit" class="btn btn-md" value="Rate playlist")
+                form(method="post")
+                        br
+                        label(for="comment") Add Comment
+                        input(id="comment" class="form-control" type="text" name="comment" placeholder="Comment")
+                        br
+                        input(type="submit" class="btn btn-md" value="Add comment")
+                        br
+            .col-md-4
+                h2 Videos:
+                if (isAuth)
+                    form(method="post")
+                        label(for="videoURL") Add video URL
+                        input(id="videoURL" class="form-control" type="text" name="videoURL" placeholder="VideoURL")
+                        br
+                        input(type="submit" class="btn btn-md" value="Add video")
+                if(playlist.videoURLs)
+                    each videoURL in playlist.videoURLs
+                        iframe(width="420" height="315" src="#{videoURL}" frameborder="0" allowfullscreen)
+                else
+                    h3 
+                        | There are no videos in this playlist
+            .col-md-3.col-md-offset-1
+                h2 Comments:
+                if(playlist.comments)
+                    each comment in playlist.comments
+                        h3 <strong>#{comment.username}:</strong>
+                        p #{comment.content}
+                    else
+                        h3 
+                            | Be the first one to comment!
