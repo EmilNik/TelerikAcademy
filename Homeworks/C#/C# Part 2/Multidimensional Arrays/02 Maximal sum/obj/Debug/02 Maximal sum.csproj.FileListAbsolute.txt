@@ -6,3 +6,6 @@ c:\users\vucheva\documents\visual studio 2013\Projects\Solution8\02 Maximal sum\
 C:\Users\Emil\Desktop\New folder\Solution8\02 Maximal sum\bin\Debug\02 Maximal sum.exe.config
 C:\Users\Emil\Desktop\New folder\Solution8\02 Maximal sum\obj\Debug\02 Maximal sum.exe
 C:\Users\Emil\Desktop\New folder\Solution8\02 Maximal sum\obj\Debug\02 Maximal sum.pdb
+D:\Documents\GitHub\TelerikAcademy\Homeworks\C#\C# Part 2\Multidimensional Arrays\02 Maximal sum\bin\Debug\02 Maximal sum.exe.config
+D:\Documents\GitHub\TelerikAcademy\Homeworks\C#\C# Part 2\Multidimensional Arrays\02 Maximal sum\obj\Debug\02 Maximal sum.exe
+D:\Documents\GitHub\TelerikAcademy\Homeworks\C#\C# Part 2\Multidimensional Arrays\02 Maximal sum\obj\Debug\02 Maximal sum.pdb
