@@ -29,6 +29,6 @@
 
         public DateTime? DeletedOn { get; set; }
 
-        public ICollection<Tag> Tags { get { return this.tags; } set { this.tags = value; } }
+        public virtual ICollection<Tag> Tags { get { return this.tags; } set { this.tags = value; } }
     }
 }

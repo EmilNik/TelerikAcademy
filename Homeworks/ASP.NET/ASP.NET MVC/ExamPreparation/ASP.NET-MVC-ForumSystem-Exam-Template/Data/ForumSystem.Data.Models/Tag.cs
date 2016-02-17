@@ -25,6 +25,6 @@
 
         public DateTime? DeletedOn { get; set; }
 
-        public ICollection<Post> Posts { get { return this.posts; } set { this.posts = value; } }
+        public virtual ICollection<Post> Posts { get { return this.posts; } set { this.posts = value; } }
     }
 }
