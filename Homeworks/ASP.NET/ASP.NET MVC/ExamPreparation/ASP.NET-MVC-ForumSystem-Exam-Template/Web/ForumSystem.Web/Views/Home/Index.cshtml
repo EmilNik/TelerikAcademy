@@ -1,0 +1,40 @@
+﻿@model IEnumerable<ForumSystem.Web.ViewModels.Home.IndexBlogPostViewModel>
+@{
+    ViewBag.Title = "Home Page";
+}
+<div class="container">
+    @foreach (var post in Model)
+    {
+        <div class="row">
+            <div class="col-md-1">
+                <div class="well text-center">
+                    <div class="row">0</div>
+                    <div class="row">answers</div>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="well text-center">
+                    <div class="row">0</div>
+                    <div class="row">answers</div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="row">
+                    <h4>
+                        <a href="@post.Url">@post.Title</a>
+                    </h4>
+                </div>
+                <div class="row">
+                    <p>asked 35 minutes ago in Kids Academy - програмиране за деца by a.dimitrov04 (40 points)</p>
+                </div>
+                <div class="row">
+                    @foreach (var tag in post.Tags)
+                    {
+                        <span class="label label-default">@tag.Name</span>
+                    }
+                </div>
+            </div>
+        </div>
+        <hr />
+    }
+</div>

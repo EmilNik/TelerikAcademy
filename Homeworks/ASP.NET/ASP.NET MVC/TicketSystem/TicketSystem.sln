@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketSystem.Models", "TicketSystem.Models\TicketSystem.Models.csproj", "{1EA621FC-E2B7-4184-B2E5-FE6AC3533860}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketSystem.Web", "TicketSystem.Web\TicketSystem.Web.csproj", "{15495086-61A3-41DD-9638-5C9B8A0D302D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketSystem.Data", "TicketSystem.Data\TicketSystem.Data.csproj", "{37E2824E-DC21-4AE5-9F52-E3F7FAF4129B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EA621FC-E2B7-4184-B2E5-FE6AC3533860}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EA621FC-E2B7-4184-B2E5-FE6AC3533860}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EA621FC-E2B7-4184-B2E5-FE6AC3533860}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EA621FC-E2B7-4184-B2E5-FE6AC3533860}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15495086-61A3-41DD-9638-5C9B8A0D302D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15495086-61A3-41DD-9638-5C9B8A0D302D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15495086-61A3-41DD-9638-5C9B8A0D302D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15495086-61A3-41DD-9638-5C9B8A0D302D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37E2824E-DC21-4AE5-9F52-E3F7FAF4129B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37E2824E-DC21-4AE5-9F52-E3F7FAF4129B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37E2824E-DC21-4AE5-9F52-E3F7FAF4129B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37E2824E-DC21-4AE5-9F52-E3F7FAF4129B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
