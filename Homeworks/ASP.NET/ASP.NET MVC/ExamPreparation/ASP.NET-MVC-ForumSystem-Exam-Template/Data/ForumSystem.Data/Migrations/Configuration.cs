@@ -43,6 +43,23 @@ namespace ForumSystem.Data.Migrations
                     }
 
                     context.Posts.Add(post);
+                }
+
+                context.SaveChanges();
+
+                if (!context.Feedbacks.Any())
+                {
+                    for (int i = 0; i < 18; i++)
+                    {
+                        var feedback = new Feedback()
+                        {
+                            Content = $"Feedback <b>content</b> {i}",
+                            Title = $"Feedback Title {i}"
+                        };
+
+                        context.Feedbacks.Add(feedback);
+                    }
+
                     context.SaveChanges();
                 }
             }

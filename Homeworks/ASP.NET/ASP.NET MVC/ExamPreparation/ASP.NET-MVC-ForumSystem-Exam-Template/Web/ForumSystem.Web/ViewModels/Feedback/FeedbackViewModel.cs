@@ -2,7 +2,8 @@
 {
     using System.ComponentModel.DataAnnotations;
     using System.Web.Mvc;
-    public class FeedbackViewModel
+
+    public class FeedbackInputModel
     {
         [Required]
         [StringLength(20)]
