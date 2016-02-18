@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Forum System</title>
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/css", "~/Content/kendo")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/kendo")
 </head>
 <body>
     <div class="navbar navbar-default">
@@ -19,10 +22,11 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Ask question", "Ask", "Questions")</li>
-                    <li>@Html.ActionLink("Send a Feedback", "Create", "Feedback")</li>
-                    <li>@Html.ActionLink("List Feedbacks", "Index", "PageableFeedbackList")</li>
+                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = string.Empty }, null)</li>
+                    <li>@Html.ActionLink("Ask question", "Ask", "Questions", new { area = string.Empty }, null)</li>
+                    <li>@Html.ActionLink("Send a Feedback", "Create", "Feedback", new { area = string.Empty }, null)</li>
+                    <li>@Html.ActionLink("Feedbacks", "Index", "PageableFeedbackList", new { area = string.Empty }, null)</li>
+                    <li>@Html.ActionLink("Posts", "Index", "Posts", new { area = "Admin" }, null)</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -45,7 +49,6 @@
         </footer>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>

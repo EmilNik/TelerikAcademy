@@ -44,7 +44,7 @@
             }
             else
             {
-                if (vote.Type != (VoteType)voteType)
+                if (vote.Type == (VoteType)voteType)
                 {
                     vote.Type = VoteType.Neutral;
                 }
