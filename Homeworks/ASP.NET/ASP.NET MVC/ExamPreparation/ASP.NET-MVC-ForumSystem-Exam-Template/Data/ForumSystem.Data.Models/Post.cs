@@ -8,10 +8,12 @@
     public class Post : AuditInfo, IDeletableEntity
     {
         private ICollection<Tag> tags;
+        private ICollection<Vote> votes;
 
         public Post()
         {
             this.tags = new HashSet<Tag>();
+            this.votes = new HashSet<Vote>();
         }
 
         public int Id { get; set; }
@@ -30,5 +32,7 @@
         public DateTime? DeletedOn { get; set; }
 
         public virtual ICollection<Tag> Tags { get { return this.tags; } set { this.tags = value; } }
+
+        public virtual ICollection<Vote> Votes { get { return this.votes; } set { this.votes = value; } }
     }
 }

@@ -8,8 +8,19 @@
         <div class="row">
             <div class="col-md-1">
                 <div class="well text-center">
-                    <div class="row">0</div>
-                    <div class="row">answers</div>
+                    <div class="left">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <div data-action="up" data-id="@post.Id" class="row"><span class="glyphicon glyphicon-chevron-up"></span></div>
+                            <div data-action="down" data-id="@post.Id" class="row"><span class="glyphicon glyphicon-chevron-down"></span></div>
+                        }
+                    </div>
+                    <div class="">
+                        <div data-action="votes-count" data-id="@post.Id" class="row">
+                            <h3 id="votes-count"><strong>@post.VotesCount</strong></h3>
+                            <h5 id="votes-count-h5">votes</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-1">
@@ -38,3 +49,25 @@
         <hr />
     }
 </div>
+@section scripts {
+    <script>
+        $('div[data-action="up"]').click(function () {
+            var id = $(this).attr('data-id');
+            voteClick(id, 1);
+        });
+
+        $('div[data-action="down"]').click(function () {
+            var id = $(this).attr('data-id');
+            voteClick(id, -1);
+        });
+
+        function voteClick(id, voteType) {
+            $.post("/Votes/Vote", { postId: id, voteType: voteType },
+                function (data) {
+                    var newVotesCount = data.Count;
+                    $('div[data-action="votes-count"][data-id="' + id + '"] #votes-count strong')
+                        .html(newVotesCount);
+                })
+        }
+    </script>
+}
