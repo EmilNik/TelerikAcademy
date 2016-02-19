@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommentsService.cs" />
+    <Compile Include="ICommentsService.cs" />
     <Compile Include="IdeasServices.cs" />
     <Compile Include="IIdeasServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

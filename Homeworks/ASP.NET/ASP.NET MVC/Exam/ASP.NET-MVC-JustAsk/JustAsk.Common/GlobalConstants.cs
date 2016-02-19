@@ -11,5 +11,7 @@
 
         public const int IdeasPerPage = 3;
         public const int CommentsPerIdea = 4;
+
+        public const string CreepyMessage = "X-ROSES-ARE-RED-VIOLETS-ARE-BLUE-I-KNOW-EVERYTHING-ABOUT-YOU";
     }
 }

@@ -12,5 +12,7 @@
 
         [Required]
         public string AuthorEmail { get; set; }
+
+        public int IdeaId { get; set; }
     }
 }

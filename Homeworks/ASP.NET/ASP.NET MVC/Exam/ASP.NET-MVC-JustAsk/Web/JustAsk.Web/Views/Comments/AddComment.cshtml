@@ -1,0 +1,41 @@
+﻿@model JustAsk.Web.ViewModels.Comments.CommentInputModel
+@{
+    ViewBag.Title = "Add Comment";
+}
+
+<h1>@ViewBag.Title</h1>
+
+@using (Html.BeginForm("AddComment", "Comments", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <h4>Send a Feedback.</h4>
+    <hr />
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(m => m.Content, new { @class = "col-md-2 control-label" })
+        <div class="col-md-5">
+            @Html.EditorFor(m => m.Content, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.AuthorEmail, new { @class = "col-md-2 control-label" })
+        <div class="col-md-5">
+            @Html.EditorFor(m => m.AuthorEmail, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group" hidden="hidden">
+        @Html.LabelFor(m => m.IdeaId, new { @class = "col-md-2 control-label" })
+        <div class="col-md-5">
+            @Html.EditorFor(m => m.IdeaId, new { @class = "form-control", value = this.TempData["id"] });
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="Send Feedback" />
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jquesryval")
+}

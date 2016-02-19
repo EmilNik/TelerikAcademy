@@ -3,18 +3,6 @@
     ViewBag.Title = "Home Page";
 }
 <div class="container">
-    @*<div class="container body-content">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="input-group">
-                        <input id="search" type="text" class="form-control" placeholder="Search for...">
-                        <span class="input-group-btn">
-                            <a id="search-a" class="btn btn-default" id="search-button" href="">Search</a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>*@
     @using (Html.BeginForm("Search", "Search", FormMethod.Get))
     {
         <p>
@@ -29,11 +17,6 @@
             <div class="col-md-1">
                 <div class="well text-center">
                     <div class="left">
-                        @if (User.Identity.IsAuthenticated)
-                        {
-                            <div data-action="up" data-id="@idea.Id" class="row"><span class="glyphicon glyphicon-chevron-up"></span></div>
-                            <div data-action="down" data-id="@idea.Id" class="row"><span class="glyphicon glyphicon-chevron-down"></span></div>
-                        }
                     </div>
                     <div class="">
                         <div data-action="votes-count" data-id="@idea.Id" class="row">
