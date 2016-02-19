@@ -30,9 +30,9 @@
         </div>
         <p>@Model.Description</p>
 
-        <h3>@Html.ActionLink("Add comment", "AddComment", "Comments", null, null)</h3>
+        <h3 id="click-me"><a href="/Comments/AddComment/@Model.Id">Add a comment</a></h3>
 
-        @foreach (var comment in Model.Comments)
+        @foreach (var comment in Model.Comments.Reverse())
         {
             <hr />
             <h4><strong>@comment.HiddenEmail</strong></h4>

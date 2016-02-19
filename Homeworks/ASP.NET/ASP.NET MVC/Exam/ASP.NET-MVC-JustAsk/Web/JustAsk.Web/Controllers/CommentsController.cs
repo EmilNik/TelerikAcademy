@@ -10,6 +10,7 @@
     {
         private ICommentsService comments;
         private IIdeasServices ideas;
+        private int id;
 
         public CommentsController(ICommentsService comments, IIdeasServices ideas)
         {
@@ -18,8 +19,9 @@
         }
 
         [HttpGet]
-        public ActionResult AddComment()
+        public ActionResult AddComment(int id)
         {
+            this.TempData["id"] = id;
             return this.View();
         }
 
@@ -37,13 +39,13 @@
                 AuthorEmail = model.AuthorEmail,
                 Content = model.Content,
                 AuthorId = this.HttpContext.Request.UserHostAddress,
-                Idea = this.ideas.GetById(model.IdeaId)
+                Idea = this.ideas.GetById((int)this.TempData["id"])
             };
 
             this.comments.Add(comment);
 
             this.TempData["Notification"] = "Your comment was added!";
-            return this.Redirect("/Ideas/Index/" + model.IdeaId);
+            return this.Redirect("/Ideas/Index/" + this.id);
         }
     }
 }

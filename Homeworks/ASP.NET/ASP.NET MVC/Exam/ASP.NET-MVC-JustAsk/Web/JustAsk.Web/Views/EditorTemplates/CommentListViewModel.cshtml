@@ -1,0 +1,15 @@
+﻿@model JustAsk.Web.ViewModels.Comments.CommentListViewModel
+
+@Html.ValidationSummary("", new { @class = "text-danger" })
+<div class="form-group">
+    @Html.LabelFor(m => m.SanitizedContent, new { @class = "col-md-2 control-label" })
+    <div class="col-md-10">
+        @Html.EditorFor(m => m.SanitizedContent, new { @class = "form-control" })
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(m => m.AuthorEmail, new { @class = "col-md-2 control-label" })
+    <div class="col-md-11">
+        @Html.EditorFor(m => m.AuthorEmail, new { @class = "form-control" })
+    </div>
+</div>

@@ -4,10 +4,11 @@
     using System.Linq;
 
     using AutoMapper;
+    using Comments;
     using Data.Models;
     using Infrastructure;
     using Infrastructure.Mapping;
-    using Comments;
+
     public class IdeaViewModel : IMapFrom<Idea>, IHaveCustomMappings
     {
         private ISanitizer sanitizer;

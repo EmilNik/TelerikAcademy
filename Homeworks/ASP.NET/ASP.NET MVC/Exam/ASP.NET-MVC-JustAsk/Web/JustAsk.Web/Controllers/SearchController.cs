@@ -1,10 +1,12 @@
 ﻿namespace JustAsk.Web.Controllers
 {
+    using System.Linq;
     using System.Web.Mvc;
+
     using Infrastructure.Mapping;
     using Services.Data;
     using ViewModels.Idea;
-    using System.Linq;
+
     public class SearchController : BaseController
     {
         private IIdeasServices ideas;

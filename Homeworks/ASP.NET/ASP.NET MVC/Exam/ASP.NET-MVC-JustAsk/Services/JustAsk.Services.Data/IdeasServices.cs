@@ -42,5 +42,12 @@
         {
             return this.ideas.All().Count();
         }
+
+        public Idea Add(Idea idea)
+        {
+            this.ideas.Add(idea);
+            this.ideas.Save();
+            return idea;
+        }
     }
 }

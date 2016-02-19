@@ -1,0 +1,29 @@
+﻿@using Kendo.Mvc.UI;
+@(Html.Kendo().Grid<JustAsk.Web.ViewModels.Comments.CommentListViewModel>()
+      .Name("grid")
+      .Columns(columns =>
+      {
+        columns.Bound(c => c.Content);
+        columns.Bound(c => c.AuthorEmail);
+        columns.Bound(c => c.AuthorId);
+        columns.Bound(c => c.CreatedOn).Format("{0:yyyy-MM-dd HH:mm}");
+        columns.Bound(c => c.ModifiedOn).Format("{0:yyyy-MM-dd HH:mm}");
+        columns.Bound(c => c.IsDeleted);
+        columns.Command(command => { command.Edit(); command.Destroy(); }).Width(180);
+      })
+      .Editable(editable => editable.Mode(GridEditMode.PopUp))
+      .Pageable()
+      .Navigatable()
+      .Sortable(sortable => {
+          sortable.SortMode(GridSortMode.SingleColumn);
+      })
+      .Filterable()
+      .Scrollable()
+      .DataSource(dataSource => dataSource
+          .Ajax()
+          .Model(model => model.Id(p => p.Id))
+          .Read(read => read.Action("Comments_Read", "CommentsList"))
+          .Update(update => update.Action("Comments_Update", "CommentsList"))
+          .Destroy(destroy => destroy.Action("Comments_Destroy", "CommentsList"))
+      )
+)

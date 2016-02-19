@@ -1,0 +1,30 @@
+﻿@using Kendo.Mvc.UI;
+@(Html.Kendo().Grid<JustAsk.Data.Models.Idea>()
+      .Name("grid")
+      .Columns(columns =>
+      {
+        columns.Bound(c => c.Title);
+        columns.Bound(c => c.Description);
+        columns.Bound(c => c.AuthorIP);
+        columns.Bound(c => c.TotalVotes);
+        columns.Bound(c => c.CreatedOn);
+        columns.Bound(c => c.ModifiedOn);
+        columns.Bound(c => c.IsDeleted);
+        columns.Bound(c => c.DeletedOn);
+        columns.Command(command => { command.Edit(); command.Destroy(); }).Width(180);
+      })
+      .Editable(editable => editable.Mode(GridEditMode.PopUp))
+      .Pageable()
+      .Sortable(sortable => {
+          sortable.SortMode(GridSortMode.SingleColumn);
+      })
+      .Filterable()
+      .Scrollable()
+      .DataSource(dataSource => dataSource
+          .Ajax()
+          .Model(model => model.Id(p => p.Id))
+          .Read(read => read.Action("Ideas_Read", "IdeasList"))
+          .Update(update => update.Action("Ideas_Update", "IdeasList"))
+          .Destroy(destroy => destroy.Action("Ideas_Destroy", "IdeasList"))
+      )
+)

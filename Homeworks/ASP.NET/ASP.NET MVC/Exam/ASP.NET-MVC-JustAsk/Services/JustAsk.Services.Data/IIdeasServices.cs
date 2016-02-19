@@ -12,5 +12,7 @@
         IQueryable<Idea> FindByTitle(string title);
 
         int Count();
+
+        Idea Add(Idea idea);
     }
 }

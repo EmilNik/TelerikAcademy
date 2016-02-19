@@ -20,13 +20,7 @@
     <div class="form-group">
         @Html.LabelFor(m => m.AuthorEmail, new { @class = "col-md-2 control-label" })
         <div class="col-md-5">
-            @Html.EditorFor(m => m.AuthorEmail, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group" hidden="hidden">
-        @Html.LabelFor(m => m.IdeaId, new { @class = "col-md-2 control-label" })
-        <div class="col-md-5">
-            @Html.EditorFor(m => m.IdeaId, new { @class = "form-control", value = this.TempData["id"] });
+            @Html.EditorFor(m => m.AuthorEmail, new { @class = "form-control" });
         </div>
     </div>
     <div class="form-group">
