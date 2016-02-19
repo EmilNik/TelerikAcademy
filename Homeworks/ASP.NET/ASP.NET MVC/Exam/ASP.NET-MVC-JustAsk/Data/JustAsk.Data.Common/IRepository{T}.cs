@@ -2,9 +2,9 @@
 {
     using System.Linq;
 
-    using JustAsk.Data.Common.Models;
+    using Models;
 
-    public interface IDbRepository<T> : IDbRepository<T, int>
+    public interface IRepository<T> : IDbRepository<T, int>
         where T : BaseModel<int>
     {
     }

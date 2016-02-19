@@ -11,7 +11,6 @@
 
     using Data;
     using Data.Common;
-
     using Services.Data;
     using Services.Web;
 
@@ -57,11 +56,11 @@
                 .As<IIdentifierProvider>()
                 .InstancePerRequest();
 
-            var servicesAssembly = Assembly.GetAssembly(typeof(IJokesService));
+            var servicesAssembly = Assembly.GetAssembly(typeof(IIdeasServices));
             builder.RegisterAssemblyTypes(servicesAssembly).AsImplementedInterfaces();
 
             builder.RegisterGeneric(typeof(DbRepository<>))
-                .As(typeof(IDbRepository<>))
+                .As(typeof(IRepository<>))
                 .InstancePerRequest();
 
             builder.RegisterAssemblyTypes(Assembly.GetExecutingAssembly())

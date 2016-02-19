@@ -22,3 +22,28 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+div[data-action="up"], div[data-action="down"] {
+    cursor: pointer;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+#votes-count {
+    margin: 0;
+}
+
+#votes-count-h5 {
+    margin: 0;
+}
+
+.well {
+    min-height: 84px;
+}

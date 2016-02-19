@@ -7,8 +7,7 @@
     using Common.Models;
 
     using Microsoft.AspNet.Identity.EntityFramework;
-
-    using JustAsk.Data.Models;
+    using Models;
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
@@ -17,9 +16,11 @@
         {
         }
 
-        public IDbSet<Joke> Jokes { get; set; }
+        public IDbSet<Idea> Ideas { get; set; }
 
-        public IDbSet<JokeCategory> JokesCategories { get; set; }
+        public IDbSet<Comment> Comments { get; set; }
+
+        public IDbSet<Vote> Votes { get; set; }
 
         public static ApplicationDbContext Create()
         {

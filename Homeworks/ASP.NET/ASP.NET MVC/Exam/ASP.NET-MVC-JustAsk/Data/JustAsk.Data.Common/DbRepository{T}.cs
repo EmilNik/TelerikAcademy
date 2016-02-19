@@ -7,7 +7,7 @@
     using JustAsk.Data.Common.Models;
 
     // TODO: Why BaseModel<int> instead BaseModel<TKey>?
-    public class DbRepository<T> : IDbRepository<T>
+    public class DbRepository<T> : IRepository<T>
         where T : BaseModel<int>
     {
         public DbRepository(DbContext context)

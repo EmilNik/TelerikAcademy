@@ -1,25 +1,124 @@
-﻿@model JustAsk.Web.ViewModels.Home.IndexViewModel
+﻿@model JustAsk.Web.ViewModels.Idea.IdeaHomeViewModel
 @{
     ViewBag.Title = "Home Page";
 }
-<h1>Вицове</h1>
-<div class="row">
-    @foreach (var joke in Model.Jokes)
+<div class="container">
+    @*<div class="container body-content">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <input id="search" type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <a id="search-a" class="btn btn-default" id="search-button" href="">Search</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+    @using (Html.BeginForm("Search", "Search", FormMethod.Get))
     {
-        <div class="col-md-4">
-            <a href="@joke.Url">
-                @Html.Raw(joke.Content.Replace("\n", "<br />"))
-            </a>
-            <div>@joke.Category</div>
+        <p>
+            Title: @Html.TextBox("q")
+            <input type="submit" value="Search" />
+        </p>
+    }
+    <br />
+    @foreach (var idea in Model.Ideas)
+    {
+        <div class="row">
+            <div class="col-md-1">
+                <div class="well text-center">
+                    <div class="left">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <div data-action="up" data-id="@idea.Id" class="row"><span class="glyphicon glyphicon-chevron-up"></span></div>
+                            <div data-action="down" data-id="@idea.Id" class="row"><span class="glyphicon glyphicon-chevron-down"></span></div>
+                        }
+                    </div>
+                    <div class="">
+                        <div data-action="votes-count" data-id="@idea.Id" class="row">
+                            <h3 id="votes-count"><strong>@idea.Votes</strong></h3>
+                            <h5 id="votes-count-h5">votes</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="well text-center">
+                    <div class="row">@idea.CommentsCount</div>
+                    <div class="row">comments</div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="row">
+                    <h4>
+                        <a href="@idea.Url">@idea.Title</a>
+                    </h4>
+                </div>
+                @if (idea.Description.Length >= 300)
+                {
+                    <p>@idea.Description.Substring(0, 300) ... <a href='@idea.Url'>more</a></p>
+                }
+                else
+                {
+                    <p>@idea.Description</p>
+                }
+            </div>
         </div>
+        <hr />
     }
 </div>
-<h1>Категории</h1>
-<div class="row">
-    @foreach (var category in Model.Categories)
-    {
-        <div class="col-md-2">
-            @category.Name
-        </div>
-    }
-</div>
+<nav>
+    <ul class="pagination">
+        @if (Model.CurrentPage > 1)
+            {
+            <li>
+                <a href="/Home/Index/@(Model.CurrentPage - 1)" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+        }
+
+        @for (int i = 1; i <= Model.TotalPages; i++)
+            {
+                var className = string.Empty;
+                if (Model.CurrentPage == i)
+                {
+                    className = "active";
+                }
+
+                <li class="@className"><a href="/Home/Index/@i">@i</a></li>
+        }
+
+        @if (Model.CurrentPage != Model.TotalPages)
+            {
+            <li>
+                <a href="/Home/Index/@(Model.CurrentPage + 1)" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        }
+    </ul>
+</nav>
+@section scripts {
+    <script>
+        $('div[data-action="up"]').click(function () {
+            var id = $(this).attr('data-id');
+            voteClick(id, 1);
+        });
+
+        $('div[data-action="down"]').click(function () {
+            var id = $(this).attr('data-id');
+            voteClick(id, -1);
+        });
+
+        function voteClick(id, voteType) {
+            $.post("/Votes/Vote", { postId: id, voteType: voteType },
+                function (data) {
+                    var newVotesCount = data.Count;
+                    $('div[data-action="votes-count"][data-id="' + id + '"] #votes-count strong')
+                        .html(newVotesCount);
+                })
+        }
+    </script>
+}

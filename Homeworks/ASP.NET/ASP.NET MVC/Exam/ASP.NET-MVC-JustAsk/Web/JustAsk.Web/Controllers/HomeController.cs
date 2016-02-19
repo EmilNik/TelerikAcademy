@@ -1,40 +1,55 @@
 ﻿namespace JustAsk.Web.Controllers
 {
+    using System;
+    using System.Collections.Generic;
     using System.Linq;
     using System.Web.Mvc;
 
+    using Common;
     using Infrastructure.Mapping;
-
     using Services.Data;
-
-    using ViewModels.Home;
+    using ViewModels.Idea;
 
     public class HomeController : BaseController
     {
-        private readonly IJokesService jokes;
-        private readonly ICategoriesService jokeCategories;
+        private IIdeasServices ideas;
 
-        public HomeController(
-            IJokesService jokes,
-            ICategoriesService jokeCategories)
+        public HomeController(IIdeasServices ideas)
         {
-            this.jokes = jokes;
-            this.jokeCategories = jokeCategories;
+            this.ideas = ideas;
         }
 
-        public ActionResult Index()
+        [HttpGet]
+        public ActionResult Index(int id = 1)
         {
-            var jokes = this.jokes.GetRandomJokes(3).To<JokeViewModel>().ToList();
-            var categories =
-                this.Cache.Get(
-                    "categories",
-                    () => this.jokeCategories.GetAll().To<JokeCategoryViewModel>().ToList(),
-                    30 * 60);
-            var viewModel = new IndexViewModel
+            IdeaHomeViewModel viewModel;
+            if (this.HttpContext.Cache["Home_page_" + id] != null)
             {
-                Jokes = jokes,
-                Categories = categories
-            };
+                viewModel = (IdeaHomeViewModel)this.HttpContext.Cache["Home_page_" + id];
+            }
+            else
+            {
+                var page = id;
+                var allItemsCount = this.ideas.Count();
+                var totalPages = (int)Math.Ceiling(allItemsCount / (decimal)GlobalConstants.IdeasPerPage);
+
+                if (page > totalPages)
+                {
+                    page = totalPages;
+                }
+
+                var itemsToSkip = (page - 1) * GlobalConstants.IdeasPerPage;
+                var allIdeas = this.ideas.GetIdeas(itemsToSkip, GlobalConstants.IdeasPerPage).To<IdeaViewModel>().ToList();
+
+                viewModel = new IdeaHomeViewModel
+                {
+                    CurrentPage = page,
+                    TotalPages = totalPages,
+                    Ideas = allIdeas
+                };
+
+                this.HttpContext.Cache["Home_page_" + id] = viewModel;
+            }
 
             return this.View(viewModel);
         }

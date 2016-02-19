@@ -2,13 +2,13 @@
 {
     using System;
 
+    using Data;
+    using Data.Models;
+
     using Microsoft.AspNet.Identity;
     using Microsoft.AspNet.Identity.EntityFramework;
     using Microsoft.AspNet.Identity.Owin;
     using Microsoft.Owin;
-
-    using JustAsk.Data;
-    using JustAsk.Data.Models;
 
     // Configure the application user manager used in this application. UserManager is defined in ASP.NET Identity and is used by the application.
     public class ApplicationUserManager : UserManager<ApplicationUser>
@@ -25,20 +25,20 @@
 
             // Configure validation logic for usernames
             manager.UserValidator = new UserValidator<ApplicationUser>(manager)
-                                        {
-                                            AllowOnlyAlphanumericUserNames = false,
-                                            RequireUniqueEmail = true
-                                        };
+            {
+                AllowOnlyAlphanumericUserNames = false,
+                RequireUniqueEmail = true
+            };
 
             // Configure validation logic for passwords
             manager.PasswordValidator = new PasswordValidator
-                                            {
-                                                RequiredLength = 6,
-                                                RequireNonLetterOrDigit = true,
-                                                RequireDigit = true,
-                                                RequireLowercase = true,
-                                                RequireUppercase = true,
-                                            };
+            {
+                RequiredLength = 5,
+                RequireNonLetterOrDigit = false,
+                RequireDigit = false,
+                RequireLowercase = false,
+                RequireUppercase = false,
+            };
 
             // Configure user lockout defaults
             manager.UserLockoutEnabledByDefault = true;
