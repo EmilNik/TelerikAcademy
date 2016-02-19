@@ -30,6 +30,16 @@
     </div>
 }
 
+<div class="g-recaptcha" data-sitekey="6LcOvBgTAAAAAEWWc4193Byye7WLlcueHm7x3i7C"></div>
+<div class="row">
+    <div class="col-md-12">
+        <form action="/home/validatecaptcha" method="POST">
+            <div class="g-recaptcha" data-sitekey="6LfiS_8SAAAAABvF6ixcyP5MtsevE5RZ9dTorUWr"></div>
+        </form>
+    </div>
+
+</div>
 @section Scripts {
     @Scripts.Render("~/bundles/jquesryval")
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 }
